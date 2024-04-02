@@ -7,9 +7,17 @@
     <meta name="author" content="Thisura Liyanage">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/fontawesome-free-6.5.1-web/css/all.min.css">
+    <link rel="stylesheet" href="assets/style.css">
+
+    <style>
+
+    </style>
 </head>
 <body>
 <header>
+    <img src="assets/logo.png" alt="myLogo">
     <nav>
     <a href="#home"><u>Home</u></a>
     <a href="#about">About</a>
@@ -19,102 +27,68 @@
     </nav>
 </header>
 <!--Hero section-->
-<section id="home">
+<section id="home" class="section1">
+
 <!--    left side-->
     <div>
-        <h1>HELLO !!! <br>
-        I'M <br>THISURA LIYANAGE
-        </h1>
+        <h1>HELLO ! ! !</h1>
+        <h1>I' AM</h1>
+        <h2>THISURA LIYANAGE</h2>
         <h4>FULL STACK DEVELOPER</h4>
-        <button type="button">More About ></button>
+        <button type="button" id="btnMore">More About ></button>
+        <br><br><br><br>
     </div>
-    <img src="assets/images/icons8-gmail-48.png" title="gmail" alt="gmail">
-    <img src="assets/images/icons8-linkedin-48.png" title="linkedin" alt="linkedin">
-    <img src="assets/images/icons8-facebook-48%20(1).png" title="fb" alt="fb">
-    <img src="assets/images/icons8-whatsapp-48.png" title="whatsapp" alt="whatsapp">
+
+    <div>
+        <img src="assets/images/icons8-gmail-48.png" title="gmail" alt="gmail">
+        <img src="assets/images/icons8-linkedin-48.png" title="linkedin" alt="linkedin">
+        <img src="assets/images/icons8-facebook-48%20(1).png" title="fb" alt="fb">
+        <img src="assets/images/icons8-whatsapp-48.png" title="whatsapp" alt="whatsapp">
+    </div>
+
 <!--    right side-->
     <div>
-        <picture>
-            <source media="(min-width: 1000px)" srcset="assets/images/large.png">
+        <picture id="myPic">
+            <source media="(min-width: 2000px)" srcset="assets/images/large.png">
             <source media="(min-width: 800px)" srcset="assets/images/medium.png">
             <img src="assets/images/small.png" title="iphone" alt="iphone">
         </picture>
+<!--        <img src="assets/images/medium.png" id="myPic" alt="">-->
     </div>
     <br><br>
 </section>
 <!--    About section-->
-<section id="about">
+<section id="about" class="section2">
 <!--    right side of about section-->
     <div>
-        <h1>| ABOUT</h1>
-        <picture>
-            <source media="(min-width: 1000px)" srcset="assets/images/about-large.jpg">
+        <h1 id="aboutLabel">| ABOUT</h1>
+        <picture class="aboutPic">
+            <source media="(min-width: 1000px)"  srcset="assets/images/about-large.jpg">
             <source media="(min-width: 800px)" srcset="assets/images/about-small.jpg">
             <img src="assets/images/about-small.jpg" alt="about">
         </picture>
     </div>
 <!--    left side of about section-->
-    <div>
+    <div id="aboutText">
         <h2>I’M  Passionate Software Engineer !!!<br><br></h2>
         <h3>Hello !!!</h3>
-        <p style="font-size: large">
-            I'm Thisura Liyanage a passionate software engineering student at <br>the Institute of Java Software Engineering. I am deeply enthusiastic
+        <p id="p1">
+            👨‍💻 I'm Thisura Liyanage a passionate software engineering student at <br>the Institute of Java Software Engineering. I am deeply enthusiastic
             <br> about crafting innovative solutions and embracing <br>the ever-evolving landscape of technology. <br><br>
-
-            Throughout my academic journey, I've actively engaged in various <br> projects, honing my skills in software development, problem-solving,<br> and collaboration. Whether it's building web applications, mobile apps,<br> or diving into the depths of data science, I'm always eager to explore
+        </p>
+        <p id="p2">
+            🚀 Throughout my academic journey, I've actively engaged in various <br> projects, honing my skills in software development, problem-solving,<br> and collaboration. Whether it's building web applications, mobile apps,<br> or diving into the depths of data science, I'm always eager to explore
             <br>new challenges and push the boundaries of what's possible. <br><br>
-
-            I'm excited to embark on this journey of exploration, innovation,<br> and collaboration. Let's connect, create, and make an impact together!
+        </p>
+        <p id="p3">
+            🌐 I'm excited to embark on this journey of exploration, innovation,<br> and collaboration. Let's connect, create, and make an impact together!
         </p><br>
-        <button type="Button">Download my Cv</button>
+        <button type="Button" id="btnDownload">Download my Cv</button>
     </div>
     <br><br>
 </section>
-<!--Education Section-->
-<section>
-    <div>
-        <h1>| EDUCATION</h1>
-    </div>
-    <div>
-            <img src="assets/images/icons8-education-48.png" title="Education" alt="Education" width="83" height="80">
-            <span style="font-size: large">Higher Education (2023)</span><br>
-            <span>
-                BSc (Hons) In Computer Science <br>
-                Institute of Software <br>
-                Engineering
-            </span>
-    </div>
-
-    <div>
-        <img src="assets/images/icons8-education-48.png" title="Education" alt="Education" width="83" height="80">
-        <span style="font-size: large">Advanced Education (2020) </span> <br>
-            <span>2020 Advanced Level <br>
-                Examination <br>
-                Ananda shastralaya
-            </span>
-    </div>
-    <div>
-        <img src="assets/images/icons8-education-48.png" title="Education" alt="Education" width="83" height="80">
-        <span style="font-size: large">Ordinary Education (2017) </span> <br>
-            <span>
-                2017 Ordinary Level <br>
-                Examination <br>
-                Ananda shastralaya <br>
-            </span>
-    </div>
-    <div>
-        <img src="assets/images/icons8-education-48.png" title="Education" alt="Education" width="83" height="80">
-        <span style="font-size: large">Primary Education (2011)</span><br>
-            <span>
-                2011 Primary Level <br>
-                Examination <br>
-                Kamburawala National School
-            </span>
-    </div>
-</section>
-<br><br>
 <!--Projects Section-->
-<section id="projects">
+<section id="projects" class="section4">
     <div>
         <h1>| PROJECTS</h1>
     </div>
