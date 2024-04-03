@@ -9,23 +9,39 @@
     <title>Home Page</title>
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/fontawesome-free-6.5.1-web/css/all.min.css">
-    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/home.css">
+    <link rel="stylesheet" href="assets/about.css">
+    <link rel="stylesheet" href="assets/project.css">
+    <link rel="stylesheet" href="assets/assignment.css">
+    <link rel="stylesheet" href="assets/contact.css">
 
     <style>
-
+        body{
+            background-color: black;
+        }
     </style>
 </head>
 <body>
-<header>
-    <img src="assets/logo.png" alt="myLogo">
-    <nav>
-    <a href="#home"><u>Home</u></a>
-    <a href="#about">About</a>
-    <a href="#projects">Projects</a>
-    <a href="#gallery">Gallery</a>
-    <a href="#contact">Contact</a>
-    </nav>
-</header>
+    <div class="pre_loader">
+        <div id="pre_loader_over_layer"></div>
+        <img src="assets/images/logo-white.png" alt="logo" style="width: 60px; height: 60px;">
+    </div>
+    <header>
+
+
+        <nav>
+
+            <ol>
+                <li class="nav_items">Home</li>
+                <li class="nav_items">About</li>
+                <li class="nav_items">Project</li>
+                <li class="nav_items">Assignment</li>
+                <li class="nav_items">Contact</li>
+            </ol>
+        </nav>
+
+
+    </header>
 <!--Hero section-->
 <section id="home" class="section1">
 
@@ -88,137 +104,183 @@
     <br><br>
 </section>
 <!--Projects Section-->
-<section id="projects" class="section4">
+<section id="projects" class="section3">
     <div>
-        <h1>| PROJECTS</h1>
+        <h1 id="projectLabel">| PROJECTS</h1>
     </div>
-    <div>
-        <fieldset style="width: fit-content">
-            <h1>Liyo Garment</h1>
-            <h5>Liyo Garment Stock
-                Management System</h5>
+    <div id="pro1">
+            <h1>Garment Management System</h1>
+        <p>
+            A garment management system helps businesses streamline inventory, sales, and production processes for efficient management of clothing products.
+        </p>
             <img src="assets/images/icons8-github-48.png" title="github" alt="github">
-        </fieldset>
-        <br>
-        <fieldset style="width: fit-content">
-            <h1>Liyo Garment</h1>
-            <h5>Liyo Garment Stock
-                Management System</h5>
+        <button type="button" class="btn1">View</button>
+    </div>
+    <div id="pro2">
+            <h1>Library Management System</h1>
+        <p>
+            A Library Management System automates library tasks such as cataloging, lending, returns, and patron management for effective library administration and user services.
+        </p>
             <img src="assets/images/icons8-github-48.png" title="github" alt="github">
-        </fieldset>
-        <br>
-        <fieldset style="width: fit-content">
-            <h1>Liyo Garment</h1>
-            <h5>Liyo Garment Stock
-                Management System</h5>
+        <button type="button" class="btn1">View</button>
+    </div>
+    <div id="pro3">
+            <h1>Garment Management System</h1>
+        <p>
+            A garment management system helps businesses streamline inventory, sales, and production processes for efficient management of clothing products.
+        </p>
             <img src="assets/images/icons8-github-48.png" title="github" alt="github">
-        </fieldset>
+        <button type="button" class="btn1">View</button>
     </div>
 </section>
 <br><br>
 <!--Assignment Section-->
-<section>
-    <div>
-        <h1>| ASSIGNMENT</h1>
-    </div>
-    <div>
-        <fieldset>
-            <fieldset style="width: fit-content">
-                <img src="assets/images/icons8-assignment-50.png" alt="Assignment">
-                <h2>Assignment 01</h2>
-                <button>View</button>
-            </fieldset>
-            <br>
-            <fieldset style="width: fit-content">
-                <img src="assets/images/icons8-assignment-50.png" alt="Assignment">
-                <h2>Assignment 02</h2>
-                <button>View</button>
-            </fieldset>
-            <br>
-            <fieldset style="width: fit-content">
-                <img src="assets/images/icons8-assignment-50.png" alt="Assignment">
-                <h2>Assignment 03</h2>
-                <button>View</button>
-            </fieldset>
-            <br>
-            <fieldset style="width: fit-content">
-                <img src="assets/images/icons8-assignment-50.png" alt="Assignment">
-                <h2>Assignment 04</h2>
-                <button>View</button>
-            </fieldset>
-            <br>
-            <fieldset style="width: fit-content">
-                <img src="assets/images/icons8-assignment-50.png" alt="Assignment">
-                <h2>Assignment 05</h2>
-                <button>View</button>
-            </fieldset>
-        </fieldset>
-    </div>
-</section>
-<br><br>
-<section>
-    <br><br>
-    <div>
-        <h1>SKILLS & LANGUAGES</h1><br><br>
-        <img src="assets/images/intellij-idea-logo.png" width="160"  alt="intellij">
-        <img src="assets/images/java-logo.png" width="120" height="140"  alt="java">
-        <img src="assets/images/GitHub-Mark-ea2971cee799.png" width="170" alt="github">
-        <img src="assets/images/javascript-logo.png" width="170" alt="javaScript">
-        <img src="assets/images/mysql-logo-3.png" width="170"  alt="mysql">
-        <img src="assets/images/photoshop_PNG68.png" width="150"  alt="photoshop">
-        <img src="assets/images/adobe-lightroom-logo-FF1AAA233D-seeklogo.com.png" width="170" alt="lightroom">
-        <img src="assets/images/png-transparent-figma-app-logo-tech-companies-thumbnail.png" width="170"  alt="figma">
-        <img src="assets/images/html-logo.png" width="150" alt="html">
-        <img src="assets/images/css3-logo.png" width="170"  alt="css">
-    </div>
-</section>
-<br><br>
-<!--Gallery Section-->
-<section id="gallery">
-    <br><br>
-    <h1>| GALLERY</h1>
-    <br><br>
-    <div>
-        <picture>
-<!--            1st image-->
-            <source media="(min-width: 1000px)" srcset="assets/images/gallery1-large.jpg">
-            <source media="(min-width: 800px)" srcset="assets/images/gallery1-medium.jpg">
-            <img src="assets/images/gallery1-small.jpg" alt="gallery1-small.jpg">
-        </picture>
-        <picture>
-<!--            2nd image-->
-            <source media="(min-width: 1000px)" srcset="assets/images/gallery2-large.jpg">
-            <source media="(min-width: 800px)" srcset="assets/images/gallery2-medium.jpg">
-            <img src="assets/images/gallery2-small.jpg" alt="gallery2-small.jpg">
-        </picture>
-        <picture>
-<!--            3rd image-->
-            <source media="(min-width: 1000px)" srcset="assets/images/gallery3-large.jpg">
-            <source media="(min-width: 800px)" srcset="assets/images/gallery3-medium.jpg">
-            <img src="assets/images/gallery-3-small.jpg" alt="gallery3-small.jpg">
-        </picture>
-        <picture>
-<!--            4th image-->
-            <source media="(min-width: 1000px)" srcset="assets/images/gallery4-large.jpg">
-            <source media="(min-width: 800px)" srcset="assets/images/gallery4-medium.jpg">
-            <img src="assets/images/gallery4-small.jpg" alt="gallery4-small.jpg">
-        </picture>
-        <picture>
-<!--            5th image-->
-            <source media="(min-width: 1000px)" srcset="assets/images/gallery5-large.jpg">
-            <source media="(min-width: 800px)" srcset="assets/images/gallery5-medium.jpg">
-            <img src="assets/images/gallery5-small.jpg" alt="gallery5-small.jpg">
-        </picture>
-        <picture>
-<!--            6th image-->
-            <source media="(min-width: 1000px)" srcset="assets/images/about-large.jpg">
-            <source media="(min-width: 800px)" srcset="assets/images/about-small.jpg">
-            <img src="assets/images/about-small.jpg" alt="about-small.jpg">
-        </picture>
-    </div>
-</section>
-<br><br>
-<!--contact section-->
+    <section class="assigment">
+        <section>
+            <div>
+                <h2 id="assigmentLabel">|ASSIGNMENTS</h2>
+            </div>
+
+        </section>
+
+
+        <section>
+
+            <div class="card" data-aos="flip-left">
+                <div class="content">
+                    <p class="heading">Assignment 01
+                    </p>
+
+                    <button class="btn">View</button>
+                </div>
+            </div>
+
+
+            <div class="card" data-aos="flip-left">
+                <div class="content">
+                    <p class="heading">Assignment 02
+                    </p>
+
+                    <button class="btn">View</button>
+                </div>
+            </div>
+
+
+            <div class="card" data-aos="flip-left">
+                <div class="content">
+                    <p class="heading">Assignment 03
+                    </p>
+
+                    <button class="btn">View</button>
+                </div>
+            </div>
+
+
+            <div class="card" data-aos="flip-left">
+                <div class="content">
+                    <p class="heading">Assignment 04
+                    </p>
+
+                    <button class="btn">View</button>
+                </div>
+            </div>
+
+
+            <div class="card" data-aos="flip-left">
+                <div class="content">
+                    <p class="heading">Assignment 05
+                    </p>
+
+                    <button class="btn">View</button>
+                </div>
+            </div>
+
+
+            <div class="card" data-aos="flip-left">
+                <div class="content">
+                    <p class="heading">Assignment 06
+                    </p>
+
+                    <button class="btn">View</button>
+                </div>
+            </div>
+
+
+            <div class="card" data-aos="flip-left">
+                <div class="content">
+                    <p class="heading">Assignment 07
+                    </p>
+
+                    <button class="btn">View</button>
+                </div>
+            </div>
+
+
+            <div class="card" data-aos="flip-left">
+                <div class="content">
+                    <p class="heading">Assignment 08
+                    </p>
+
+                    <button class="btn">View</button>
+                </div>
+            </div>
+
+
+            <div class="card" data-aos="flip-left">
+                <div class="content">
+                    <p class="heading">Assignment 09
+                    </p>
+
+                    <button class="btn">View</button>
+                </div>
+            </div>
+
+            <div class="card" data-aos="flip-left">
+                <div class="content">
+                    <p class="heading">Assignment 10
+                    </p>
+
+                    <button class="btn">View</button>
+                </div>
+            </div>
+
+            <div class="card" data-aos="flip-left">
+                <div class="content">
+                    <p class="heading">Assignment 11
+                    </p>
+                    <button class="btn">View</button>
+                </div>
+            </div>
+
+            <div class="card" data-aos="flip-left">
+                <div class="content">
+                    <p class="heading">Assignment 12
+                    </p>
+                    <button class="btn">View</button>
+                </div>
+            </div>
+
+
+        </section>
+    </section>
+    <section>
+        <br><br>
+        <div>
+            <h1>SKILLS & LANGUAGES</h1><br><br>
+            <img src="assets/images/intellij-idea-logo.png" width="160"  alt="intellij">
+            <img src="assets/images/java-logo.png" width="120" height="140"  alt="java">
+            <img src="assets/images/GitHub-Mark-ea2971cee799.png" width="170" alt="github">
+            <img src="assets/images/javascript-logo.png" width="170" alt="javaScript">
+            <img src="assets/images/mysql-logo-3.png" width="170"  alt="mysql">
+            <img src="assets/images/photoshop_PNG68.png" width="150"  alt="photoshop">
+            <img src="assets/images/adobe-lightroom-logo-FF1AAA233D-seeklogo.com.png" width="170" alt="lightroom">
+            <img src="assets/images/png-transparent-figma-app-logo-tech-companies-thumbnail.png" width="170"  alt="figma">
+            <img src="assets/images/html-logo.png" width="150" alt="html">
+            <img src="assets/images/css3-logo.png" width="170"  alt="css">
+        </div>
+    </section>
+
+    <!--contact section-->
 <section id="contact">
     <br><br>
 <!--left side-->
