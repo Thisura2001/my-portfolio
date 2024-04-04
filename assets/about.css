@@ -25,6 +25,15 @@
         filter: drop-shadow(0 0 10px rgb(16, 219, 225));
         overflow: hidden;
         opacity: 70%;
+        animation: scaleUp 1s ease forwards;
+    }
+    @keyframes scaleUp {
+        from {
+            transform: scale(0);
+        }
+        to {
+            transform: scale(1);
+        }
     }
 
     #aboutText {
@@ -61,14 +70,26 @@
         width: 180px;
         height: 48px;
         border-radius: 40px;
-        font-size: 19px;
+        font-size: 16px;
         color: white;
         text-decoration: none;
         font-weight: 600;
         letter-spacing: 1px;
         z-index: 1;
-
+        animation: pulse 1s infinite;
     }
+    @keyframes pulse {
+        0% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(1.1);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+
 
     #btnDownload::before {
         content: ' ';
@@ -134,6 +155,15 @@
         overflow: hidden;
         opacity: 70%;
         filter: drop-shadow(0 0 10px rgb(16, 219, 225));
+        animation: scaleUp 1s ease forwards;
+    }
+    @keyframes scaleUp {
+        from {
+            transform: scale(0);
+        }
+        to {
+            transform: scale(1);
+        }
     }
 
     #aboutText {
@@ -176,7 +206,18 @@
         font-weight: 600;
         letter-spacing: 1px;
         z-index: 1;
-
+        animation: pulse 1s infinite;
+    }
+    @keyframes pulse {
+        0% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(1.1);
+        }
+        100% {
+            transform: scale(1);
+        }
     }
 
     #btnDownload::before {
@@ -244,8 +285,16 @@
         overflow: hidden;
         opacity: 70%;
         filter: drop-shadow(0 0 10px rgb(16, 219, 225));
+        animation: scaleUp 1s ease forwards;
     }
-
+    @keyframes scaleUp {
+        from {
+            transform: scale(0);
+        }
+        to {
+            transform: scale(1);
+        }
+    }
     #aboutText {
         position: absolute;
         top: 10px;
@@ -303,6 +352,19 @@
         z-index: 1;
         left: -300px;
         top: 60px;
+        animation: pulse 1s infinite;
+
+    }
+    @keyframes pulse {
+        0% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(1.1);
+        }
+        100% {
+            transform: scale(1);
+        }
     }
 
     #btnDownload::before {
@@ -370,8 +432,16 @@
         overflow: hidden;
         opacity: 70%;
         filter: drop-shadow(0 0 10px rgb(16, 219, 225));
+        animation: scaleUp 1s ease forwards;
     }
-
+    @keyframes scaleUp {
+        from {
+            transform: scale(0);
+        }
+        to {
+            transform: scale(1);
+        }
+    }
     #aboutText {
         position: absolute;
         top: 350px;
@@ -437,6 +507,18 @@
         z-index: 1;
         left: -300px;
         top: -100px;
+        animation: pulse 1s infinite;
+    }
+    @keyframes pulse {
+        0% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(1.1);
+        }
+        100% {
+            transform: scale(1);
+        }
     }
 
     #btnDownload::before {

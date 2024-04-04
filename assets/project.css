@@ -621,7 +621,7 @@
         border-radius: 100%;
         visibility: hidden;
     }
-    #pro2>.btn1{
+    #pro2>a>.btn1{
         background: black;
         border: 2px solid green;
         color: green;
