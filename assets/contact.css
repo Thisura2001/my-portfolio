@@ -1,4 +1,11 @@
 .section4{
     height: 100vh;
     background: #ffffff;
+    position: relative;
+}
+#contactLabel{
+    position: absolute;
+    top: 50px;
+    left: 60px;
+    color: #daf519;
 }

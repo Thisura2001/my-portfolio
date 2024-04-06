@@ -42,7 +42,7 @@
     border-radius: 10px;
     transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
     z-index: 99999;
-    left: 30px;
+    left: 130px;
 }
 
 .content {

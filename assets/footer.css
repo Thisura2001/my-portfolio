@@ -1,0 +1,28 @@
+footer{
+    position: relative;
+    width: 100vw;
+    height: 70px;
+    background: linear-gradient(45deg, #437bbb, #ae89e8, #103681);
+    font-family: 'Roboto', sans-serif;
+}
+footer>img{
+    width: 50px;
+    height: 50px;
+    left: 470px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    border-radius: 100%;
+}
+footer>h3{
+    text-align: center;
+    font-size: 20px;
+    color: #421c1c;
+    top: 20px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+}
