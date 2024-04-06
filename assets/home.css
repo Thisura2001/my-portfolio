@@ -1,4 +1,7 @@
-
+body{
+    background-color: black;
+    overflow-x:hidden ;
+}
 * {
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
