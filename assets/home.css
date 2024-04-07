@@ -1,5 +1,5 @@
 body{
-    background-color: black;
+    background: linear-gradient( #000000, #000000);
     overflow-x:hidden ;
 }
 * {

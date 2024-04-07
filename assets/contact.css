@@ -1,11 +1,111 @@
 .section4{
     height: 100vh;
-    background: #ffffff;
+    background: #000000;
     position: relative;
 }
 #contactLabel{
     position: absolute;
-    top: 50px;
+    top: 100px;
     left: 60px;
     color: #daf519;
+}
+#contactCard{
+    width: 400px;
+    height: 500px;
+    position: absolute;
+    left: 1000px;
+    top: 100px;
+    border: 7px solid black;
+    background: linear-gradient(to right top, #3b078f, #881717);
+    border-radius: 20%;
+    color: white;
+}
+#contactCard>div{
+    position: absolute;
+    top: 80px;
+    left: 70px;
+}
+#contactCard>div>button{
+    left: 100px;
+    position: absolute;
+}
+#left{
+    position: absolute;
+    top: 200px;
+}
+#left>h1{
+    position: absolute;
+    font-size: 100px;
+    left: 100px;
+    animation: popUp 1s ease infinite alternate;
+    font-style: italic;
+    filter: drop-shadow(0 0 10px rgb(4, 155, 220));
+    color: #75aae8;
+}
+@keyframes popUp {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+#left>h4{
+    position: absolute;
+    left: 500px;
+    top: 100px;
+    width: 150px;
+    font-size: 20px;
+    color: white;
+}
+#left>h5{
+    position: absolute;
+    left: 550px;
+    top: 150px;
+    width: 100px;
+    color: white;
+}
+#call>img:first-child{
+    position: absolute;
+    left: 500px;
+    top: 170px;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background: white;
+}
+#call>img:nth-child(2){
+    position: absolute;
+    left: 500px;
+    top: 200px;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background: white;
+}
+#social{
+    position: absolute;
+    justify-content: space-around;
+    left: 900px;
+    word-spacing: 30px;
+    top: 60px;
+}
+#btnSend{
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+#btnSend:hover {
+    background-color: #0069d9;
 }

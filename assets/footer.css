@@ -26,3 +26,14 @@ footer>h3{
     margin: auto;
     position: absolute;
 }
+@media all and (max-width: 768px){
+    footer>img{
+        width: 30px;
+        height: 30px;
+        left: 40px;
+        top: 0px;
+    }
+    footer>h3{
+        font-size: 15px;
+    }
+}
