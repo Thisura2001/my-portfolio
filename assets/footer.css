@@ -27,6 +27,14 @@ footer>h3{
     position: absolute;
 }
 @media all and (max-width: 768px){
+    footer{
+        position: relative;
+        top: 400px;
+        width: 100vw;
+        height: 70px;
+        background: linear-gradient(45deg, #437bbb, #ae89e8, #103681);
+        font-family: 'Roboto', sans-serif;
+    }
     footer>img{
         width: 30px;
         height: 30px;

@@ -109,3 +109,213 @@
 #btnSend:hover {
     background-color: #0069d9;
 }
+@media all and (max-width: 1440px) and (min-width: 1024px){
+    #contactLabel{
+        position: absolute;
+        top: 50px;
+        left: 40px;
+        color: #daf519;
+    }
+    #contactCard{
+        width: 400px;
+        height: 500px;
+        position: absolute;
+        left: 600px;
+        top: 100px;
+        border: 7px solid black;
+        background: linear-gradient(to right top, #3b078f, #881717);
+        border-radius: 20%;
+        color: white;
+    }
+    #left{
+        position: absolute;
+        top: 100px;
+    }
+    #left>h4{
+        position: absolute;
+        left: 50px;
+        top: 300px;
+        width: 150px;
+        font-size: 20px;
+        color: white;
+    }
+    #left>h5{
+        position: absolute;
+        left: 100px;
+        top: 350px;
+        width: 100px;
+        color: white;
+    }
+    #call>img:first-child{
+        position: absolute;
+        left: 50px;
+        top: 370px;
+        width: 20px;
+        height: 20px;
+        border-radius: 100%;
+        background: white;
+    }
+    #call>img:nth-child(2){
+        position: absolute;
+        left: 50px;
+        top: 400px;
+        width: 20px;
+        height: 20px;
+        border-radius: 100%;
+        background: white;
+    }
+    #social{
+        position: absolute;
+        justify-content: space-around;
+        left: 530px;
+        word-spacing: 30px;
+        top: 160px;
+    }
+}
+@media all and (max-width: 1024px) and (min-width: 768px) {
+    #contactLabel{
+        position: absolute;
+        top: 50px;
+        left: 40px;
+        color: #daf519;
+    }
+    #contactCard{
+        width: 400px;
+        height: 500px;
+        position: absolute;
+        left: 350px;
+        top: 100px;
+        border: 7px solid black;
+        background: linear-gradient(to right top, #3b078f, #881717);
+        border-radius: 20%;
+        color: white;
+    }
+    #left{
+        position: absolute;
+        top: 100px;
+    }
+    #left>h1{
+        position: absolute;
+        font-size: 60px;
+        left: 100px;
+        animation: popUp 1s ease infinite alternate;
+        font-style: italic;
+        filter: drop-shadow(0 0 10px rgb(4, 155, 220));
+        color: #75aae8;
+    }
+    #left>h4{
+        position: absolute;
+        left: 50px;
+        top: 200px;
+        width: 150px;
+        font-size: 20px;
+        color: white;
+    }
+    #left>h5{
+        position: absolute;
+        left: 100px;
+        top: 250px;
+        width: 100px;
+        color: white;
+    }
+    #call>img:first-child{
+        position: absolute;
+        left: 50px;
+        top: 300px;
+        width: 20px;
+        height: 20px;
+        border-radius: 100%;
+        background: white;
+    }
+    #call>img:nth-child(2){
+        position: absolute;
+        left: 50px;
+        top: 270px;
+        width: 20px;
+        height: 20px;
+        border-radius: 100%;
+        background: white;
+    }
+    #social{
+        position: absolute;
+        justify-content: space-around;
+        left: 50px;
+        word-spacing: 100px;
+        top: 360px;
+        display: flex;
+    }
+}
+@media all and (max-width: 768px) and (min-width: 320px) {
+    #contactLabel{
+        position: absolute;
+        top: 50px;
+        left: 40px;
+        color: #daf519;
+    }
+    #contactCard{
+        width: 400px;
+        height: 500px;
+        position: absolute;
+        left: 50px;
+        top: 600px;
+        border: 7px solid black;
+        background: linear-gradient(to right top, #3b078f, #881717);
+        border-radius: 20%;
+        color: white;
+    }
+    #left{
+        position: absolute;
+        top: 100px;
+        left: 20px;
+    }
+    #left>h1{
+        position: absolute;
+        font-size: 60px;
+        left: 100px;
+        animation: popUp 1s ease infinite alternate;
+        font-style: italic;
+        filter: drop-shadow(0 0 10px rgb(4, 155, 220));
+        color: #75aae8;
+    }
+    #left>h4{
+        position: absolute;
+        left: 50px;
+        top: 200px;
+        width: 150px;
+        font-size: 20px;
+        color: white;
+    }
+    #left>h5{
+        position: absolute;
+        left: 100px;
+        top: 250px;
+        width: 100px;
+        color: white;
+    }
+    #call>img:first-child{
+        position: absolute;
+        left: 50px;
+        top: 300px;
+        width: 20px;
+        height: 20px;
+        border-radius: 100%;
+        background: white;
+    }
+    #call>img:nth-child(2){
+        position: absolute;
+        left: 50px;
+        top: 270px;
+        width: 20px;
+        height: 20px;
+        border-radius: 100%;
+        background: white;
+    }
+    #social{
+        position: absolute;
+        justify-content: space-around;
+        left: 50px;
+        word-spacing: 100px;
+        top: 360px;
+        display: flex;
+    }
+}
