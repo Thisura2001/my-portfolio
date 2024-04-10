@@ -1,5 +1,6 @@
 .section4{
     height: 100vh;
+    width: 100vw;
     background: #000000;
     position: relative;
 }
@@ -246,6 +247,9 @@
     }
 }
 @media all and (max-width: 768px) and (min-width: 320px) {
+    #section4{
+        overflow-x: hidden;
+    }
     #contactLabel{
         position: absolute;
         top: 50px;
@@ -253,15 +257,24 @@
         color: #daf519;
     }
     #contactCard{
-        width: 400px;
+        width: 300px;
         height: 500px;
         position: absolute;
-        left: 50px;
-        top: 600px;
+        left: 20px;
+        top: 550px;
         border: 7px solid black;
         background: linear-gradient(to right top, #3b078f, #881717);
         border-radius: 20%;
         color: white;
+    }
+    #contactCard>div>button{
+        left: 50px;
+        position: absolute;
+    }
+    #contactCard>div{
+        position: absolute;
+        top: 80px;
+        left: 60px;
     }
     #left{
         position: absolute;

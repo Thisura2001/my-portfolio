@@ -18,27 +18,19 @@
     <link rel="stylesheet" href="assets/footer.css">
 </head>
 <body>
-    <div class="pre_loader">
-        <div id="pre_loader_over_layer"></div>
-        <img src="assets/images/logo-white.png" alt="logo" style="width: 60px; height: 60px;">
-    </div>
-    <header>
-
-
-        <nav>
-
-            <ol>
-                <li class="nav_items">Home</li>
-                <li class="nav_items">About</li>
-                <li class="nav_items">Project</li>
-                <li class="nav_items">Assignment</li>
-                <li class="nav_items">Contact</li>
-            </ol>
-        </nav>
-
-
-    </header>
-<!--Hero section-->
+<header class="header">
+    <a href="#home" class="logo"></a>
+    <div class="hamburger"><i class='bx bx-menu'></i></div>
+    <div class="hamburger"><i class='bx bx-x'></i></div>
+    <nav id="navbar" class="navbar">
+        <a data-aos="zoom-in-left" href="#home" style="--i:1" class="active">Home</a>
+        <a data-aos="zoom-in-left" href="#about" style="--i:2">About</a>
+        <a data-aos="zoom-in-left" href="#projects" style="--i:3">Projects</a>
+        <a data-aos="zoom-in-left" href="#assignments" style="--i:4">Assignments</a>
+        <a data-aos="zoom-in-left" href="#contact" style="--i:5">Contact</a>
+    </nav>
+    <div class="background"></div>
+</header><!--Hero section-->
 <section id="home" class="section1">
 
 <!--    left side-->
@@ -131,7 +123,7 @@
 </section>
 <br><br>
 <!--Assignment Section-->
-    <section class="assigment">
+    <section class="assigment" id="assignments">
         <section>
             <div>
                 <h2 id="assigmentLabel">|ASSIGNMENTS</h2>
@@ -260,10 +252,10 @@
 
         </section>
     </section>
-    <section id="skills">
+    <section id="skills" >
         <br><br>
         <div>
-            <h1 id="skillsLabel">| SKILLS & LANGUAGES</h1><br><br>
+            <h1 id="skillsLabel">| SKILLS</h1><br><br>
         </div>
         <div id="skiltext">
             <h1>See what I perfectly know 👻👨‍💻</h1>
@@ -308,11 +300,11 @@
                 <div id="contactCard">
                     <div>
                     <label for="name">Name</label><br>
-                    <input type="text" id="name" placeholder="Enter Your Name"><br><br>
+                    <input type="text" id="name" placeholder="Enter Your Name" style="width: 180px;"><br><br>
                     <label for="email">Email</label><br>
-                    <input type="email" id="email" placeholder="Enter Your Email Address"><br><br>
+                    <input type="email" id="email" placeholder="Enter Your Email Address" style="width: 180px;"><br><br>
                     <label for="message">Message</label><br>
-                    <textarea name="Message" id="message" cols="30" rows="10" placeholder="Type Your Message Here..."></textarea><br><br>
+                    <textarea name="Message" id="message" cols="30" rows="10" placeholder="Type Your Message Here..." style="width: 180px;"></textarea><br><br>
                     <button type="submit" id="btnSend">Send</button>
                     </div>
                 </div>
