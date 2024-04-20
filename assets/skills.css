@@ -10,6 +10,15 @@
     left: 60px;
     color: #daf519;
 }
+#bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    opacity: 30%;
+}
 #skillPic{
     position: absolute;
     top: 400px;
@@ -95,7 +104,8 @@
     #skillPic{
         position: absolute;
         top: 400px;
-        word-spacing: 50px;
+        word-spacing: 150px;
+        justify-content: space-around;
         overflow-x: hidden;
         left: -40px;
     }

@@ -4,7 +4,15 @@
         height: 100vh;
         width: 100vw;
         position: relative;
-        background: black;
+    }
+    #bg-video {
+        position: fixed;
+        top: 0;
+        left: 0;
+        min-width: 100%;
+        min-height: 100%;
+        z-index: -1;
+        opacity: 30%;
     }
     #projectLabel{
         position: absolute;
@@ -176,7 +184,6 @@
         height: 100vh;
         width: 100vw;
         position: relative;
-        background: black;
     }
     #projectLabel{
         position: absolute;
@@ -347,7 +354,6 @@
         height: 100vh;
         width: 100vw;
         position: relative;
-        background: black;
     }
     #projectLabel{
         position: absolute;
@@ -518,18 +524,17 @@
         color: white;
     }
 }
-@media all and (min-width: 425px) and (max-width: 768px) {
+@media all and (max-width: 768px) {
     .section3{
         height: 100vh;
         width: 100vw;
         position: relative;
-        background: black;
     }
     #projectLabel{
         position: absolute;
         top: 50px;
         left: 60px;
-        color: #3adc04;
+        color: #d0e015;
     }
     #pro1{
         top: 150px;
@@ -604,7 +609,7 @@
     }
     #pro2>h1{
         color: #ffffff;
-        font-size: 16px;
+        font-size: 10px;
     }
     #pro2>p{
         color: white;
@@ -694,12 +699,11 @@
         color: white;
     }
 }
-@media all and (min-width: 325px)and (max-width: 425px){
+@media all and (min-width: 320px)and (max-width: 425px){
     .section3{
         height: 100vh;
         width: 100vw;
         position: relative;
-        background: black;
     }
     #projectLabel{
         position: absolute;

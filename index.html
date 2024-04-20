@@ -17,6 +17,16 @@
     <link rel="stylesheet" href="assets/skills.css">
     <link rel="stylesheet" href="assets/footer.css">
 </head>
+<style>
+    /* CSS for fade effect */
+    .fade-in {
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+    }
+    .fade-in.active {
+        opacity: 1;
+    }
+</style>
 <body>
 <header class="header">
     <a href="#home" class="logo"></a>
@@ -30,9 +40,12 @@
         <a data-aos="zoom-in-left" href="#contact" style="--i:5">Contact</a>
     </nav>
     <div class="background"></div>
-</header><!--Hero section-->
+</header>
+<!--Hero section-->
+<video autoplay muted loop id="bg-video">
+    <source src="assets/images/background.mp4" type="video/mp4">
+</video>
 <section id="home" class="section1">
-
 <!--    left side-->
     <div>
         <h1>HELLO ! ! !</h1>
@@ -61,7 +74,7 @@
     <br><br>
 </section>
 <!--    About section-->
-<section id="about" class="section2">
+<section id="about" class="section2 ">
 <!--    right side of about section-->
     <div>
         <h1 id="aboutLabel">| ABOUT</h1>
@@ -315,5 +328,30 @@
     <img src="assets/images/logo-white.png" alt="logo" width="40">
     <h3>CopyRight © 2024 | Develop By Thisura Liyanage</h3>
 </footer>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const slides = document.querySelectorAll('.slide');
+
+        function fadeInOnScroll() {
+            slides.forEach((slide) => {
+                const slideTop = slide.getBoundingClientRect().top;
+                const slideBottom = slide.getBoundingClientRect().bottom;
+
+                // If the slide is in the viewport
+                if (slideTop < window.innerHeight && slideBottom >= 0) {
+                    slide.classList.add('active');
+                } else {
+                    slide.classList.remove('active');
+                }
+            });
+        }
+
+        // Initial fade in for visible slides on page load
+        fadeInOnScroll();
+
+        // Event listener for scroll
+        window.addEventListener('scroll', fadeInOnScroll);
+    });
+</script>
 </body>
 </html>
