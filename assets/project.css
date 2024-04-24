@@ -28,7 +28,7 @@
         left: 50px;
         padding: 20px;
         border-radius: 10%;
-        position: relative;
+        position: absolute;
         transition-duration: 1s;
         filter: drop-shadow(0 0 10px rgb(27, 234, 226));
     }
@@ -48,7 +48,7 @@
     }
     #pro1>img{
         position: absolute;
-        top: 300px;
+        top: 320px;
         left: 140px;
         width: 50px;
         height: 50px;
@@ -59,7 +59,6 @@
         background: black;
         border: 2px solid green;
         color: green;
-        padding: 10px 20px;
         border-radius: 5px;
         cursor: pointer;
         font-size: 16px;
@@ -74,8 +73,8 @@
         color: white;
     }
     #pro2{
-        top: -320px;
-        position: relative;
+        top: 150px;
+        position: absolute;
         width: 300px;
         height: 60vh;
         border:10px solid white;
@@ -101,7 +100,7 @@
     }
     #pro2>img{
         position: absolute;
-        top: 300px;
+        top: 320px;
         left: 140px;
         width: 50px;
         height: 50px;
@@ -112,7 +111,6 @@
         background: black;
         border: 2px solid green;
         color: green;
-        padding: 10px 20px;
         border-radius: 5px;
         cursor: pointer;
         font-size: 16px;
@@ -153,7 +151,7 @@
     }
     #pro3>img{
         position: absolute;
-        top: 300px;
+        top: 320px;
         left: 140px;
         width: 50px;
         height: 50px;
@@ -164,7 +162,6 @@
         background: black;
         border: 2px solid green;
         color: green;
-        padding: 10px 20px;
         border-radius: 5px;
         cursor: pointer;
         font-size: 16px;
@@ -189,7 +186,7 @@
         position: absolute;
         top: 50px;
         left: 60px;
-        color: #daf519;
+        color: #d0e015;
     }
     #pro1{
         top: 150px;
@@ -229,7 +226,6 @@
         background: black;
         border: 2px solid green;
         color: green;
-        padding: 10px 20px;
         border-radius: 5px;
         cursor: pointer;
         font-size: 16px;
@@ -244,8 +240,8 @@
         color: white;
     }
     #pro2{
-        top: -320px;
-        position: relative;
+        top: 150px;
+        position: absolute;
         width: 250px;
         height: 60vh;
         border:10px solid white;
@@ -282,7 +278,6 @@
         background: black;
         border: 2px solid green;
         color: green;
-        padding: 10px 20px;
         border-radius: 5px;
         cursor: pointer;
         font-size: 16px;
@@ -334,7 +329,6 @@
         background: black;
         border: 2px solid green;
         color: green;
-        padding: 10px 20px;
         border-radius: 5px;
         cursor: pointer;
         font-size: 16px;
@@ -349,11 +343,14 @@
         color: white;
     }
 }
-@media all and (max-width: 1024px) and (min-width: 768px){
+
+
+@media all and (min-width: 834px ) and (max-width: 1024px){
     .section3{
         height: 100vh;
         width: 100vw;
         position: relative;
+        display: flex;
     }
     #projectLabel{
         position: absolute;
@@ -369,7 +366,7 @@
         left: 50px;
         padding: 20px;
         border-radius: 10%;
-        position: relative;
+        position: absolute;
         transition-duration: 1s;
         filter: drop-shadow(0 0 10px rgb(27, 234, 226));
     }
@@ -401,7 +398,6 @@
         background: black;
         border: 2px solid green;
         color: green;
-        padding: 10px 20px;
         border-radius: 5px;
         cursor: pointer;
         font-size: 16px;
@@ -416,12 +412,12 @@
         color: white;
     }
     #pro2{
-        top: -210px;
-        position: relative;
+        top: 70px;
+        position: absolute;
         width: 250px;
         height: 220px;
         border:10px solid white;
-        left: 400px;
+        left: 500px;
         padding: 20px;
         border-radius: 10%;
         transition-duration: 1s;
@@ -455,7 +451,6 @@
         background: black;
         border: 2px solid green;
         color: green;
-        padding: 10px 20px;
         border-radius: 5px;
         cursor: pointer;
         font-size: 16px;
@@ -470,7 +465,181 @@
         color: white;
     }
     #pro3{
-        top: 370px;
+        top: 430px;
+        position: absolute;
+        width: 250px;
+        height: 220px;
+        border:10px solid #ffffff;
+        left: 270px;
+        padding: 20px;
+        border-radius: 10%;
+        transition-duration: 1s;
+        filter: drop-shadow(0 0 10px rgb(27, 234, 226));
+    }
+    #pro3:hover{
+        background: linear-gradient(45deg, #0d73e7, #84aaf5, #2133a8);
+        width: 300px;
+        font-size: 20px;
+    }
+    #pro3>h1{
+        color: #ffffff;
+        font-size: 25px;
+    }
+    #pro3>p{
+        color: white;
+        text-align: center;
+        font-size: 12px;
+    }
+    #pro3>img{
+        position: absolute;
+        top: 300px;
+        left: 140px;
+        width: 50px;
+        height: 50px;
+        background: white;
+        border-radius: 100%;
+        visibility: hidden;
+    }
+    #pro3>.btn1{
+        background: black;
+        border: 2px solid green;
+        color: green;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+        position: absolute;
+        top: 200px;
+        left: 100px;
+    }
+    #pro3>.btn1:hover {
+        background-color: #05832b;
+        color: white;
+    }
+}
+
+@media all and (min-width: 769px ) and (max-width: 834px){
+    .section3{
+        height: 100vh;
+        width: 100vw;
+        position: relative;
+        display: flex;
+    }
+    #projectLabel{
+        position: absolute;
+        top: 0;
+        left: 60px;
+        color: #d0e015;
+    }
+    #pro1{
+        top: 150px;
+        width: 250px;
+        height: 220px;
+        border:10px solid white;
+        left: 70px;
+        padding: 20px;
+        border-radius: 10%;
+        position: absolute;
+        transition-duration: 1s;
+        filter: drop-shadow(0 0 10px rgb(27, 234, 226));
+    }
+    #pro1:hover{
+        background: linear-gradient(45deg, #0d73e7, #84aaf5, #2133a8);
+        width: 300px;
+        font-size: 20px;
+    }
+    #pro1>h1{
+        color: #ffffff;
+        font-size: 25px;
+    }
+    #pro1>p{
+        color: white;
+        text-align: center;
+        font-size: 14px;
+    }
+    #pro1>img{
+        position: absolute;
+        top: 350px;
+        left: 100px;
+        width: 30px;
+        height: 30px;
+        background: white;
+        border-radius: 100%;
+        visibility: hidden;
+    }
+    #pro1>.btn1{
+        background: black;
+        border: 2px solid green;
+        color: green;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+        position: absolute;
+        top: 190px;
+        left: 110px;
+    }
+    #pro1>.btn1:hover {
+        background-color: #05832b;
+        color: white;
+    }
+    #pro2{
+        top: 150px;
+        position: absolute;
+        width: 250px;
+        height: 220px;
+        border:10px solid white;
+        left: 430px;
+        padding: 20px;
+        border-radius: 10%;
+        transition-duration: 1s;
+        filter: drop-shadow(0 0 10px rgb(27, 234, 226));
+    }
+    #pro2:hover{
+        background: linear-gradient(45deg, #0d73e7, #84aaf5, #2133a8);
+        width: 300px;
+        font-size: 20px;
+    }
+    #pro2>h1{
+        color: #ffffff;
+        font-size: 25px;
+    }
+    #pro2>p{
+        color: white;
+        font-size: 14px;
+        text-align: center;
+    }
+    #pro2>img{
+        position: absolute;
+        top: 405px;
+        left: 40px;
+        width: 30px;
+        height: 30px;
+        background: white;
+        border-radius: 100%;
+        visibility: hidden;
+    }
+    #pro2>.btn1{
+        background: black;
+        border: 2px solid green;
+        color: green;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+        position: absolute;
+        top: 200px;
+        left: 110px;
+    }
+    #pro2>.btn1:hover {
+        background-color: #05832b;
+        color: white;
+    }
+    #pro3{
+        top: 500px;
         position: absolute;
         width: 250px;
         height: 220px;
@@ -509,7 +678,6 @@
         background: black;
         border: 2px solid green;
         color: green;
-        padding: 10px 20px;
         border-radius: 5px;
         cursor: pointer;
         font-size: 16px;
@@ -524,7 +692,8 @@
         color: white;
     }
 }
-@media all and (max-width: 768px) {
+
+@media all and (min-width: 461px ) and (max-width: 768px){
     .section3{
         height: 100vh;
         width: 100vw;
@@ -576,14 +745,13 @@
         background: black;
         border: 2px solid green;
         color: green;
-        padding: 10px 20px;
         border-radius: 5px;
         cursor: pointer;
-        font-size: 16px;
+        font-size: 12px;
         font-weight: bold;
         transition: background-color 0.3s ease;
         position: absolute;
-        top: 180px;
+        top: 190px;
         left: 60px;
     }
     #pro1>.btn1:hover {
@@ -609,7 +777,7 @@
     }
     #pro2>h1{
         color: #ffffff;
-        font-size: 10px;
+        font-size: 14px;
     }
     #pro2>p{
         color: white;
@@ -626,18 +794,17 @@
         border-radius: 100%;
         visibility: hidden;
     }
-    #pro2>a>.btn1{
+    #pro2>.btn1{
         background: black;
         border: 2px solid green;
         color: green;
-        padding: 10px 20px;
         border-radius: 5px;
         cursor: pointer;
-        font-size: 16px;
+        font-size: 12px;
         font-weight: bold;
         transition: background-color 0.3s ease;
         position: absolute;
-        top: 180px;
+        top: 190px;
         left: 60px;
     }
     #pro2>.btn1:hover {
@@ -684,7 +851,6 @@
         background: black;
         border: 2px solid green;
         color: green;
-        padding: 10px 20px;
         border-radius: 5px;
         cursor: pointer;
         font-size: 16px;
@@ -699,7 +865,8 @@
         color: white;
     }
 }
-@media all and (min-width: 320px)and (max-width: 425px){
+
+@media all and (min-width: 321px ) and (max-width: 460px){
     .section3{
         height: 100vh;
         width: 100vw;
@@ -713,10 +880,10 @@
     }
     #pro1{
         top: 150px;
-        width: 150px;
-        height: 200px;
+        width: 250px;
+        height: 250px;
         border:10px solid white;
-        left: 70px;
+        left: 50px;
         padding: 20px;
         border-radius: 10%;
         position: relative;
@@ -725,17 +892,17 @@
     }
     #pro1:hover{
         background: linear-gradient(45deg, #0d73e7, #84aaf5, #2133a8);
-        width: 200px;
+        width: 280px;
         font-size: 20px;
     }
     #pro1>h1{
         color: #ffffff;
-        font-size: 16px;
+        font-size: 25px;
     }
     #pro1>p{
         color: white;
         text-align: center;
-        font-size: 12px;
+        font-size: 16px;
     }
     #pro1>img{
         position: absolute;
@@ -751,27 +918,26 @@
         background: black;
         border: 2px solid green;
         color: green;
-        padding: 10px 20px;
         border-radius: 5px;
         cursor: pointer;
         font-size: 16px;
         font-weight: bold;
         transition: background-color 0.3s ease;
         position: absolute;
-        top: 180px;
-        left: 60px;
+        top: 230px;
+        left: 100px;
     }
     #pro1>.btn1:hover {
         background-color: #05832b;
         color: white;
     }
     #pro2{
-        top: 180px;
+        top: 200px;
         position: relative;
-        width: 150px;
-        height: 200px;
+        width: 250px;
+        height: 250px;
         border:10px solid white;
-        left: 70px;
+        left: 50px;
         padding: 20px;
         border-radius: 10%;
         transition-duration: 1s;
@@ -779,16 +945,16 @@
     }
     #pro2:hover{
         background: linear-gradient(45deg, #0d73e7, #84aaf5, #2133a8);
-        width: 170px;
+        width: 280px;
         font-size: 20px;
     }
     #pro2>h1{
         color: #ffffff;
-        font-size: 16px;
+        font-size: 25px;
     }
     #pro2>p{
         color: white;
-        font-size: 12px;
+        font-size: 16px;
         text-align: center;
     }
     #pro2>img{
@@ -801,31 +967,30 @@
         border-radius: 100%;
         visibility: hidden;
     }
-    #pro2>a>.btn1{
+    #pro2>.btn1{
         background: black;
         border: 2px solid green;
         color: green;
-        padding: 10px 20px;
         border-radius: 5px;
         cursor: pointer;
         font-size: 16px;
         font-weight: bold;
         transition: background-color 0.3s ease;
         position: absolute;
-        top: 180px;
-        left: 60px;
+        top: 230px;
+        left: 100px;
     }
     #pro2>.btn1:hover {
         background-color: #05832b;
         color: white;
     }
     #pro3{
-        top: 730px;
+        top: 880px;
         position: absolute;
-        width: 150px;
-        height: 200px;
+        width: 250px;
+        height: 250px;
         border:10px solid #ffffff;
-        left: 70px;
+        left: 50px;
         padding: 20px;
         border-radius: 10%;
         transition-duration: 1s;
@@ -833,17 +998,17 @@
     }
     #pro3:hover{
         background: linear-gradient(45deg, #0d73e7, #84aaf5, #2133a8);
-        width: 200px;
+        width: 280px;
         font-size: 20px;
     }
     #pro3>h1{
         color: #ffffff;
-        font-size: 16px;
+        font-size: 30px;
     }
     #pro3>p{
         color: white;
         text-align: center;
-        font-size: 12px;
+        font-size: 16px;
     }
     #pro3>img{
         position: absolute;
@@ -859,18 +1024,20 @@
         background: black;
         border: 2px solid green;
         color: green;
-        padding: 10px 20px;
         border-radius: 5px;
         cursor: pointer;
         font-size: 16px;
         font-weight: bold;
         transition: background-color 0.3s ease;
         position: absolute;
-        top: 180px;
-        left: 60px;
+        top: 230px;
+        left: 100px;
     }
     #pro3>.btn1:hover {
         background-color: #05832b;
         color: white;
     }
+}
+@media all and (max-width: 320px ){
+
 }

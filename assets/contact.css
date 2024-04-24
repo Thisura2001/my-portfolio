@@ -18,25 +18,89 @@
     z-index: -1;
     opacity: 30%;
 }
-#contactCard{
-    width: 300px;
-    height: 500px;
+.contact-container {
+    display: flex;
+    left: 950px;
     position: absolute;
-    left: 1100px;
-    top: 100px;
-    border: 7px solid white;
-    background: linear-gradient(to right top, #3b078f, #881717);
+    align-items: center;
+    height: 100vh;
+}
+
+.contact-form {
+    width: 400px;
+    background-color: #000000;
+    padding: 40px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border: 10px solid white;
     border-radius: 20%;
-    color: white;
 }
-#contactCard>div{
-    position: absolute;
-    top: 80px;
-    left: 60px;
+
+.contact-form h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #ae89e8;
+    font-size: 24px;
+    font-style: italic;
 }
-#contactCard>div>button{
-    left: 50px;
+
+.input-group {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.input-group input,
+.input-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid #6cb2eb;
+    background-color: transparent;
+    transition: border-color 0.3s;
+    font-size: 16px;
+    color: #333;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+    border-color: #4a90e2;
+}
+
+.input-group label {
     position: absolute;
+    top: 10px;
+    left: 0;
+    color: #999;
+    transition: top 0.3s, left 0.3s, font-size 0.3s, color 0.3s;
+    pointer-events: none;
+}
+
+.input-group input:focus + label,
+.input-group textarea:focus + label,
+.input-group input:not(:placeholder-shown) + label,
+.input-group textarea:not(:placeholder-shown) + label {
+    top: -15px;
+    left: 0;
+    font-size: 12px;
+    color: #4a90e2;
+}
+
+.button-group {
+    text-align: center;
+}
+
+button {
+    padding: 12px 24px;
+    background-color: #4a90e2;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #6cb2eb;
 }
 #left{
     position: absolute;
@@ -97,7 +161,7 @@
 #social{
     position: absolute;
     justify-content: space-around;
-    left: 900px;
+    left: 800px;
     word-spacing: 30px;
     top: 60px;
 }
@@ -123,18 +187,91 @@
         position: absolute;
         top: 50px;
         left: 40px;
-        color: #daf519;
+        color: #d0e015;
     }
-    #contactCard{
-        width: 300px;
-        height: 500px;
+    .contact-container {
+        display: flex;
+        left: 550px;
         position: absolute;
-        left: 600px;
-        top: 100px;
-        border: 7px solid black;
-        background: linear-gradient(to right top, #3b078f, #881717);
+        align-items: center;
+        height: 100vh;
+    }
+
+    .contact-form {
+        width: 400px;
+        background-color: #000000;
+        padding: 40px;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+        border: 10px solid white;
         border-radius: 20%;
-        color: white;
+    }
+
+    .contact-form h2 {
+        text-align: center;
+        margin-bottom: 40px;
+        color: #ae89e8;
+        font-size: 24px;
+        font-style: italic;
+    }
+
+    .input-group {
+        position: relative;
+        margin-bottom: 30px;
+    }
+
+    .input-group input,
+    .input-group textarea {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        border-bottom: 2px solid #6cb2eb;
+        background-color: transparent;
+        transition: border-color 0.3s;
+        font-size: 16px;
+        color: #333;
+    }
+
+    .input-group input:focus,
+    .input-group textarea:focus {
+        border-color: #4a90e2;
+    }
+
+    .input-group label {
+        position: absolute;
+        top: 10px;
+        left: 0;
+        color: #999;
+        transition: top 0.3s, left 0.3s, font-size 0.3s, color 0.3s;
+        pointer-events: none;
+    }
+
+    .input-group input:focus + label,
+    .input-group textarea:focus + label,
+    .input-group input:not(:placeholder-shown) + label,
+    .input-group textarea:not(:placeholder-shown) + label {
+        top: -15px;
+        left: 0;
+        font-size: 12px;
+        color: #4a90e2;
+    }
+
+    .button-group {
+        text-align: center;
+    }
+
+    button {
+        padding: 12px 24px;
+        background-color: #4a90e2;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        font-size: 16px;
+    }
+
+    button:hover {
+        background-color: #6cb2eb;
     }
     #left{
         position: absolute;
@@ -176,127 +313,387 @@
     #social{
         position: absolute;
         justify-content: space-around;
-        left: 530px;
+        left: 430px;
         word-spacing: 30px;
         top: 160px;
     }
 }
-@media all and (max-width: 1024px) and (min-width: 768px) {
+@media all and (max-width: 1025px) and (min-width: 835px) {
     #contactLabel{
         position: absolute;
         top: 50px;
         left: 40px;
-        color: #daf519;
+        color: #d0e015;
     }
-    #contactCard{
-        width: 400px;
-        height: 500px;
-        position: absolute;
-        left: 350px;
-        top: 100px;
-        border: 7px solid black;
-        background: linear-gradient(to right top, #3b078f, #881717);
-        border-radius: 20%;
-        color: white;
-    }
-    #left{
-        position: absolute;
-        top: 100px;
-    }
-    #left>h1{
-        position: absolute;
-        font-size: 60px;
-        left: 100px;
-        animation: popUp 1s ease infinite alternate;
-        font-style: italic;
-        filter: drop-shadow(0 0 10px rgb(4, 155, 220));
-        color: #75aae8;
-    }
-    #left>h4{
-        position: absolute;
-        left: 50px;
-        top: 200px;
-        width: 150px;
-        font-size: 20px;
-        color: white;
-    }
-    #left>h5{
-        position: absolute;
-        left: 100px;
-        top: 250px;
-        width: 100px;
-        color: white;
-    }
-    #call>img:first-child{
-        position: absolute;
-        left: 50px;
-        top: 300px;
-        width: 20px;
-        height: 20px;
-        border-radius: 100%;
-        background: white;
-    }
-    #call>img:nth-child(2){
-        position: absolute;
-        left: 50px;
-        top: 270px;
-        width: 20px;
-        height: 20px;
-        border-radius: 100%;
-        background: white;
-    }
-    #social{
-        position: absolute;
-        justify-content: space-around;
-        left: 50px;
-        word-spacing: 100px;
-        top: 360px;
-        display: flex;
-    }
-}
-@media all and (max-width: 768px) and (min-width: 320px) {
-    #section4{
-        overflow-x: hidden;
-    }
-    #contactLabel{
-        position: absolute;
-        top: 50px;
-        left: 40px;
-        color: #daf519;
-    }
-    #contactCard{
+    .contact-container {
         width: 300px;
-        height: 500px;
+        display: flex;
+        left: 500px;
         position: absolute;
-        left: 20px;
-        top: 550px;
-        border: 7px solid black;
-        background: linear-gradient(to right top, #3b078f, #881717);
+        align-items: center;
+        height: 100vh;
+    }
+
+    .contact-form {
+        width: 400px;
+        background-color: #000000;
+        padding: 40px;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+        border: 10px solid white;
         border-radius: 20%;
-        color: white;
     }
-    #contactCard>div>button{
-        left: 50px;
-        position: absolute;
+
+    .contact-form h2 {
+        text-align: center;
+        margin-bottom: 40px;
+        color: #ae89e8;
+        font-size: 24px;
+        font-style: italic;
     }
-    #contactCard>div{
+
+    .input-group {
+        position: relative;
+        margin-bottom: 30px;
+    }
+
+    .input-group input,
+    .input-group textarea {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        border-bottom: 2px solid #6cb2eb;
+        background-color: transparent;
+        transition: border-color 0.3s;
+        font-size: 16px;
+        color: #333;
+    }
+
+    .input-group input:focus,
+    .input-group textarea:focus {
+        border-color: #4a90e2;
+    }
+
+    .input-group label {
         position: absolute;
-        top: 80px;
-        left: 60px;
+        top: 10px;
+        left: 0;
+        color: #999;
+        transition: top 0.3s, left 0.3s, font-size 0.3s, color 0.3s;
+        pointer-events: none;
+    }
+
+    .input-group input:focus + label,
+    .input-group textarea:focus + label,
+    .input-group input:not(:placeholder-shown) + label,
+    .input-group textarea:not(:placeholder-shown) + label {
+        top: -15px;
+        left: 0;
+        font-size: 12px;
+        color: #4a90e2;
+    }
+
+    .button-group {
+        text-align: center;
+    }
+
+    button {
+        padding: 12px 24px;
+        background-color: #4a90e2;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        font-size: 16px;
+    }
+
+    button:hover {
+        background-color: #6cb2eb;
     }
     #left{
         position: absolute;
         top: 100px;
-        left: 20px;
+    }
+    #left>h4{
+        position: absolute;
+        left: 50px;
+        top: 300px;
+        width: 150px;
+        font-size: 20px;
+        color: white;
+    }
+    #left>h5{
+        position: absolute;
+        left: 100px;
+        top: 350px;
+        width: 100px;
+        color: white;
+    }
+    #call>img:first-child{
+        position: absolute;
+        left: 50px;
+        top: 370px;
+        width: 20px;
+        height: 20px;
+        border-radius: 100%;
+        background: white;
+    }
+    #call>img:nth-child(2){
+        position: absolute;
+        left: 50px;
+        top: 400px;
+        width: 20px;
+        height: 20px;
+        border-radius: 100%;
+        background: white;
+    }
+    #social{
+        position: absolute;
+        justify-content: space-around;
+        left: 430px;
+        word-spacing: 30px;
+        top: 160px;
+    }
+}
+@media all and (min-width: 769px ) and (max-width: 834px){
+    #contactLabel{
+        position: absolute;
+        top: 50px;
+        left: 40px;
+        color: #d0e015;
+    }
+    .contact-container {
+        width: 300px;
+        display: flex;
+        left: 450px;
+        position: absolute;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .contact-form {
+        width: 400px;
+        background-color: #000000;
+        padding: 40px;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+        border: 10px solid white;
+        border-radius: 20%;
+    }
+
+    .contact-form h2 {
+        text-align: center;
+        margin-bottom: 40px;
+        color: #ae89e8;
+        font-size: 24px;
+        font-style: italic;
+    }
+
+    .input-group {
+        position: relative;
+        margin-bottom: 30px;
+    }
+
+    .input-group input,
+    .input-group textarea {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        border-bottom: 2px solid #6cb2eb;
+        background-color: transparent;
+        transition: border-color 0.3s;
+        font-size: 16px;
+        color: #333;
+    }
+
+    .input-group input:focus,
+    .input-group textarea:focus {
+        border-color: #4a90e2;
+    }
+
+    .input-group label {
+        position: absolute;
+        top: 10px;
+        left: 0;
+        color: #999;
+        transition: top 0.3s, left 0.3s, font-size 0.3s, color 0.3s;
+        pointer-events: none;
+    }
+
+    .input-group input:focus + label,
+    .input-group textarea:focus + label,
+    .input-group input:not(:placeholder-shown) + label,
+    .input-group textarea:not(:placeholder-shown) + label {
+        top: -15px;
+        left: 0;
+        font-size: 12px;
+        color: #4a90e2;
+    }
+
+    .button-group {
+        text-align: center;
+    }
+
+    button {
+        padding: 12px 24px;
+        background-color: #4a90e2;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        font-size: 16px;
+    }
+
+    button:hover {
+        background-color: #6cb2eb;
+    }
+    #left{
+        position: absolute;
+        top: 100px;
+    }
+    #left>h4{
+        position: absolute;
+        left: 50px;
+        top: 300px;
+        width: 150px;
+        font-size: 20px;
+        color: white;
+    }
+    #left>h5{
+        position: absolute;
+        left: 100px;
+        top: 350px;
+        width: 100px;
+        color: white;
+    }
+    #call>img:first-child{
+        position: absolute;
+        left: 50px;
+        top: 370px;
+        width: 20px;
+        height: 20px;
+        border-radius: 100%;
+        background: white;
+    }
+    #call>img:nth-child(2){
+        position: absolute;
+        left: 50px;
+        top: 400px;
+        width: 20px;
+        height: 20px;
+        border-radius: 100%;
+        background: white;
+    }
+    #social{
+        position: absolute;
+        justify-content: space-around;
+        left: 50px;
+        word-spacing: 100px;
+        top: 460px;
+        display: flex;
+    }
+}
+@media all and (min-width: 461px ) and (max-width: 768px){
+    #contactLabel{
+        position: absolute;
+        top: 50px;
+        left: 40px;
+        color: #d0e015;
+    }
+    .contact-container {
+        width: 300px;
+        display: flex;
+        left: 100px;
+        top: 400px;
+        position: absolute;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .contact-form {
+        width: 400px;
+        background-color: #000000;
+        padding: 40px;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+        border: 10px solid white;
+        border-radius: 20%;
+    }
+
+    .contact-form h2 {
+        text-align: center;
+        margin-bottom: 40px;
+        color: #ae89e8;
+        font-size: 24px;
+        font-style: italic;
+    }
+
+    .input-group {
+        position: relative;
+        margin-bottom: 30px;
+    }
+
+    .input-group input,
+    .input-group textarea {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        border-bottom: 2px solid #6cb2eb;
+        background-color: transparent;
+        transition: border-color 0.3s;
+        font-size: 16px;
+        color: #333;
+    }
+
+    .input-group input:focus,
+    .input-group textarea:focus {
+        border-color: #4a90e2;
+    }
+
+    .input-group label {
+        position: absolute;
+        top: 10px;
+        left: 0;
+        color: #999;
+        transition: top 0.3s, left 0.3s, font-size 0.3s, color 0.3s;
+        pointer-events: none;
+    }
+
+    .input-group input:focus + label,
+    .input-group textarea:focus + label,
+    .input-group input:not(:placeholder-shown) + label,
+    .input-group textarea:not(:placeholder-shown) + label {
+        top: -15px;
+        left: 0;
+        font-size: 12px;
+        color: #4a90e2;
+    }
+
+    .button-group {
+        text-align: center;
+    }
+
+    button {
+        padding: 12px 24px;
+        background-color: #4a90e2;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        font-size: 16px;
+    }
+
+    button:hover {
+        background-color: #6cb2eb;
+    }
+    #left{
+        position: absolute;
+        top: 100px;
     }
     #left>h1{
-        position: absolute;
         font-size: 60px;
-        left: 100px;
-        animation: popUp 1s ease infinite alternate;
-        font-style: italic;
-        filter: drop-shadow(0 0 10px rgb(4, 155, 220));
-        color: #75aae8;
+        position: absolute;
+        left: 150px;
     }
     #left>h4{
         position: absolute;
@@ -316,7 +713,7 @@
     #call>img:first-child{
         position: absolute;
         left: 50px;
-        top: 300px;
+        top: 270px;
         width: 20px;
         height: 20px;
         border-radius: 100%;
@@ -325,7 +722,7 @@
     #call>img:nth-child(2){
         position: absolute;
         left: 50px;
-        top: 270px;
+        top: 300px;
         width: 20px;
         height: 20px;
         border-radius: 100%;
@@ -334,9 +731,158 @@
     #social{
         position: absolute;
         justify-content: space-around;
-        left: 50px;
+        left: 150px;
         word-spacing: 100px;
-        top: 360px;
+        top: 330px;
         display: flex;
     }
 }
+
+
+@media all and (min-width: 321px ) and (max-width: 460px){
+    #contactLabel{
+        position: absolute;
+        top: 50px;
+        left: 40px;
+        color: #d0e015;
+    }
+    .contact-container {
+        width: 300px;
+        display: flex;
+        left: 50px;
+        top: 550px;
+        position: absolute;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .contact-form {
+        width: 400px;
+        background-color: #000000;
+        padding: 40px;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+        border: 10px solid white;
+        border-radius: 20%;
+    }
+
+    .contact-form h2 {
+        text-align: center;
+        margin-bottom: 40px;
+        color: #ae89e8;
+        font-size: 24px;
+        font-style: italic;
+    }
+
+    .input-group {
+        position: relative;
+        margin-bottom: 30px;
+    }
+
+    .input-group input,
+    .input-group textarea {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        border-bottom: 2px solid #6cb2eb;
+        background-color: transparent;
+        transition: border-color 0.3s;
+        font-size: 16px;
+        color: #333;
+    }
+
+    .input-group input:focus,
+    .input-group textarea:focus {
+        border-color: #4a90e2;
+    }
+
+    .input-group label {
+        position: absolute;
+        top: 10px;
+        left: 0;
+        color: #999;
+        transition: top 0.3s, left 0.3s, font-size 0.3s, color 0.3s;
+        pointer-events: none;
+    }
+
+    .input-group input:focus + label,
+    .input-group textarea:focus + label,
+    .input-group input:not(:placeholder-shown) + label,
+    .input-group textarea:not(:placeholder-shown) + label {
+        top: -15px;
+        left: 0;
+        font-size: 12px;
+        color: #4a90e2;
+    }
+
+    .button-group {
+        text-align: center;
+    }
+
+    button {
+        padding: 12px 24px;
+        background-color: #4a90e2;
+        color: #fff;
+        border: none;
+        border-radius: 20%;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        font-size: 16px;
+    }
+
+    button:hover {
+        background-color: #6cb2eb;
+    }
+    #left{
+        position: absolute;
+        top: 100px;
+    }
+    #left>h1{
+        font-size: 70px;
+        position: absolute;
+        left: 100px;
+        top: 50px;
+    }
+    #left>h4{
+        position: absolute;
+        left: 130px;
+        top: 300px;
+        width: 150px;
+        font-size: 20px;
+        color: white;
+    }
+    #left>h5{
+        position: absolute;
+        left: 170px;
+        top: 350px;
+        width: 100px;
+        color: white;
+    }
+    #call>img:first-child{
+        position: absolute;
+        left: 130px;
+        top: 370px;
+        width: 20px;
+        height: 20px;
+        border-radius: 100%;
+        background: white;
+    }
+    #call>img:nth-child(2){
+        position: absolute;
+        left: 130px;
+        top: 400px;
+        width: 20px;
+        height: 20px;
+        border-radius: 100%;
+        background: white;
+    }
+    #social{
+        position: absolute;
+        justify-content: space-around;
+        left: 100px;
+        word-spacing: 100px;
+        top: 460px;
+        display: flex;
+    }
+}
+@media all and (max-width: 320px ){}
+

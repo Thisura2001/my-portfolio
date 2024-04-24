@@ -16,6 +16,11 @@
     <link rel="stylesheet" href="assets/contact.css">
     <link rel="stylesheet" href="assets/skills.css">
     <link rel="stylesheet" href="assets/footer.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+          integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <style>
     /* CSS for fade effect */
@@ -55,7 +60,7 @@
         <br><br><br><br>
     </div>
 
-    <div>
+    <div id="homeSocial">
         <a href="https://www.gmail.com"><img src="assets/images/icons8-gmail-48.png" title="gmail" alt="gmail"></a>
         <a href="https://www.linkedin.com/feed/?trk=onboarding-landing"><img src="assets/images/icons8-linkedin-48.png" title="linkedin" alt="linkedin"></a>
         <a href="https://www.facebook.com"><img src="assets/images/icons8-facebook-48%20(1).png" title="fb" alt="fb"></a>
@@ -143,7 +148,6 @@
             </div>
 
         </section>
-
 
         <section>
 
@@ -309,24 +313,38 @@
                 </div>
             </div>
             <!--right side-->
-            <div>
-                <div id="contactCard">
-                    <div>
-                    <label for="name">Name</label><br>
-                    <input type="text" id="name" placeholder="Enter Your Name" style="width: 180px;"><br><br>
-                    <label for="email">Email</label><br>
-                    <input type="email" id="email" placeholder="Enter Your Email Address" style="width: 180px;"><br><br>
-                    <label for="message">Message</label><br>
-                    <textarea name="Message" id="message" cols="30" rows="10" placeholder="Type Your Message Here..." style="width: 180px;"></textarea><br><br>
-                    <button type="submit" id="btnSend">Send</button>
-                    </div>
+            <div class="contact-container">
+                <div class="contact-form">
+                    <h2>Contact Me 🤖</h2>
+                    <form action="#" method="post">
+                        <div class="input-group">
+                            <input type="text" id="name" name="name" required>
+                            <label for="name">Your Name</label>
+                        </div>
+                        <div class="input-group">
+                            <input type="email" id="email" name="email" required>
+                            <label for="email">Your Email</label>
+                        </div>
+                        <div class="input-group">
+                            <textarea id="message" name="message" rows="4" required></textarea>
+                            <label for="message">Your Message</label>
+                        </div>
+                        <div class="button-group">
+                            <button type="submit">Send Message</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </section>
 <br><br>
 <footer>
-    <img src="assets/images/logo-white.png" alt="logo" width="40">
-    <h3>CopyRight © 2024 | Develop By Thisura Liyanage</h3>
+    <div class="social">
+        <a href="https://www.linkedin.com/feed/?trk=onboarding-landing"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://github.com/Thisura2001"><i class="fa-brands fa-github"></i></a>
+        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+    </div>
+    <P class="end">CopyWrite ©️ By Thisura Liyanage (2024)</P>
 </footer>
 <script>
     document.addEventListener('DOMContentLoaded', function() {

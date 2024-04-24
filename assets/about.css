@@ -1,9 +1,20 @@
 @media all and (min-width: 1440px) {
-
+    .max-width {
+        max-width: 1300px;
+        padding: 0 80px;
+        margin: auto;
+    }
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
     .section2 {
         width: 100vw;
         height: 100vh;
         position: relative;
+        padding: 100px 0;
     }
     #bg-video {
         position: fixed;
@@ -18,22 +29,22 @@
 
     #aboutLabel {
         position: absolute;
-        top: 50px;
+        top: 150px;
         left: 60px;
         color: #daf519;
     }
 
     .aboutPic {
         position: absolute;
-        top: 150px;
-        left: 100px;
         width: 500px;
         height: 500px;
-        border-radius: 50%;
+        border-radius: 100%;
         filter: drop-shadow(0 0 10px rgb(16, 219, 225));
         overflow: hidden;
-        opacity: 70% !important;
-        animation: scaleUp 1s ease forwards;
+        top: 270px;
+        margin-left: 30px;
+        opacity: 70%!important;
+        animation: scaleUp 1s ease forwards
     }
     @keyframes scaleUp {
         from {
@@ -43,35 +54,46 @@
             transform: scale(1);
         }
     }
-
-    #aboutText {
-        position: absolute;
-        top: 70px;
-        left: 800px;
-        font-size: 20px;
-        color: #b6cbe0;
-    }
-
     #aboutText > h2 {
         color: #61cc37;
-        top: 0;
+        top: 200px;
         font-size: 40px;
-        position: relative;
-        right: 100px;
+        position: absolute;
+        margin-left: 700px;
     }
 
     #aboutText > h3 {
         position: absolute;
-        top: 80px;
+        top: 320px;
+        margin-left: 700px;
+        font-size: 35px;
+        color: white;
     }
 
-    #aboutText > p {
+    #aboutText >#p1 {
         font-size: 20px;
-        top: 0;
+        top: 400px;
+        position: absolute;
+        margin-left: 700px;
+        color: white;
+    }
+    #aboutText >#p2 {
+        font-size: 20px;
+        top: 550px;
+        position: absolute;
+        margin-left: 700px;
+        color: white;
+    }
+    #aboutText >#p3 {
+        font-size: 20px;
+        top: 700px;
+        position: absolute;
+        margin-left: 700px;
+        color: white;
     }
 
     #btnDownload {
-        position: relative;
+        position: absolute;
         display: inline-flex;
         justify-content: center;
         align-items: center;
@@ -85,6 +107,8 @@
         letter-spacing: 1px;
         z-index: 1;
         animation: pulse 1s infinite;
+        margin-left: 950px;
+        margin-top: 700px;
     }
     @keyframes pulse {
         0% {
@@ -137,7 +161,10 @@
         background-position: 100% 0;
     }
 }
-@media all and (max-width: 1440px) and (min-width: 1024px){
+
+
+
+@media all and (min-width: 1025px ) and (max-width: 1440px){
     .section2 {
         width: 100vw;
         height: 100vh;
@@ -148,150 +175,21 @@
     #aboutLabel {
         position: absolute;
         top: 50px;
-        left: 60px;
-        color: #daf519;
-    }
-
-    .aboutPic {
-        position: absolute;
-        top: 250px;
-        left: 50px;
-        width: 400px;
-        height: 400px;
-        border-radius: 100%;
-        overflow: hidden;
-        opacity: 70%;
-        filter: drop-shadow(0 0 10px rgb(16, 219, 225));
-        animation: scaleUp 1s ease forwards;
-    }
-    @keyframes scaleUp {
-        from {
-            transform: scale(0);
-        }
-        to {
-            transform: scale(1);
-        }
-    }
-
-    #aboutText {
-        position: absolute;
-        top: 70px;
-        left: 500px;
-        font-size: 20px;
-        color: #b6cbe0;
-    }
-
-    #aboutText > h2 {
-        color: #61cc37;
-        top: 0;
-        font-size: 30px;
-        position: relative;
-        right: 100px;
-    }
-
-    #aboutText > h3 {
-        position: absolute;
-        top: 50px;
-    }
-
-    #aboutText > p {
-        font-size: 18px;
-        top: 0;
-    }
-
-    #btnDownload {
-        position: relative;
-        display: inline-flex;
-        justify-content: center;
-        align-items: center;
-        width: 150px;
-        height: 48px;
-        border-radius: 40px;
-        font-size: 15px;
-        color: white;
-        text-decoration: none;
-        font-weight: 600;
-        letter-spacing: 1px;
-        z-index: 1;
-        animation: pulse 1s infinite;
-    }
-    @keyframes pulse {
-        0% {
-            transform: scale(1);
-        }
-        50% {
-            transform: scale(1.1);
-        }
-        100% {
-            transform: scale(1);
-        }
-    }
-
-    #btnDownload::before {
-        content: ' ';
-        position: absolute;
-        top: 0;
-        left: 0;
-        inset: 0;
-        background: linear-gradient(45deg, #0033ff, #ff3399, #13e767);
-        background-position: 0 0;
-        background-size: 200%;
-        z-index: -1;
-        border-radius: 40px;
-        filter: blur(10px);
-        transition: .5s ease;
-    }
-
-    #btnDownload::after {
-        content: ' ';
-        position: absolute;
-        top: 0;
-        left: 0;
-        inset: 0;
-        background: linear-gradient(45deg, #0033ff, #ff3399, #13e767);
-        background-position: 0 0;
-        background-size: 200%;
-        z-index: -1;
-        border-radius: 40px;
-        transition: .5s ease;
-
-    }
-
-    #btnDownload:hover::after {
-        background-position: 100% 0;
-    }
-
-    #btnDownload:hover::before {
-        background-position: 100% 0;
-    }
-}
-@media all and (min-width: 768px) and (max-width: 1024px) {
-
-    .section2 {
-        width: 100vw;
-        height: 100vh;
-        position: relative;
-
-    }
-
-    #aboutLabel {
-        position: absolute;
-        top: 0;
-        left: 60px;
+        margin-left: 30px;
         color: #d0e015;
     }
 
     .aboutPic {
         position: absolute;
-        top: 100px;
-        left: 250px;
-        width: 500px;
-        height: 500px;
+        width: 400px;
+        height: 400px;
         border-radius: 100%;
-        overflow: hidden;
-        opacity: 70%;
         filter: drop-shadow(0 0 10px rgb(16, 219, 225));
-        animation: scaleUp 1s ease forwards;
+        overflow: hidden;
+        top: 170px;
+        margin-left: 30px;
+        opacity: 70%!important;
+        animation: scaleUp 1s ease forwards
     }
     @keyframes scaleUp {
         from {
@@ -301,97 +199,61 @@
             transform: scale(1);
         }
     }
-    #aboutText {
-        position: absolute;
-        top: 510px;
-        left: 500px;
-        font-size: 20px;
-        color: #b6cbe0;
-    }
 
     #aboutText > h2 {
         color: #61cc37;
-        font-size: 30px;
-        top: 100px;
-        visibility: hidden;
+        margin-top: 130px;
+        font-size: 25px;
+        position: absolute;
+        margin-left: 500px;
     }
-
     #aboutText > h3 {
         position: absolute;
-        top: 50px;
-        visibility: hidden;
+        top: 170px;
+        margin-left: 500px;
+        font-size: 30px;
+        color: white;
     }
 
-    #aboutText > p {
-        font-size: 25px;
-        top: 10px;
-        right: 500px;
-        position: relative;
+    #aboutText >#p1 {
+        font-size: 16px;
+        top: 250px;
+        position: absolute;
+        margin-left: 500px;
+        color: white;
     }
-    #aboutText>#p1{
-        font-size: 25px;
-        position: relative;
-        left: -370px;
-        width: 1000px;
-        top: 20px;
+    #aboutText >#p2 {
+        font-size: 16px;
+        top: 350px;
+        position: absolute;
+        margin-left: 500px;
+        color: white;
     }
-    #aboutText>#p2{
-        font-size: 25px;
-        position: relative;
-        left: -370px;
-        width: 1000px;
-    }
-    #aboutText>#p3{
-        font-size: 25px;
-        position: relative;
-        left: -370px;
-        width: 1000px;
+    #aboutText >#p3 {
+        font-size: 16px;
+        top: 470px;
+        position: absolute;
+        margin-left: 500px;
+        color: white;
     }
 
     #btnDownload {
-        position: relative;
+        position: absolute;
         display: inline-flex;
         justify-content: center;
         align-items: center;
-        width: 250px;
-        height: 48px;
+        width: 150px;
+        height: 40px;
         border-radius: 40px;
-        font-size: 20px;
+        font-size: 14px;
         color: white;
         text-decoration: none;
         font-weight: 600;
         letter-spacing: 1px;
         z-index: 1;
-        left: -100px;
-        top: 60px;
         animation: pulse 1s infinite;
-
-    }
-    @keyframes pulse {
-        0% {
-            transform: scale(1);
-        }
-        50% {
-            transform: scale(1.1);
-        }
-        100% {
-            transform: scale(1);
-        }
-    }
-
-    #btnDownload::before {
-        content: ' ';
-        position: absolute;
-        top: 0;
-        left: 0;
-        inset: 0;
-        background: linear-gradient(45deg, #0033ff, #ff3399, #13e767);
-        background-position: 0 0;
-        background-size: 200%;
-        z-index: -1;
-        border-radius: 40px;
-        filter: blur(10px);
-        transition: .5s ease;
+        margin-left: 650px;
+        margin-top: 550px;
     }
 
     #btnDownload::after {
@@ -417,7 +279,241 @@
         background-position: 100% 0;
     }
 }
-@media all and (min-width: 425px) and (max-width: 768px) {
+@media all and (min-width: 835px ) and (max-width: 1024px){
+
+    .section2 {
+        width: 100vw;
+        height: 100vh;
+        position: relative;
+    }
+
+    #aboutLabel {
+        position: absolute;
+        top: 50px;
+        margin-left: 30px;
+        color: #d0e015;
+    }
+
+    .aboutPic {
+        position: absolute;
+        width: 350px;
+        height: 350px;
+        border-radius: 100%;
+        filter: drop-shadow(0 0 10px rgb(16, 219, 225));
+        overflow: hidden;
+        top: 250px;
+        margin-left: 50px;
+        opacity: 70%!important;
+        animation: scaleUp 1s ease forwards
+    }
+    @keyframes scaleUp {
+        from {
+            transform: scale(0);
+        }
+        to {
+            transform: scale(1);
+        }
+    }
+
+    #aboutText > h2 {
+        color: #61cc37;
+        margin-top: 230px;
+        font-size: 25px;
+        position: absolute;
+        margin-left: 400px;
+    }
+    #aboutText > h3 {
+        position: absolute;
+        top: 270px;
+        margin-left: 400px;
+        font-size: 20px;
+        color: white;
+    }
+
+    #aboutText >#p1 {
+        font-size: 14px;
+        top: 350px;
+        position: absolute;
+        margin-left: 400px;
+        color: white;
+
+    }
+    #aboutText >#p2 {
+        font-size: 14px;
+        top: 450px;
+        position: absolute;
+        margin-left: 400px;
+        color: white;
+    }
+    #aboutText >#p3 {
+        font-size: 14px;
+        top: 570px;
+        position: absolute;
+        margin-left: 400px;
+        color: white;
+    }
+
+    #btnDownload {
+        position: absolute;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 130px;
+        height: 40px;
+        border-radius: 40px;
+        font-size: 12px;
+        color: white;
+        text-decoration: none;
+        font-weight: 600;
+        letter-spacing: 1px;
+        z-index: 1;
+        animation: pulse 1s infinite;
+        margin-left: 530px;
+        margin-top: 650px;
+    }
+
+    #btnDownload::after {
+        content: ' ';
+        position: absolute;
+        top: 0;
+        left: 0;
+        inset: 0;
+        background: linear-gradient(45deg, #0033ff, #ff3399, #13e767);
+        background-position: 0 0;
+        background-size: 200%;
+        z-index: -1;
+        border-radius: 40px;
+        transition: .5s ease;
+
+    }
+
+    #btnDownload:hover::after {
+        background-position: 100% 0;
+    }
+
+    #btnDownload:hover::before {
+        background-position: 100% 0;
+    }
+}
+@media all and (min-width: 769px ) and (max-width: 834px){
+    .section2 {
+        width: 100vw;
+        height: 100vh;
+        position: relative;
+    }
+
+    #aboutLabel {
+        position: absolute;
+        top: 50px;
+        margin-left: 30px;
+        color: #d0e015;
+    }
+
+    .aboutPic {
+        position: absolute;
+        width: 300px;
+        height: 300px;
+        border-radius: 100%;
+        filter: drop-shadow(0 0 10px rgb(16, 219, 225));
+        overflow: hidden;
+        top: 130px;
+        margin-left: 230px;
+        opacity: 70%!important;
+        animation: scaleUp 1s ease forwards
+    }
+    @keyframes scaleUp {
+        from {
+            transform: scale(0);
+        }
+        to {
+            transform: scale(1);
+        }
+    }
+
+    #aboutText > h2 {
+        color: #61cc37;
+        margin-top: 350px;
+        font-size: 20px;
+        position: absolute;
+        margin-left: 200px;
+        visibility: hidden;
+    }
+    #aboutText > h3 {
+        position: absolute;
+        top: 360px;
+        margin-left: 200px;
+        font-size: 20px;
+        color: white;
+        visibility: hidden;
+    }
+
+    #aboutText >#p1 {
+        font-size: 16px;
+        top: 450px;
+        position: absolute;
+        margin-left: 150px;
+        color: white;
+    }
+    #aboutText >#p2 {
+        font-size: 16px;
+        top: 540px;
+        position: absolute;
+        margin-left: 150px;
+        color: white;
+    }
+    #aboutText >#p3 {
+        font-size: 16px;
+        top: 650px;
+        position: absolute;
+        margin-left: 150px;
+        color: white;
+    }
+
+    #btnDownload {
+        position: absolute;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 130px;
+        height: 40px;
+        border-radius: 40px;
+        font-size: 12px;
+        color: white;
+        text-decoration: none;
+        font-weight: 600;
+        letter-spacing: 1px;
+        z-index: 1;
+        animation: pulse 1s infinite;
+        margin-left: 300px;
+        margin-top: 700px;
+    }
+
+    #btnDownload::after {
+        content: ' ';
+        position: absolute;
+        top: 0;
+        left: 0;
+        inset: 0;
+        background: linear-gradient(45deg, #0033ff, #ff3399, #13e767);
+        background-position: 0 0;
+        background-size: 200%;
+        z-index: -1;
+        border-radius: 40px;
+        transition: .5s ease;
+
+    }
+
+    #btnDownload:hover::after {
+        background-position: 100% 0;
+    }
+
+    #btnDownload:hover::before {
+        background-position: 100% 0;
+    }
+}
+/*@media all and (max-width: 320px ){}*/
+
+@media all and (min-width: 461px ) and (max-width: 768px){
     .section2 {
         width: 100vw;
         height: 100vh;
@@ -435,7 +531,7 @@
     .aboutPic {
         position: absolute;
         top: 50px;
-        left: 100px;
+        left: 40px;
         width: 300px;
         height: 300px;
         border-radius: 100%;
@@ -571,6 +667,157 @@
         background-position: 100% 0;
     }
 }
+@media all and (min-width: 321px ) and (max-width: 460px){
+    .section2 {
+        width: 100vw;
+        height: 100vh;
+        position: relative;
+        overflow: hidden;
+    }
+
+    #aboutLabel {
+        position: absolute;
+        top: 0;
+        left: 60px;
+        color: #d0e015;
+        font-size: 30px;
+    }
+
+    .aboutPic {
+        position: absolute;
+        top: 70px;
+        left: 50px;
+        width: 320px;
+        height: 350px;
+        border-radius: 100%;
+        overflow: hidden;
+        opacity: 70%;
+        filter: drop-shadow(0 0 10px rgb(16, 219, 225));
+        animation: scaleUp 1s ease forwards;
+    }
+    @keyframes scaleUp {
+        from {
+            transform: scale(0);
+        }
+        to {
+            transform: scale(1);
+        }
+    }
+    #aboutText {
+        position:absolute;
+        top: 450px;
+        left:550px;
+        font-size: 12px;
+        color: #ffffff;
+        margin: 20px;
+    }
+
+    #aboutText > h2 {
+        color: #61cc37;
+        font-size: 16px;
+        right: 300px;
+        position: absolute;
+        visibility: hidden;
+    }
+
+    #aboutText > h3 {
+        position: absolute;
+        top: 50px;
+        right: 350px;
+        visibility: hidden;
+    }
+
+    #aboutText > p {
+        font-size: 12px;
+        right: 800px;
+        position: absolute;
+        width: 300px;
+    }
+    #aboutText>#p1{
+        font-size: 12px;
+        position: relative;
+        left: -490px;
+    }
+    #aboutText>#p2{
+        font-size: 12px;
+        position: relative;
+        left: -490px;
+    }
+    #aboutText>#p3{
+        font-size: 12px;
+        position: relative;
+        left: -490px;
+    }
+
+    #btnDownload {
+        position: relative;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 100px;
+        height: 40px;
+        border-radius: 40px;
+        font-size: 10px;
+        color: white;
+        text-decoration: none;
+        font-weight: 600;
+        letter-spacing: 1px;
+        z-index: 1;
+        left: -400px;
+        top: 7px;
+        animation: pulse 1s infinite;
+    }
+    @keyframes pulse {
+        0% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(1.1);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+
+    #btnDownload::before {
+        content: ' ';
+        position: absolute;
+        top: 0;
+        left: 0;
+        inset: 0;
+        background: linear-gradient(45deg, #0033ff, #ff3399, #13e767);
+        background-position: 0 0;
+        background-size: 200%;
+        z-index: -1;
+        border-radius: 40px;
+        filter: blur(10px);
+        transition: .5s ease;
+    }
+
+    #btnDownload::after {
+        content: ' ';
+        position: absolute;
+        top: 0;
+        left: 0;
+        inset: 0;
+        background: linear-gradient(45deg, #0033ff, #ff3399, #13e767);
+        background-position: 0 0;
+        background-size: 200%;
+        z-index: -1;
+        border-radius: 40px;
+        transition: .5s ease;
+
+    }
+
+    #btnDownload:hover::after {
+        background-position: 100% 0;
+    }
+
+    #btnDownload:hover::before {
+        background-position: 100% 0;
+    }
+}
+
 @media all and (max-width: 425px) and (min-width: 320px){
     .section2 {
         width: 100vw;
@@ -610,7 +857,7 @@
     #aboutText {
         position:absolute;
         top: 350px;
-        left:500px;
+        left:520px;
         font-size: 12px;
         color: #ffffff;
         margin: 20px;
@@ -633,10 +880,9 @@
 
     #aboutText > p {
         font-size: 10px;
-        top: 10px;
-        right: 500px;
-        position: relative;
-        width: 400px;
+        right: 800px;
+        position: absolute;
+        width: 300px;
     }
     #aboutText>#p1{
         font-size: 12px;
