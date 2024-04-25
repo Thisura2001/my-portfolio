@@ -890,11 +890,6 @@
         transition-duration: 1s;
         filter: drop-shadow(0 0 10px rgb(27, 234, 226));
     }
-    #pro1:hover{
-        background: linear-gradient(45deg, #0d73e7, #84aaf5, #2133a8);
-        width: 280px;
-        font-size: 20px;
-    }
     #pro1>h1{
         color: #ffffff;
         font-size: 25px;
@@ -942,11 +937,6 @@
         border-radius: 10%;
         transition-duration: 1s;
         filter: drop-shadow(0 0 10px rgb(27, 234, 226));
-    }
-    #pro2:hover{
-        background: linear-gradient(45deg, #0d73e7, #84aaf5, #2133a8);
-        width: 280px;
-        font-size: 20px;
     }
     #pro2>h1{
         color: #ffffff;
@@ -996,11 +986,6 @@
         transition-duration: 1s;
         filter: drop-shadow(0 0 10px rgb(27, 234, 226));
     }
-    #pro3:hover{
-        background: linear-gradient(45deg, #0d73e7, #84aaf5, #2133a8);
-        width: 280px;
-        font-size: 20px;
-    }
     #pro3>h1{
         color: #ffffff;
         font-size: 30px;
@@ -1032,10 +1017,6 @@
         position: absolute;
         top: 230px;
         left: 100px;
-    }
-    #pro3>.btn1:hover {
-        background-color: #05832b;
-        color: white;
     }
 }
 @media all and (max-width: 320px ){

@@ -109,7 +109,7 @@ footer p:nth-child(2){
 @media all and (min-width: 321px ) and (max-width: 460px){
     footer{
         position: relative;
-        top: 200px;
+        top: 400px;
         width: 100vw;
         height: 150px;
         background: linear-gradient(45deg, #000000, #000000, #000000);

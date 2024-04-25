@@ -45,7 +45,6 @@ body{
     text-decoration: none;
     font-weight: 500;
     margin-left: 35px;
-    animation-delay: calc(5s * var(--i));
     animation: anim 5s ease forwards;
 
 }
@@ -242,7 +241,6 @@ body{
         text-decoration: none;
         font-weight: 500;
         margin-left: 35px;
-        animation-delay: calc(5s * var(--i));
         animation: anim 5s ease forwards;
 
     }
@@ -437,7 +435,6 @@ body{
         text-decoration: none;
         font-weight: 500;
         margin-left: 35px;
-        animation-delay: calc(5s * var(--i));
         animation: anim 5s ease forwards;
 
     }
@@ -582,8 +579,8 @@ body{
         top: -780px;
         float: right;
         position: relative;
-        opacity: 70%;
-        filter:drop-shadow(0 0 10px rgb(0, 0, 255));
+        opacity: 40%!important;
+        filter:drop-shadow(0 0 10px rgb(39, 81, 154));
         animation: fadeIn 1s ease forwards;
     }
     @keyframes fadeIn {
@@ -632,7 +629,6 @@ body{
         text-decoration: none;
         font-weight: 500;
         margin-left: 35px;
-        animation-delay: calc(5s * var(--i));
         animation: anim 5s ease forwards;
 
     }
@@ -777,7 +773,7 @@ body{
         top: -780px;
         float: right;
         position: relative;
-        opacity: 70%;
+        opacity: 40% !important;
         filter:drop-shadow(0 0 10px rgb(0, 0, 255));
         animation: fadeIn 1s ease forwards;
     }
@@ -869,7 +865,7 @@ body{
     #myPic {
         left: -150px;
         top: -550px;
-        opacity: 40%;
+        opacity: 40%!important;
         animation: fadeIn 1s ease forwards;
     }
 }
@@ -898,8 +894,12 @@ body{
 }
 @media all and (max-width: 768px) and (min-width: 425px){
     .hamburger{
-        display: none;
+        position: absolute;
+        display: block;
         font-size: 50px;
+        color: white;
+        left: 400px;
+        top: 30px;
     }
 
     .header>div:nth-child(1){
@@ -1005,8 +1005,12 @@ body{
 }
 @media all and (min-width: 321px ) and (max-width: 460px){
     .hamburger{
-        display: none;
+        position: absolute;
+        display: block;
         font-size: 50px;
+        color: white;
+        left: 300px;
+        top: 30px;
     }
 
     .header>div:nth-child(1){

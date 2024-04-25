@@ -460,7 +460,7 @@ button:hover {
         position: absolute;
         top: 50px;
         left: 40px;
-        color: #d0e015;
+        color: #0d73e7;
     }
     .contact-container {
         width: 300px;
@@ -749,7 +749,7 @@ button:hover {
     .contact-container {
         width: 300px;
         display: flex;
-        left: 50px;
+        left: 40px;
         top: 550px;
         position: absolute;
         align-items: center;
