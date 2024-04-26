@@ -79,7 +79,7 @@
 <section id="about" class="section2 ">
 <!--    right side of about section-->
     <div>
-        <h1 id="aboutLabel">| ABOUT</h1>
+        <h1 id="aboutLabel"> ABOUT</h1>
         <picture class="aboutPic">
             <source media="(min-width: 1000px)"  srcset="assets/images/about-large.jpg">
             <source media="(min-width: 800px)" srcset="assets/images/about-small.jpg">
@@ -109,39 +109,40 @@
 <!--Projects Section-->
 <section id="projects" class="section3">
     <div>
-        <h1 id="projectLabel">| PROJECTS</h1>
+        <h1 id="projectLabel"> PROJECTS</h1>
     </div>
-    <div id="pro1">
-            <h1>Garment Management System</h1>
+    <div class="project-container1">
+        <h1>Garment Management System</h1>
         <p>
             A garment management system helps businesses streamline inventory, sales, and production processes for efficient management of clothing products.
         </p>
-            <img src="assets/images/icons8-github-48.png" title="github" alt="github">
+        <img src="assets/images/icons8-github-48.png" title="github" alt="github">
         <a href="https://github.com/Thisura2001/garment-management-system-Final-Project-.git" class="btn1"><button type="button" style="background-color: black;color: white">View</button></a>
     </div>
-    <div id="pro2">
-            <h1>Library Management System</h1>
+    <div class="project-container2">
+        <h1>Library Management System</h1>
         <p>
             A Library Management System automates library tasks such as cataloging, lending, returns, and patron management for effective library administration and user services.
         </p>
-            <img src="assets/images/icons8-github-48.png" title="github" alt="github">
+        <img src="assets/images/icons8-github-48.png" title="github" alt="github">
         <a href="https://github.com/Thisura2001/book-worm-library-management-system.git" class="btn1"><button type="button" style="background-color: black;color: white">View</button></a>
     </div>
-    <div id="pro3">
-            <h1>Chat Application</h1>
+    <div class="project-container3">
+        <h1>Chat Application</h1>
         <p>
             A client-server application facilitates communication between multiple devices, where clients request data or services from a centralized server, enhancing connectivity and resource sharing.
         </p>
-            <img src="assets/images/icons8-github-48.png" title="github" alt="github">
+        <img src="assets/images/icons8-github-48.png" title="github" alt="github">
         <a href="https://github.com/Thisura2001/chat-application-course-work.git" class="btn1"><button type="button" style="background-color: black;color: white">View</button></a>
     </div>
 </section>
+
 <br><br>
 <!--Assignment Section-->
     <section class="assigment" id="assignments">
         <section>
             <div>
-                <h2 id="assigmentLabel">|ASSIGNMENTS</h2>
+                <h2 id="assigmentLabel">ASSIGNMENTS</h2>
             </div>
 
         </section>
@@ -269,7 +270,7 @@
     <section id="skills" >
         <br><br>
         <div>
-            <h1 id="skillsLabel">| SKILLS</h1><br><br>
+            <h1 id="skillsLabel"> SKILLS</h1><br><br>
         </div>
         <div id="skiltext">
             <h1>See what I perfectly know 👻👨‍💻</h1>
@@ -292,7 +293,7 @@
             <br><br>
             <!--left side-->
             <div>
-                <h1 id="contactLabel">| CONTACT</h1>
+                <h1 id="contactLabel">CONTACT</h1>
             </div>
             <div id="left">
                 <h1>Need <br>Help..?</h1>
@@ -344,15 +345,7 @@
     <P class="end">CopyWrite ©️ By Thisura Liyanage (2024)</P>
 </footer>
 <script src="assets/lib/jquery-3.7.1.min.js"></script>
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        const hamburger = document.querySelector('.hamburger');
-        const navbar = document.querySelector('.navbar');
-
-        hamburger.addEventListener('click', function () {
-            navbar.classList.toggle('active');
-        });
-    });
+<script src="js/script.js">
 
 </script>
 </body>

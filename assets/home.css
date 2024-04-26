@@ -8,6 +8,26 @@ body{
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
 }
+.page {
+    height: 100vh;
+    /* Add other styles as needed */
+    opacity: 0; /* Initially hide pages */
+    transition: opacity 0.5s; /* Smooth transition for opacity change */
+}
+
+.animated {
+    animation: fadeIn 1s forwards; /* Add desired animation */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 #bg-video {
     position: fixed;
     top: 0;
@@ -894,12 +914,7 @@ body{
 }
 @media all and (max-width: 768px) and (min-width: 425px){
     .hamburger{
-        position: absolute;
-        display: block;
-        font-size: 50px;
-        color: white;
-        left: 400px;
-        top: 30px;
+     display: none;
     }
 
     .header>div:nth-child(1){
@@ -917,7 +932,6 @@ body{
 
 
     .navbar {
-        display: none;
         position: absolute;
         top: 65px;
         right: 0;

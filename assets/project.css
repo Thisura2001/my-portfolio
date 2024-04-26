@@ -1,113 +1,65 @@
 
-@media all and (min-width: 1440px){
-    .section3{
+@media all and (min-width: 1440px) {
+    .section3 {
         height: 100vh;
         width: 100vw;
         position: relative;
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
     }
-    #bg-video {
-        position: fixed;
-        top: 0;
-        left: 0;
-        min-width: 100%;
-        min-height: 100%;
-        z-index: -1;
-        opacity: 30%;
-    }
-    #projectLabel{
-        position: absolute;
-        top: 50px;
-        left: 60px;
+
+    #projectLabel {
         color: #daf519;
+        margin-top: 50px;
     }
-    #pro1{
-        top: 150px;
+
+    .project-container1 {
         width: 300px;
         height: 60vh;
-        border:10px solid white;
-        left: 50px;
+        border: 10px solid white;
         padding: 20px;
         border-radius: 10%;
-        position: absolute;
         transition-duration: 1s;
         filter: drop-shadow(0 0 10px rgb(27, 234, 226));
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        font-size: 16px;
+        color: white;
+        position: relative;
+        top: 180px;
+        right: 150px;
     }
-    #pro1:hover{
+
+    .project-container1:hover {
         background: linear-gradient(45deg, #0d73e7, #84aaf5, #2133a8);
         width: 400px;
         font-size: 20px;
     }
-    #pro1>h1{
+
+    .project-container1 > h1 {
         color: #ffffff;
     }
 
-    #pro1>p{
-        color: white;
+    .project-container1 > p {
         text-align: center;
-        font-size: 20px;
     }
-    #pro1>img{
-        position: absolute;
-        top: 320px;
-        left: 140px;
-        width: 50px;
-        height: 50px;
-        background: white;
-        border-radius: 100%;
-    }
-    #pro1>.btn1{
-        background: black;
-        border: 2px solid green;
-        color: green;
-        border-radius: 5px;
-        cursor: pointer;
-        font-size: 16px;
-        font-weight: bold;
-        transition: background-color 0.3s ease;
-        position: absolute;
-        top: 380px;
-        left: 125px;
-    }
-    #pro1>.btn1:hover {
-        background-color: #05832b;
-        color: white;
-    }
-    #pro2{
-        top: 150px;
-        position: absolute;
-        width: 300px;
-        height: 60vh;
-        border:10px solid white;
-        left: 550px;
-        padding: 20px;
-        border-radius: 10%;
-        transition-duration: 1s;
-        filter: drop-shadow(0 0 10px rgb(27, 234, 226));
-    }
-    #pro2:hover{
-        background: linear-gradient(45deg, #0d73e7, #84aaf5, #2133a8);
-        width: 400px;
-        font-size: 20px;
-    }
-    #pro2>h1{
-        color: #ffffff;
 
-    }
-    #pro2>p{
-        color: white;
-        font-size: 20px;
-        text-align: center;
-    }
-    #pro2>img{
-        position: absolute;
-        top: 320px;
-        left: 140px;
-        width: 50px;
-        height: 50px;
+    .project-container1 > img {
+        width: 40px;
+        height: 40px;
         background: white;
         border-radius: 100%;
+        position: absolute;
+        top: 320px;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
     }
-    #pro2>.btn1{
+
+    .project-container1 > .btn1 {
         background: black;
         border: 2px solid green;
         color: green;
@@ -116,49 +68,62 @@
         font-size: 16px;
         font-weight: bold;
         transition: background-color 0.3s ease;
-        position: absolute;
-        top: 380px;
-        left: 125px;
+        text-align: center;
+        align-self: center;
     }
-    #pro2>.btn1:hover {
+
+    .project-container1 > .btn1:hover {
         background-color: #05832b;
         color: white;
     }
-    #pro3{
-        top: 150px;
-        position: absolute;
+
+
+    .project-container2 {
         width: 300px;
         height: 60vh;
-        border:10px solid #ffffff;
-        left: 1050px;
+        border: 10px solid white;
         padding: 20px;
         border-radius: 10%;
         transition-duration: 1s;
         filter: drop-shadow(0 0 10px rgb(27, 234, 226));
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        font-size: 16px;
+        color: white;
+        position: relative;
+        top: 180px;
+        right: 150px;
     }
-    #pro3:hover{
+
+    .project-container2:hover {
         background: linear-gradient(45deg, #0d73e7, #84aaf5, #2133a8);
         width: 400px;
         font-size: 20px;
     }
-    #pro3>h1{
+
+    .project-container2 > h1 {
         color: #ffffff;
     }
-    #pro3>p{
-        color: white;
+
+    .project-container2 > p {
         text-align: center;
-        font-size: 20px;
     }
-    #pro3>img{
-        position: absolute;
-        top: 320px;
-        left: 140px;
-        width: 50px;
-        height: 50px;
+
+    .project-container2 > img {
+        width: 40px;
+        height: 40px;
         background: white;
         border-radius: 100%;
+        position: absolute;
+        top: 320px;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
     }
-    #pro3>.btn1{
+
+    .project-container2 > .btn1 {
         background: black;
         border: 2px solid green;
         color: green;
@@ -167,165 +132,141 @@
         font-size: 16px;
         font-weight: bold;
         transition: background-color 0.3s ease;
-        position: absolute;
-        top: 380px;
-        left: 125px;
+        text-align: center;
+        align-self: center;
     }
-    #pro3>.btn1:hover {
+
+    .project-container2 > .btn1:hover {
+        background-color: #05832b;
+        color: white;
+    }
+
+
+    .project-container3 {
+        width: 300px;
+        height: 60vh;
+        border: 10px solid white;
+        padding: 20px;
+        border-radius: 10%;
+        transition-duration: 1s;
+        filter: drop-shadow(0 0 10px rgb(27, 234, 226));
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        font-size: 16px;
+        color: white;
+        position: relative;
+        top: 180px;
+        right: 150px;
+    }
+
+    .project-container3:hover {
+        background: linear-gradient(45deg, #0d73e7, #84aaf5, #2133a8);
+        width: 400px;
+        font-size: 20px;
+    }
+
+    .project-container3 > h1 {
+        color: #ffffff;
+    }
+
+    .project-container3 > p {
+        text-align: center;
+    }
+
+    .project-container3 > img {
+        width: 40px;
+        height: 40px;
+        background: white;
+        border-radius: 100%;
+        position: absolute;
+        top: 320px;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .project-container3 > .btn1 {
+        background: black;
+        border: 2px solid green;
+        color: green;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+        text-align: center;
+        align-self: center;
+    }
+
+    .project-container3 > .btn1:hover {
         background-color: #05832b;
         color: white;
     }
 }
-@media all and (min-width: 1024px) and (max-width: 1440px){
-    .section3{
+
+@media all and (min-width: 1024px) and (max-width: 1440px) {
+    .section3 {
         height: 100vh;
         width: 100vw;
         position: relative;
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
     }
-    #projectLabel{
-        position: absolute;
-        top: 50px;
-        left: 60px;
-        color: #d0e015;
-    }
-    #pro1{
-        top: 150px;
-        width: 250px;
-        height: 60vh;
-        border:10px solid white;
-        left: 50px;
-        padding: 20px;
-        border-radius: 10%;
-        position: relative;
-        transition-duration: 1s;
-        filter: drop-shadow(0 0 10px rgb(27, 234, 226));
-    }
-    #pro1:hover{
-        background: linear-gradient(45deg, #0d73e7, #84aaf5, #2133a8);
-        width: 300px;
-        font-size: 20px;
-    }
-    #pro1>h1{
-        color: #ffffff;
-    }
-    #pro1>p{
-        color: white;
-        text-align: center;
-        font-size: 20px;
-    }
-    #pro1>img{
-        position: absolute;
-        top: 320px;
-        left: 140px;
-        width: 40px;
-        height: 40px;
-        background: white;
-        border-radius: 100%;
-    }
-    #pro1>.btn1{
-        background: black;
-        border: 2px solid green;
-        color: green;
-        border-radius: 5px;
-        cursor: pointer;
-        font-size: 16px;
-        font-weight: bold;
-        transition: background-color 0.3s ease;
-        position: absolute;
-        top: 380px;
-        left: 115px;
-    }
-    #pro1>.btn1:hover {
-        background-color: #05832b;
-        color: white;
-    }
-    #pro2{
-        top: 150px;
-        position: absolute;
-        width: 250px;
-        height: 60vh;
-        border:10px solid white;
-        left: 380px;
-        padding: 20px;
-        border-radius: 10%;
-        transition-duration: 1s;
-        filter: drop-shadow(0 0 10px rgb(27, 234, 226));
-    }
-    #pro2:hover{
-        background: linear-gradient(45deg, #0d73e7, #84aaf5, #2133a8);
-        width: 300px;
-        font-size: 20px;
-    }
-    #pro2>h1{
-        color: #ffffff;
 
+    #projectLabel {
+        color: #daf519;
+        margin-top: 50px;
     }
-    #pro2>p{
-        color: white;
-        font-size: 20px;
-        text-align: center;
-    }
-    #pro2>img{
-        position: absolute;
-        top: 335px;
-        left: 140px;
-        width: 40px;
-        height: 40px;
-        background: white;
-        border-radius: 100%;
-    }
-    #pro2>.btn1{
-        background: black;
-        border: 2px solid green;
-        color: green;
-        border-radius: 5px;
-        cursor: pointer;
-        font-size: 16px;
-        font-weight: bold;
-        transition: background-color 0.3s ease;
-        position: absolute;
-        top: 380px;
-        left: 125px;
-    }
-    #pro2>.btn1:hover {
-        background-color: #05832b;
-        color: white;
-    }
-    #pro3{
-        top: 150px;
-        position: absolute;
-        width: 250px;
+
+    .project-container1 {
+        width: 300px;
         height: 60vh;
-        border:10px solid #ffffff;
-        left: 710px;
+        border: 10px solid white;
         padding: 20px;
         border-radius: 10%;
         transition-duration: 1s;
         filter: drop-shadow(0 0 10px rgb(27, 234, 226));
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        font-size: 16px;
+        color: white;
+        position: relative;
+        top: 180px;
+        right: 150px;
     }
-    #pro3:hover{
+
+    .project-container1:hover {
         background: linear-gradient(45deg, #0d73e7, #84aaf5, #2133a8);
-        width: 280px;
+        width: 400px;
         font-size: 20px;
     }
-    #pro3>h1{
+
+    .project-container1 > h1 {
         color: #ffffff;
     }
-    #pro3>p{
-        color: white;
+
+    .project-container1 > p {
         text-align: center;
-        font-size: 20px;
     }
-    #pro3>img{
-        position: absolute;
-        top: 320px;
-        left: 140px;
+
+    .project-container1 > img {
         width: 40px;
         height: 40px;
         background: white;
         border-radius: 100%;
+        position: absolute;
+        top: 320px;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
     }
-    #pro3>.btn1{
+
+    .project-container1 > .btn1 {
         background: black;
         border: 2px solid green;
         color: green;
@@ -334,67 +275,207 @@
         font-size: 16px;
         font-weight: bold;
         transition: background-color 0.3s ease;
-        position: absolute;
-        top: 380px;
-        left: 125px;
+        text-align: center;
+        align-self: center;
     }
-    #pro3>.btn1:hover {
+
+    .project-container1 > .btn1:hover {
+        background-color: #05832b;
+        color: white;
+    }
+
+
+    .project-container2 {
+        width: 300px;
+        height: 60vh;
+        border: 10px solid white;
+        padding: 20px;
+        border-radius: 10%;
+        transition-duration: 1s;
+        filter: drop-shadow(0 0 10px rgb(27, 234, 226));
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        font-size: 16px;
+        color: white;
+        position: relative;
+        top: 180px;
+        left: -100px;
+    }
+
+    .project-container2:hover {
+        background: linear-gradient(45deg, #0d73e7, #84aaf5, #2133a8);
+        width: 400px;
+        font-size: 20px;
+    }
+
+    .project-container2 > h1 {
+        color: #ffffff;
+    }
+
+    .project-container2 > p {
+        text-align: center;
+    }
+
+    .project-container2 > img {
+        width: 40px;
+        height: 40px;
+        background: white;
+        border-radius: 100%;
+        position: absolute;
+        top: 320px;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .project-container2 > .btn1 {
+        background: black;
+        border: 2px solid green;
+        color: green;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+        text-align: center;
+        align-self: center;
+    }
+
+    .project-container2 > .btn1:hover {
+        background-color: #05832b;
+        color: white;
+    }
+
+
+    .project-container3 {
+        width: 300px;
+        height: 60vh;
+        border: 10px solid white;
+        padding: 20px;
+        border-radius: 10%;
+        transition-duration: 1s;
+        filter: drop-shadow(0 0 10px rgb(27, 234, 226));
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        font-size: 16px;
+        color: white;
+        position: relative;
+        top: 180px;
+        right: 50px;
+    }
+
+    .project-container3:hover {
+        background: linear-gradient(45deg, #0d73e7, #84aaf5, #2133a8);
+        width: 400px;
+        font-size: 20px;
+    }
+
+    .project-container3 > h1 {
+        color: #ffffff;
+    }
+
+    .project-container3 > p {
+        text-align: center;
+    }
+
+    .project-container3 > img {
+        width: 40px;
+        height: 40px;
+        background: white;
+        border-radius: 100%;
+        position: absolute;
+        top: 320px;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .project-container3 > .btn1 {
+        background: black;
+        border: 2px solid green;
+        color: green;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+        text-align: center;
+        align-self: center;
+    }
+
+    .project-container3 > .btn1:hover {
         background-color: #05832b;
         color: white;
     }
 }
+
 
 
 @media all and (min-width: 834px ) and (max-width: 1024px){
-    .section3{
+    .section3 {
         height: 100vh;
         width: 100vw;
         position: relative;
         display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
     }
-    #projectLabel{
-        position: absolute;
-        top: 0;
-        left: 60px;
-        color: #d0e015;
+
+    #projectLabel {
+        color: #daf519;
+        margin-top: 50px;
     }
-    #pro1{
-        top: 70px;
-        width: 250px;
-        height: 220px;
-        border:10px solid white;
-        left: 50px;
+
+    .project-container1 {
+        width: 300px;
+        height: 60vh;
+        border: 10px solid white;
         padding: 20px;
         border-radius: 10%;
-        position: absolute;
         transition-duration: 1s;
         filter: drop-shadow(0 0 10px rgb(27, 234, 226));
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        font-size: 16px;
+        color: white;
+        position: relative;
+        top: 180px;
+        right: 150px;
     }
-    #pro1:hover{
+
+    .project-container1:hover {
         background: linear-gradient(45deg, #0d73e7, #84aaf5, #2133a8);
         width: 300px;
         font-size: 20px;
     }
-    #pro1>h1{
+
+    .project-container1 > h1 {
         color: #ffffff;
-        font-size: 25px;
     }
-    #pro1>p{
-        color: white;
+
+    .project-container1 > p {
         text-align: center;
-        font-size: 14px;
     }
-    #pro1>img{
-        position: absolute;
-        top: 350px;
-        left: 100px;
-        width: 30px;
-        height: 30px;
+
+    .project-container1 > img {
+        width: 40px;
+        height: 40px;
         background: white;
         border-radius: 100%;
-        visibility: hidden;
+        position: absolute;
+        top: 320px;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
     }
-    #pro1>.btn1{
+
+    .project-container1 > .btn1 {
         background: black;
         border: 2px solid green;
         color: green;
@@ -403,51 +484,62 @@
         font-size: 16px;
         font-weight: bold;
         transition: background-color 0.3s ease;
-        position: absolute;
-        top: 190px;
-        left: 110px;
+        text-align: center;
+        align-self: center;
     }
-    #pro1>.btn1:hover {
+
+    .project-container1 > .btn1:hover {
         background-color: #05832b;
         color: white;
     }
-    #pro2{
-        top: 70px;
-        position: absolute;
-        width: 250px;
-        height: 220px;
-        border:10px solid white;
-        left: 500px;
+
+
+    .project-container2 {
+        width: 300px;
+        height: 60vh;
+        border: 10px solid white;
         padding: 20px;
         border-radius: 10%;
         transition-duration: 1s;
         filter: drop-shadow(0 0 10px rgb(27, 234, 226));
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        font-size: 16px;
+        color: white;
+        position: relative;
+        top: 180px;
+        left: -140px;
     }
-    #pro2:hover{
+
+    .project-container2:hover {
         background: linear-gradient(45deg, #0d73e7, #84aaf5, #2133a8);
         width: 300px;
         font-size: 20px;
     }
-    #pro2>h1{
+
+    .project-container2 > h1 {
         color: #ffffff;
-        font-size: 25px;
     }
-    #pro2>p{
-        color: white;
-        font-size: 14px;
+
+    .project-container2 > p {
         text-align: center;
     }
-    #pro2>img{
-        position: absolute;
-        top: 405px;
-        left: 40px;
-        width: 30px;
-        height: 30px;
+
+    .project-container2 > img {
+        width: 40px;
+        height: 40px;
         background: white;
         border-radius: 100%;
-        visibility: hidden;
+        position: absolute;
+        top: 320px;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
     }
-    #pro2>.btn1{
+
+    .project-container2 > .btn1 {
         background: black;
         border: 2px solid green;
         color: green;
@@ -456,51 +548,62 @@
         font-size: 16px;
         font-weight: bold;
         transition: background-color 0.3s ease;
-        position: absolute;
-        top: 200px;
-        left: 110px;
+        text-align: center;
+        align-self: center;
     }
-    #pro2>.btn1:hover {
+
+    .project-container2 > .btn1:hover {
         background-color: #05832b;
         color: white;
     }
-    #pro3{
-        top: 430px;
-        position: absolute;
-        width: 250px;
-        height: 220px;
-        border:10px solid #ffffff;
-        left: 270px;
+
+
+    .project-container3 {
+        width: 300px;
+        height: 60vh;
+        border: 10px solid white;
         padding: 20px;
         border-radius: 10%;
         transition-duration: 1s;
         filter: drop-shadow(0 0 10px rgb(27, 234, 226));
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        font-size: 16px;
+        color: white;
+        position: relative;
+        top: 180px;
+        left: -130px;
     }
-    #pro3:hover{
+
+    .project-container3:hover {
         background: linear-gradient(45deg, #0d73e7, #84aaf5, #2133a8);
         width: 300px;
         font-size: 20px;
     }
-    #pro3>h1{
+
+    .project-container3 > h1 {
         color: #ffffff;
-        font-size: 25px;
     }
-    #pro3>p{
-        color: white;
+
+    .project-container3 > p {
         text-align: center;
-        font-size: 12px;
     }
-    #pro3>img{
-        position: absolute;
-        top: 300px;
-        left: 140px;
-        width: 50px;
-        height: 50px;
+
+    .project-container3 > img {
+        width: 40px;
+        height: 40px;
         background: white;
         border-radius: 100%;
-        visibility: hidden;
+        position: absolute;
+        top: 320px;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
     }
-    #pro3>.btn1{
+
+    .project-container3 > .btn1 {
         background: black;
         border: 2px solid green;
         color: green;
@@ -509,66 +612,83 @@
         font-size: 16px;
         font-weight: bold;
         transition: background-color 0.3s ease;
-        position: absolute;
-        top: 200px;
-        left: 100px;
+        text-align: center;
+        align-self: center;
     }
-    #pro3>.btn1:hover {
+
+    .project-container3 > .btn1:hover {
         background-color: #05832b;
         color: white;
     }
 }
 
-@media all and (min-width: 769px ) and (max-width: 834px){
-    .section3{
-        height: 100vh;
-        width: 100vw;
-        position: relative;
+@media all and (min-width: 768px) and (max-width: 834px) {
+    .section3 {
+        height: auto;
         display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: flex-start;
     }
-    #projectLabel{
-        position: absolute;
-        top: 0;
-        left: 60px;
-        color: #d0e015;
+    #projectLabel {
+        color: #daf519;
+        margin-top: 100px;
     }
-    #pro1{
-        top: 150px;
-        width: 250px;
-        height: 220px;
-        border:10px solid white;
-        left: 70px;
+
+    .project-container1{
+        width: 45%;
+        min-height: 300px;
+        margin: 20px;
         padding: 20px;
+        border: 10px solid white;
         border-radius: 10%;
-        position: absolute;
-        transition-duration: 1s;
+        box-shadow: 0 0 10px rgb(27, 234, 226);
+        color: white;
+        position: relative;
+        top: 130px;
+        filter: drop-shadow(0 0 10px rgb(27, 234, 226));
+        left: -120px;
+    }
+    .project-container2{
+        width: 45%;
+        min-height: 300px;
+        margin: 20px;
+        padding: 20px;
+        border: 10px solid white;
+        border-radius: 10%;
+        box-shadow: 0 0 10px rgb(27, 234, 226);
+        color: white;
+        position: relative;
+        top: 130px;
         filter: drop-shadow(0 0 10px rgb(27, 234, 226));
     }
-    #pro1:hover{
-        background: linear-gradient(45deg, #0d73e7, #84aaf5, #2133a8);
-        width: 300px;
-        font-size: 20px;
-    }
-    #pro1>h1{
-        color: #ffffff;
-        font-size: 25px;
-    }
-    #pro1>p{
+    .project-container3 {
+        width: 45%;
+        min-height: 300px;
+        margin: 20px;
+        padding: 20px;
+        border: 10px solid white;
+        border-radius: 10%;
+        box-shadow: 0 0 10px rgb(27, 234, 226);
         color: white;
-        text-align: center;
-        font-size: 14px;
+        position: relative;
+        top: 130px;
+        filter: drop-shadow(0 0 10px rgb(27, 234, 226));
     }
-    #pro1>img{
+
+    .project-container1 > img,
+    .project-container2 > img,
+    .project-container3 > img {
         position: absolute;
-        top: 350px;
-        left: 100px;
-        width: 30px;
-        height: 30px;
-        background: white;
-        border-radius: 100%;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
         visibility: hidden;
     }
-    #pro1>.btn1{
+
+    .project-container1 > .btn1,
+    .project-container2 > .btn1,
+    .project-container3 > .btn1 {
         background: black;
         border: 2px solid green;
         color: green;
@@ -577,277 +697,85 @@
         font-size: 16px;
         font-weight: bold;
         transition: background-color 0.3s ease;
-        position: absolute;
-        top: 190px;
-        left: 110px;
-    }
-    #pro1>.btn1:hover {
-        background-color: #05832b;
-        color: white;
-    }
-    #pro2{
-        top: 150px;
-        position: absolute;
-        width: 250px;
-        height: 220px;
-        border:10px solid white;
-        left: 430px;
-        padding: 20px;
-        border-radius: 10%;
-        transition-duration: 1s;
-        filter: drop-shadow(0 0 10px rgb(27, 234, 226));
-    }
-    #pro2:hover{
-        background: linear-gradient(45deg, #0d73e7, #84aaf5, #2133a8);
-        width: 300px;
-        font-size: 20px;
-    }
-    #pro2>h1{
-        color: #ffffff;
-        font-size: 25px;
-    }
-    #pro2>p{
-        color: white;
-        font-size: 14px;
         text-align: center;
+        align-self: center;
     }
-    #pro2>img{
-        position: absolute;
-        top: 405px;
-        left: 40px;
-        width: 30px;
-        height: 30px;
-        background: white;
-        border-radius: 100%;
-        visibility: hidden;
-    }
-    #pro2>.btn1{
-        background: black;
-        border: 2px solid green;
-        color: green;
-        border-radius: 5px;
-        cursor: pointer;
-        font-size: 16px;
-        font-weight: bold;
-        transition: background-color 0.3s ease;
-        position: absolute;
-        top: 200px;
-        left: 110px;
-    }
-    #pro2>.btn1:hover {
-        background-color: #05832b;
-        color: white;
-    }
-    #pro3{
-        top: 500px;
-        position: absolute;
-        width: 250px;
-        height: 220px;
-        border:10px solid #ffffff;
-        left: 225px;
-        padding: 20px;
-        border-radius: 10%;
-        transition-duration: 1s;
-        filter: drop-shadow(0 0 10px rgb(27, 234, 226));
-    }
-    #pro3:hover{
-        background: linear-gradient(45deg, #0d73e7, #84aaf5, #2133a8);
-        width: 300px;
-        font-size: 20px;
-    }
-    #pro3>h1{
-        color: #ffffff;
-        font-size: 25px;
-    }
-    #pro3>p{
-        color: white;
-        text-align: center;
-        font-size: 12px;
-    }
-    #pro3>img{
-        position: absolute;
-        top: 300px;
-        left: 140px;
-        width: 50px;
-        height: 50px;
-        background: white;
-        border-radius: 100%;
-        visibility: hidden;
-    }
-    #pro3>.btn1{
-        background: black;
-        border: 2px solid green;
-        color: green;
-        border-radius: 5px;
-        cursor: pointer;
-        font-size: 16px;
-        font-weight: bold;
-        transition: background-color 0.3s ease;
-        position: absolute;
-        top: 200px;
-        left: 100px;
-    }
-    #pro3>.btn1:hover {
+
+    .project-container1 > .btn1:hover,
+    .project-container2 > .btn1:hover,
+    .project-container3 > .btn1:hover {
         background-color: #05832b;
         color: white;
     }
 }
+
 
 @media all and (min-width: 461px ) and (max-width: 768px){
-    .section3{
-        height: 100vh;
-        width: 100vw;
-        position: relative;
+    .section3 {
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: flex-start;
     }
-    #projectLabel{
-        position: absolute;
-        top: 50px;
-        left: 60px;
-        color: #d0e015;
+    #projectLabel {
+        color: #daf519;
+        margin-top: 100px;
     }
-    #pro1{
-        top: 150px;
-        width: 150px;
-        height: 200px;
-        border:10px solid white;
-        left: 20px;
+
+    .project-container1{
+        width: 45%;
+        min-height: 300px;
+        margin: 20px;
         padding: 20px;
+        border: 10px solid white;
         border-radius: 10%;
+        box-shadow: 0 0 10px rgb(27, 234, 226);
+        color: white;
         position: relative;
-        transition-duration: 1s;
+        top: 130px;
         filter: drop-shadow(0 0 10px rgb(27, 234, 226));
     }
-    #pro1:hover{
-        background: linear-gradient(45deg, #0d73e7, #84aaf5, #2133a8);
-        width: 200px;
-        font-size: 20px;
-    }
-    #pro1>h1{
-        color: #ffffff;
-        font-size: 16px;
-    }
-    #pro1>p{
+    .project-container2{
+        width: 45%;
+        min-height: 300px;
+        margin: 20px;
+        padding: 20px;
+        border: 10px solid white;
+        border-radius: 10%;
+        box-shadow: 0 0 10px rgb(27, 234, 226);
         color: white;
-        text-align: center;
-        font-size: 12px;
-    }
-    #pro1>img{
-        position: absolute;
-        top: 350px;
-        left: 100px;
-        width: 30px;
-        height: 30px;
-        background: white;
-        border-radius: 100%;
-        visibility: hidden;
-    }
-    #pro1>.btn1{
-        background: black;
-        border: 2px solid green;
-        color: green;
-        border-radius: 5px;
-        cursor: pointer;
-        font-size: 12px;
-        font-weight: bold;
-        transition: background-color 0.3s ease;
-        position: absolute;
-        top: 190px;
-        left: 60px;
-    }
-    #pro1>.btn1:hover {
-        background-color: #05832b;
-        color: white;
-    }
-    #pro2{
-        top: -110px;
         position: relative;
-        width: 150px;
-        height: 200px;
-        border:10px solid white;
-        left: 250px;
-        padding: 20px;
-        border-radius: 10%;
-        transition-duration: 1s;
+        top: 130px;
         filter: drop-shadow(0 0 10px rgb(27, 234, 226));
     }
-    #pro2:hover{
-        background: linear-gradient(45deg, #0d73e7, #84aaf5, #2133a8);
-        width: 170px;
-        font-size: 20px;
-    }
-    #pro2>h1{
-        color: #ffffff;
-        font-size: 14px;
-    }
-    #pro2>p{
-        color: white;
-        font-size: 12px;
-        text-align: center;
-    }
-    #pro2>img{
-        position: absolute;
-        top: 405px;
-        left: 40px;
-        width: 30px;
-        height: 30px;
-        background: white;
-        border-radius: 100%;
-        visibility: hidden;
-    }
-    #pro2>.btn1{
-        background: black;
-        border: 2px solid green;
-        color: green;
-        border-radius: 5px;
-        cursor: pointer;
-        font-size: 12px;
-        font-weight: bold;
-        transition: background-color 0.3s ease;
-        position: absolute;
-        top: 190px;
-        left: 60px;
-    }
-    #pro2>.btn1:hover {
-        background-color: #05832b;
-        color: white;
-    }
-    #pro3{
-        top: 420px;
-        position: absolute;
-        width: 150px;
-        height: 200px;
-        border:10px solid #ffffff;
-        left: 130px;
+    .project-container3 {
+        width: 45%;
+        min-height: 300px;
+        margin: 20px;
         padding: 20px;
+        border: 10px solid white;
         border-radius: 10%;
-        transition-duration: 1s;
+        box-shadow: 0 0 10px rgb(27, 234, 226);
+        color: white;
+        position: relative;
+        top: 130px;
         filter: drop-shadow(0 0 10px rgb(27, 234, 226));
     }
-    #pro3:hover{
-        background: linear-gradient(45deg, #0d73e7, #84aaf5, #2133a8);
-        width: 200px;
-        font-size: 20px;
-    }
-    #pro3>h1{
-        color: #ffffff;
-        font-size: 16px;
-    }
-    #pro3>p{
-        color: white;
-        text-align: center;
-        font-size: 12px;
-    }
-    #pro3>img{
+
+    .project-container1 > img,
+    .project-container2 > img,
+    .project-container3 > img {
         position: absolute;
-        top: 300px;
-        left: 140px;
-        width: 50px;
-        height: 50px;
-        background: white;
-        border-radius: 100%;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
         visibility: hidden;
     }
-    #pro3>.btn1{
+
+    .project-container1 > .btn1,
+    .project-container2 > .btn1,
+    .project-container3 > .btn1 {
         background: black;
         border: 2px solid green;
         color: green;
@@ -856,60 +784,85 @@
         font-size: 16px;
         font-weight: bold;
         transition: background-color 0.3s ease;
-        position: absolute;
-        top: 180px;
-        left: 60px;
+        text-align: center;
+        align-self: center;
+        position: relative;
     }
-    #pro3>.btn1:hover {
+
+    .project-container1 > .btn1:hover,
+    .project-container2 > .btn1:hover,
+    .project-container3 > .btn1:hover {
         background-color: #05832b;
         color: white;
     }
 }
 
 @media all and (min-width: 321px ) and (max-width: 460px){
-    .section3{
-        height: 100vh;
-        width: 100vw;
-        position: relative;
+    .section3 {
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: flex-start;
     }
-    #projectLabel{
-        position: absolute;
-        top: 50px;
-        left: 60px;
-        color: #d0e015;
+    #projectLabel {
+        color: #daf519;
+        margin-top: 100px;
     }
-    #pro1{
-        top: 150px;
-        width: 250px;
-        height: 250px;
-        border:10px solid white;
-        left: 50px;
+
+    .project-container1{
+        width: 45%;
+        min-height: 300px;
+        margin: 20px;
         padding: 20px;
+        border: 10px solid white;
         border-radius: 10%;
+        box-shadow: 0 0 10px rgb(27, 234, 226);
+        color: white;
         position: relative;
-        transition-duration: 1s;
+        top: 130px;
         filter: drop-shadow(0 0 10px rgb(27, 234, 226));
     }
-    #pro1>h1{
-        color: #ffffff;
-        font-size: 25px;
-    }
-    #pro1>p{
+    .project-container2{
+        width: 45%;
+        min-height: 300px;
+        margin: 20px;
+        padding: 20px;
+        border: 10px solid white;
+        border-radius: 10%;
+        box-shadow: 0 0 10px rgb(27, 234, 226);
         color: white;
-        text-align: center;
-        font-size: 16px;
+        position: relative;
+        top: 130px;
+        filter: drop-shadow(0 0 10px rgb(27, 234, 226));
     }
-    #pro1>img{
+    .project-container3 {
+        width: 45%;
+        min-height: 300px;
+        margin: 20px;
+        padding: 20px;
+        border: 10px solid white;
+        border-radius: 10%;
+        box-shadow: 0 0 10px rgb(27, 234, 226);
+        color: white;
+        position: relative;
+        top: 130px;
+        filter: drop-shadow(0 0 10px rgb(27, 234, 226));
+    }
+
+    .project-container1 > img,
+    .project-container2 > img,
+    .project-container3 > img {
         position: absolute;
-        top: 350px;
-        left: 100px;
-        width: 30px;
-        height: 30px;
-        background: white;
-        border-radius: 100%;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
         visibility: hidden;
     }
-    #pro1>.btn1{
+
+    .project-container1 > .btn1,
+    .project-container2 > .btn1,
+    .project-container3 > .btn1 {
         background: black;
         border: 2px solid green;
         color: green;
@@ -918,105 +871,17 @@
         font-size: 16px;
         font-weight: bold;
         transition: background-color 0.3s ease;
-        position: absolute;
-        top: 230px;
-        left: 100px;
+        text-align: center;
+        align-self: center;
+        position: relative;
+        left: 50px;
     }
-    #pro1>.btn1:hover {
+
+    .project-container1 > .btn1:hover,
+    .project-container2 > .btn1:hover,
+    .project-container3 > .btn1:hover {
         background-color: #05832b;
         color: white;
-    }
-    #pro2{
-        top: 200px;
-        position: relative;
-        width: 250px;
-        height: 250px;
-        border:10px solid white;
-        left: 50px;
-        padding: 20px;
-        border-radius: 10%;
-        transition-duration: 1s;
-        filter: drop-shadow(0 0 10px rgb(27, 234, 226));
-    }
-    #pro2>h1{
-        color: #ffffff;
-        font-size: 25px;
-    }
-    #pro2>p{
-        color: white;
-        font-size: 16px;
-        text-align: center;
-    }
-    #pro2>img{
-        position: absolute;
-        top: 405px;
-        left: 40px;
-        width: 30px;
-        height: 30px;
-        background: white;
-        border-radius: 100%;
-        visibility: hidden;
-    }
-    #pro2>.btn1{
-        background: black;
-        border: 2px solid green;
-        color: green;
-        border-radius: 5px;
-        cursor: pointer;
-        font-size: 16px;
-        font-weight: bold;
-        transition: background-color 0.3s ease;
-        position: absolute;
-        top: 230px;
-        left: 100px;
-    }
-    #pro2>.btn1:hover {
-        background-color: #05832b;
-        color: white;
-    }
-    #pro3{
-        top: 880px;
-        position: absolute;
-        width: 250px;
-        height: 250px;
-        border:10px solid #ffffff;
-        left: 50px;
-        padding: 20px;
-        border-radius: 10%;
-        transition-duration: 1s;
-        filter: drop-shadow(0 0 10px rgb(27, 234, 226));
-    }
-    #pro3>h1{
-        color: #ffffff;
-        font-size: 30px;
-    }
-    #pro3>p{
-        color: white;
-        text-align: center;
-        font-size: 16px;
-    }
-    #pro3>img{
-        position: absolute;
-        top: 300px;
-        left: 140px;
-        width: 50px;
-        height: 50px;
-        background: white;
-        border-radius: 100%;
-        visibility: hidden;
-    }
-    #pro3>.btn1{
-        background: black;
-        border: 2px solid green;
-        color: green;
-        border-radius: 5px;
-        cursor: pointer;
-        font-size: 16px;
-        font-weight: bold;
-        transition: background-color 0.3s ease;
-        position: absolute;
-        top: 230px;
-        left: 100px;
     }
 }
 @media all and (max-width: 320px ){
