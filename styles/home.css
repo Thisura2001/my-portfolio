@@ -1142,5 +1142,125 @@ body{
 
 }
 @media all and (max-width: 320px ){
+    .hamburger{
+        position: absolute;
+        display: block;
+        font-size: 50px;
+        color: white;
+        left: 250px;
+        top: 30px;
+    }
 
+    .header>div:nth-child(1){
+        display: none;
+
+    }
+
+    .hamburger > i {
+        transition: transform 0.3s ease;
+    }
+
+    .hamburger > i:hover {
+        transform: rotate(90deg);
+    }
+
+
+    .navbar {
+        display: none;
+        position: absolute;
+        top: 65px;
+        right: 0;
+        align-self: baseline;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: end;
+        height: 301px;
+        width: 150px;
+        padding: 20px;
+    }
+
+    .view{
+        display: flex;
+    }
+
+    .show{
+        display: block !important;
+    }
+    .section1>div:nth-child(1)>h1 {
+        margin-left: 50px;
+        font-size: 30px;
+        animation: fadeIn 1s ease-in-out;
+        position: absolute;
+        top: 200px;
+    }
+
+    .section1>div:nth-child(1)>h1:nth-child(2) {
+        margin-left: 60px;
+        font-size: 30px;
+        animation: fadeIn 1s ease-in-out;
+        position: absolute;
+        top: 250px;
+    }
+
+    .section1>div:nth-child(1)>h2 {
+        margin-left: 50px;
+        font-size: 40px;
+        animation: fadeIn 1s ease-in-out;
+        position: absolute;
+        top: 300px;
+    }
+
+    .section1>div:nth-child(1)>h4 {
+        margin-left: 20px;
+        font-size: 20px;
+        animation: fadeIn 1s ease-in-out;
+        position: absolute;
+        top: 420px;
+    }
+
+    .section1>div:nth-child(1)>button {
+        font-size: 16px;
+        padding: 8px;
+        width: 120px;
+        margin-left: 200px;
+    }
+
+    #homeSocial {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+        top: 500px;
+        margin-left: 70px;
+    }
+
+    #myPic {
+        left: -50px;
+        top: -200px;
+        opacity: 40% !important;
+        animation: fadeIn 1s ease forwards;
+    }
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 0.7; }
+}
+
+
+.content .btn:active {
+    box-shadow: none;
+}
+@keyframes slideInFromLeft {
+    0% { opacity: 0; transform: translateX(-100px); }
+    100% { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes slideInFromRight {
+    0% { opacity: 0; transform: translateX(100px); }
+    100% { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
 }

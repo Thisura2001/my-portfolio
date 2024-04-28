@@ -968,4 +968,158 @@
         background-position: 100% 0;
     }
 }
+@media all and (max-width: 320px ){
+    .section2 {
+        width: 100vw;
+        height: 100vh;
+        position: relative;
+        overflow: hidden;
+        margin: auto;
+    }
 
+    #aboutLabel {
+        position: absolute;
+        top: 0;
+        left: 60px;
+        color: #d0e015;
+        font-size: 30px;
+    }
+
+    .aboutPic {
+        position: absolute;
+        top: 70px;
+        left: 50px;
+        width: 250px;
+        height: 250px;
+        border-radius: 100%;
+        overflow: hidden;
+        opacity: 70%;
+        filter: drop-shadow(0 0 10px rgb(16, 219, 225));
+        animation: scaleUp 1s ease forwards;
+    }
+    @keyframes scaleUp {
+        from {
+            transform: scale(0);
+        }
+        to {
+            transform: scale(1);
+        }
+    }
+    #aboutText {
+        position:absolute;
+        top: 350px;
+        left:520px;
+        font-size: 12px;
+        color: #ffffff;
+        margin: 20px;
+    }
+
+    #aboutText > h2 {
+        color: #61cc37;
+        font-size: 16px;
+        right: 300px;
+        position: absolute;
+        visibility: hidden;
+    }
+
+    #aboutText > h3 {
+        position: absolute;
+        top: 50px;
+        right: 350px;
+        visibility: hidden;
+    }
+
+    #aboutText > p {
+        font-size: 8px;
+        right: 800px;
+        position: absolute;
+        width: 300px;
+        margin: auto;
+    }
+    #aboutText>#p1{
+        font-size: 12px;
+        position: relative;
+        left: -490px;
+        margin: auto;
+    }
+    #aboutText>#p2{
+        font-size: 12px;
+        position: relative;
+        left: -490px;
+        margin: auto;
+    }
+    #aboutText>#p3{
+        font-size: 12px;
+        position: relative;
+        left: -490px;
+        margin: auto;
+    }
+
+    #btnDownload {
+        position: relative;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 100px;
+        height: 40px;
+        border-radius: 40px;
+        font-size: 10px;
+        color: white;
+        text-decoration: none;
+        font-weight: 600;
+        letter-spacing: 1px;
+        z-index: 1;
+        left: -380px;
+        top: 7px;
+        animation: pulse 1s infinite;
+    }
+    @keyframes pulse {
+        0% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(1.1);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+
+    #btnDownload::before {
+        content: ' ';
+        position: absolute;
+        top: 0;
+        left: 0;
+        inset: 0;
+        background: linear-gradient(45deg, #0033ff, #ff3399, #13e767);
+        background-position: 0 0;
+        background-size: 200%;
+        z-index: -1;
+        border-radius: 40px;
+        filter: blur(10px);
+        transition: .5s ease;
+    }
+
+    #btnDownload::after {
+        content: ' ';
+        position: absolute;
+        top: 0;
+        left: 0;
+        inset: 0;
+        background: linear-gradient(45deg, #0033ff, #ff3399, #13e767);
+        background-position: 0 0;
+        background-size: 200%;
+        z-index: -1;
+        border-radius: 40px;
+        transition: .5s ease;
+
+    }
+
+    #btnDownload:hover::after {
+        background-position: 100% 0;
+    }
+
+    #btnDownload:hover::before {
+        background-position: 100% 0;
+    }
+}

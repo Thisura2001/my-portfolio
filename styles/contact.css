@@ -884,5 +884,151 @@ button:hover {
         display: flex;
     }
 }
-@media all and (max-width: 320px ){}
+@media all and (max-width: 320px ){
+    #contactLabel{
+        position: absolute;
+        top: 50px;
+        left: 40px;
+        color: #d0e015;
+    }
+    .contact-container {
+        width: 300px;
+        display: flex;
+        left: 40px;
+        top: 550px;
+        position: absolute;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .contact-form {
+        width: 400px;
+        background-color: #000000;
+        padding: 40px;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+        border: 10px solid white;
+        border-radius: 20%;
+        position: relative;
+        right: 30px;
+    }
+
+    .contact-form h2 {
+        text-align: center;
+        margin-bottom: 40px;
+        color: #ae89e8;
+        font-size: 24px;
+        font-style: italic;
+    }
+
+    .input-group {
+        position: relative;
+        margin-bottom: 30px;
+    }
+
+    .input-group input,
+    .input-group textarea {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        border-bottom: 2px solid #6cb2eb;
+        background-color: transparent;
+        transition: border-color 0.3s;
+        font-size: 16px;
+        color: #333;
+    }
+
+    .input-group input:focus,
+    .input-group textarea:focus {
+        border-color: #4a90e2;
+    }
+
+    .input-group label {
+        position: absolute;
+        top: 10px;
+        left: 0;
+        color: #999;
+        transition: top 0.3s, left 0.3s, font-size 0.3s, color 0.3s;
+        pointer-events: none;
+    }
+
+    .input-group input:focus + label,
+    .input-group textarea:focus + label,
+    .input-group input:not(:placeholder-shown) + label,
+    .input-group textarea:not(:placeholder-shown) + label {
+        top: -15px;
+        left: 0;
+        font-size: 12px;
+        color: #4a90e2;
+    }
+
+    .button-group {
+        text-align: center;
+    }
+
+    button {
+        padding: 12px 24px;
+        background-color: #4a90e2;
+        color: #fff;
+        border: none;
+        border-radius: 20%;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        font-size: 16px;
+    }
+
+    button:hover {
+        background-color: #6cb2eb;
+    }
+    #left{
+        position: absolute;
+        top: 100px;
+    }
+    #left>h1{
+        font-size: 70px;
+        position: absolute;
+        left: 50px!important;
+        top: 50px;
+    }
+    #left>h4{
+        position: absolute;
+        left: 130px;
+        top: 300px;
+        width: 150px;
+        font-size: 20px;
+        color: white;
+    }
+    #left>h5{
+        position: absolute;
+        left: 170px;
+        top: 350px;
+        width: 100px;
+        color: white;
+    }
+    #call>img:first-child{
+        position: absolute;
+        left: 130px;
+        top: 370px;
+        width: 20px;
+        height: 20px;
+        border-radius: 100%;
+        background: white;
+    }
+    #call>img:nth-child(2){
+        position: absolute;
+        left: 130px;
+        top: 400px;
+        width: 20px;
+        height: 20px;
+        border-radius: 100%;
+        background: white;
+    }
+    #social{
+        position: absolute;
+        justify-content: space-around;
+        left: 100px;
+        word-spacing: 100px;
+        top: 460px;
+        display: flex;
+    }
+}
 

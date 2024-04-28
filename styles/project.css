@@ -117,7 +117,7 @@
         background: white;
         border-radius: 100%;
         position: absolute;
-        top: 320px;
+        top: 340px;
         bottom: 20px;
         left: 50%;
         transform: translateX(-50%);
@@ -807,7 +807,6 @@
     }
     #projectLabel {
         color: #daf519;
-        margin-top: 100px;
     }
 
     .project-container1{
@@ -885,5 +884,89 @@
     }
 }
 @media all and (max-width: 320px ){
+    .section3 {
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+    #projectLabel {
+        color: #daf519;
+        margin-top: 200px;
+    }
 
+    .project-container1{
+        width: 70%;
+        min-height: 300px;
+        margin: 20px;
+        padding: 20px;
+        border: 10px solid white;
+        border-radius: 10%;
+        box-shadow: 0 0 10px rgb(27, 234, 226);
+        color: white;
+        position: relative;
+        top: 130px;
+        filter: drop-shadow(0 0 10px rgb(27, 234, 226));
+    }
+    .project-container2{
+        width: 70%;
+        min-height: 300px;
+        margin: 20px;
+        padding: 20px;
+        border: 10px solid white;
+        border-radius: 10%;
+        box-shadow: 0 0 10px rgb(27, 234, 226);
+        color: white;
+        position: relative;
+        top: 130px;
+        filter: drop-shadow(0 0 10px rgb(27, 234, 226));
+    }
+    .project-container3 {
+        width: 70%;
+        min-height: 300px;
+        margin: 20px;
+        padding: 20px;
+        border: 10px solid white;
+        border-radius: 10%;
+        box-shadow: 0 0 10px rgb(27, 234, 226);
+        color: white;
+        position: relative;
+        top: 130px;
+        filter: drop-shadow(0 0 10px rgb(27, 234, 226));
+    }
+
+    .project-container1 > img,
+    .project-container2 > img,
+    .project-container3 > img {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        visibility: hidden;
+    }
+
+    .project-container1 > .btn1,
+    .project-container2 > .btn1,
+    .project-container3 > .btn1 {
+        background: black;
+        border: 2px solid green;
+        color: green;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+        text-align: center;
+        align-self: center;
+        position: relative;
+        left: 50px;
+    }
+
+    .project-container1 > .btn1:hover,
+    .project-container2 > .btn1:hover,
+    .project-container3 > .btn1:hover {
+        background-color: #05832b;
+        color: white;
+    }
 }
