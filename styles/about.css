@@ -3,29 +3,21 @@
         max-width: 1300px;
         padding: 0 80px;
         margin: auto;
-    }
-{
+    } {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 }
     .section2 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         width: 100vw;
         height: 100vh;
-        position: relative;
+        position: absolute;
         padding: 100px 0;
     }
-    #bg-video {
-        position: fixed;
-        top: 0;
-        left: 0;
-        min-width: 100%;
-        min-height: 100%;
-        z-index: -1;
-        opacity: 30%;
-    }
-
 
     #aboutLabel {
         position: absolute;
@@ -41,11 +33,12 @@
         border-radius: 100%;
         filter: drop-shadow(0 0 10px rgb(16, 219, 225));
         overflow: hidden;
-        top: 270px;
-        margin-left: 30px;
+        top: 250px;
+        margin-left: 50px;
         opacity: 70%!important;
         animation: scaleUp 1s ease forwards
     }
+
     @keyframes scaleUp {
         from {
             transform: scale(0);
@@ -54,46 +47,30 @@
             transform: scale(1);
         }
     }
+
+    #aboutText {
+        width: 45%;
+        color: white;
+        padding: 0 20px;
+    }
+
     #aboutText > h2 {
         color: #61cc37;
-        top: 200px;
         font-size: 40px;
-        position: absolute;
-        margin-left: 700px;
+        position: relative;
+        left: 300px;
+        top: 50px;
     }
 
-    #aboutText > h3 {
-        position: absolute;
-        top: 320px;
-        margin-left: 700px;
-        font-size: 35px;
-        color: white;
-    }
-
-    #aboutText >#p1 {
+    #aboutText > h3,
+    #aboutText > p {
+        margin-top: 20px;
+        position: relative;
+        left: 300px;
         font-size: 20px;
-        top: 400px;
-        position: absolute;
-        margin-left: 700px;
-        color: white;
-    }
-    #aboutText >#p2 {
-        font-size: 20px;
-        top: 550px;
-        position: absolute;
-        margin-left: 700px;
-        color: white;
-    }
-    #aboutText >#p3 {
-        font-size: 20px;
-        top: 700px;
-        position: absolute;
-        margin-left: 700px;
-        color: white;
     }
 
     #btnDownload {
-        position: absolute;
         display: inline-flex;
         justify-content: center;
         align-items: center;
@@ -105,11 +82,14 @@
         text-decoration: none;
         font-weight: 600;
         letter-spacing: 1px;
+        position: relative;
+        overflow: hidden; /* Added to contain pseudo-elements */
         z-index: 1;
         animation: pulse 1s infinite;
-        margin-left: 950px;
-        margin-top: 700px;
+        margin-top: 20px;
+        left: 500px;
     }
+
     @keyframes pulse {
         0% {
             transform: scale(1);
@@ -122,75 +102,60 @@
         }
     }
 
-
-    #btnDownload::before {
-        content: ' ';
-        position: absolute;
-        top: 0;
-        left: 0;
-        inset: 0;
-        background: linear-gradient(45deg, #0033ff, #ff3399, #13e767);
-        background-position: 0 0;
-        background-size: 200%;
-        z-index: -1;
-        border-radius: 40px;
-        filter: blur(10px);
-        transition: .5s ease;
-    }
-
+    #btnDownload::before,
     #btnDownload::after {
         content: ' ';
         position: absolute;
         top: 0;
         left: 0;
-        inset: 0;
+        right: 0;
+        bottom: 0;
         background: linear-gradient(45deg, #0033ff, #ff3399, #13e767);
         background-position: 0 0;
         background-size: 200%;
-        z-index: -1;
         border-radius: 40px;
-        transition: .5s ease;
-
+        transition: background-position 0.5s ease;
+        z-index: -1; /* Ensure pseudo-elements are behind the text */
     }
 
+    #btnDownload:hover::before,
     #btnDownload:hover::after {
-        background-position: 100% 0;
-    }
-
-    #btnDownload:hover::before {
         background-position: 100% 0;
     }
 }
 
 
-
 @media all and (min-width: 1025px ) and (max-width: 1440px){
     .section2 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         width: 100vw;
         height: 100vh;
-        position: relative;
-
+        position: absolute;
+        padding: 100px 0;
     }
 
     #aboutLabel {
         position: absolute;
-        top: 50px;
-        margin-left: 30px;
+        top: 150px;
+        left: 60px;
         color: #d0e015;
     }
 
     .aboutPic {
         position: absolute;
         width: 400px;
-        height: 400px;
+        height: 420px;
         border-radius: 100%;
         filter: drop-shadow(0 0 10px rgb(16, 219, 225));
         overflow: hidden;
-        top: 170px;
-        margin-left: 30px;
+        top: 250px;
+        margin-left: 50px;
         opacity: 70%!important;
         animation: scaleUp 1s ease forwards
     }
+
     @keyframes scaleUp {
         from {
             transform: scale(0);
@@ -200,45 +165,155 @@
         }
     }
 
-    #aboutText > h2 {
-        color: #61cc37;
-        margin-top: 130px;
-        font-size: 25px;
-        position: absolute;
-        margin-left: 500px;
-    }
-    #aboutText > h3 {
-        position: absolute;
-        top: 170px;
-        margin-left: 500px;
-        font-size: 30px;
+    #aboutText {
+        width: 45%;
         color: white;
     }
 
-    #aboutText >#p1 {
-        font-size: 16px;
-        top: 250px;
-        position: absolute;
-        margin-left: 500px;
-        color: white;
+    #aboutText > h2 {
+        color: #61cc37;
+        font-size: 40px;
+        position: relative;
+        left: 300px;
+        top: 50px;
     }
-    #aboutText >#p2 {
-        font-size: 16px;
-        top: 350px;
-        position: absolute;
-        margin-left: 500px;
-        color: white;
-    }
-    #aboutText >#p3 {
-        font-size: 16px;
-        top: 470px;
-        position: absolute;
-        margin-left: 500px;
-        color: white;
+
+    #aboutText > h3,
+    #aboutText > p {
+        margin-top: 20px;
+        position: relative;
+        left: 300px;
+        font-size: 20px;
     }
 
     #btnDownload {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 180px;
+        height: 48px;
+        border-radius: 40px;
+        font-size: 16px;
+        color: white;
+        text-decoration: none;
+        font-weight: 600;
+        letter-spacing: 1px;
+        position: relative;
+        overflow: hidden; /* Added to contain pseudo-elements */
+        z-index: 1;
+        animation: pulse 1s infinite;
+        margin-top: 20px;
+        left: 500px;
+    }
+
+    @keyframes pulse {
+        0% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(1.1);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+
+    #btnDownload::before,
+    #btnDownload::after {
+        content: ' ';
         position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(45deg, #0033ff, #ff3399, #13e767);
+        background-position: 0 0;
+        background-size: 200%;
+        border-radius: 40px;
+        transition: background-position 0.5s ease;
+        z-index: -1; /* Ensure pseudo-elements are behind the text */
+    }
+
+    #btnDownload:hover::before,
+    #btnDownload:hover::after {
+        background-position: 100% 0;
+    }
+}
+@media all and (min-width: 835px ) and (max-width: 1024px){
+
+    .section2 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        padding: 100px 0;
+    }
+
+    #aboutLabel {
+        position: absolute;
+        top: 150px;
+        left: 60px;
+        color: #d0e015;
+    }
+
+    .aboutPic {
+        position: absolute;
+        width: 350px;
+        height: 350px;
+        border-radius: 100%;
+        filter: drop-shadow(0 0 10px rgb(16, 219, 225));
+        overflow: hidden;
+        top: 350px;
+        margin-left: 50px;
+        opacity: 70%!important;
+        animation: scaleUp 1s ease forwards
+    }
+
+    @keyframes scaleUp {
+        from {
+            transform: scale(0);
+        }
+        to {
+            transform: scale(1);
+        }
+    }
+
+    #aboutText {
+        width: 45%;
+        color: white;
+    }
+
+    #aboutText > h2 {
+        color: #61cc37;
+        font-size: 40px;
+        position: relative;
+        left: 300px;
+        top: 50px;
+        visibility: hidden;
+    }
+
+    #aboutText > h3,
+    #aboutText > #p1 {
+        margin-top: 20px;
+        position: relative;
+        left: 100px;
+        font-size: 16px;
+    }
+    #aboutText > #p2 {
+        margin-top: 20px;
+        position: relative;
+        left: 100px;
+        font-size: 16px;
+    }
+    #aboutText > #p3 {
+        margin-top: 20px;
+        position: relative;
+        left: 100px;
+        font-size: 16px;
+    }
+    #btnDownload {
         display: inline-flex;
         justify-content: center;
         align-items: center;
@@ -250,153 +325,53 @@
         text-decoration: none;
         font-weight: 600;
         letter-spacing: 1px;
+        position: relative;
+        overflow: hidden; /* Added to contain pseudo-elements */
         z-index: 1;
         animation: pulse 1s infinite;
-        margin-left: 650px;
-        margin-top: 550px;
+        margin-top: 20px;
+        left: 200px;
     }
 
-    #btnDownload::after {
-        content: ' ';
-        position: absolute;
-        top: 0;
-        left: 0;
-        inset: 0;
-        background: linear-gradient(45deg, #0033ff, #ff3399, #13e767);
-        background-position: 0 0;
-        background-size: 200%;
-        z-index: -1;
-        border-radius: 40px;
-        transition: .5s ease;
-
-    }
-
-    #btnDownload:hover::after {
-        background-position: 100% 0;
-    }
-
-    #btnDownload:hover::before {
-        background-position: 100% 0;
-    }
-}
-@media all and (min-width: 835px ) and (max-width: 1024px){
-
-    .section2 {
-        width: 100vw;
-        height: 100vh;
-        position: relative;
-    }
-
-    #aboutLabel {
-        position: absolute;
-        top: 50px;
-        margin-left: 30px;
-        color: #d0e015;
-    }
-
-    .aboutPic {
-        position: absolute;
-        width: 350px;
-        height: 350px;
-        border-radius: 100%;
-        filter: drop-shadow(0 0 10px rgb(16, 219, 225));
-        overflow: hidden;
-        top: 250px;
-        margin-left: 50px;
-        opacity: 70%!important;
-        animation: scaleUp 1s ease forwards
-    }
-    @keyframes scaleUp {
-        from {
-            transform: scale(0);
+    @keyframes pulse {
+        0% {
+            transform: scale(1);
         }
-        to {
+        50% {
+            transform: scale(1.1);
+        }
+        100% {
             transform: scale(1);
         }
     }
 
-    #aboutText > h2 {
-        color: #61cc37;
-        margin-top: 230px;
-        font-size: 25px;
-        position: absolute;
-        margin-left: 400px;
-    }
-    #aboutText > h3 {
-        position: absolute;
-        top: 270px;
-        margin-left: 400px;
-        font-size: 20px;
-        color: white;
-    }
-
-    #aboutText >#p1 {
-        font-size: 14px;
-        top: 350px;
-        position: absolute;
-        margin-left: 400px;
-        color: white;
-
-    }
-    #aboutText >#p2 {
-        font-size: 14px;
-        top: 450px;
-        position: absolute;
-        margin-left: 400px;
-        color: white;
-    }
-    #aboutText >#p3 {
-        font-size: 14px;
-        top: 570px;
-        position: absolute;
-        margin-left: 400px;
-        color: white;
-    }
-
-    #btnDownload {
-        position: absolute;
-        display: inline-flex;
-        justify-content: center;
-        align-items: center;
-        width: 130px;
-        height: 40px;
-        border-radius: 40px;
-        font-size: 12px;
-        color: white;
-        text-decoration: none;
-        font-weight: 600;
-        letter-spacing: 1px;
-        z-index: 1;
-        animation: pulse 1s infinite;
-        margin-left: 530px;
-        margin-top: 650px;
-    }
-
+    #btnDownload::before,
     #btnDownload::after {
         content: ' ';
         position: absolute;
         top: 0;
         left: 0;
-        inset: 0;
+        right: 0;
+        bottom: 0;
         background: linear-gradient(45deg, #0033ff, #ff3399, #13e767);
         background-position: 0 0;
         background-size: 200%;
-        z-index: -1;
         border-radius: 40px;
-        transition: .5s ease;
-
+        transition: background-position 0.5s ease;
+        z-index: -1; /* Ensure pseudo-elements are behind the text */
     }
 
+    #btnDownload:hover::before,
     #btnDownload:hover::after {
-        background-position: 100% 0;
-    }
-
-    #btnDownload:hover::before {
         background-position: 100% 0;
     }
 }
 @media all and (min-width: 769px ) and (max-width: 834px){
     .section2 {
+        display: flex;
+        flex-direction: column; /* Change to column direction */
+        align-items: center;
+        justify-content: center; /* Center vertically */
         width: 100vw;
         height: 100vh;
         position: relative;
@@ -404,8 +379,8 @@
 
     #aboutLabel {
         position: absolute;
-        top: 50px;
-        margin-left: 30px;
+        top: -500px;
+        right: 600px;
         color: #d0e015;
     }
 
@@ -416,11 +391,12 @@
         border-radius: 100%;
         filter: drop-shadow(0 0 10px rgb(16, 219, 225));
         overflow: hidden;
-        top: 130px;
-        margin-left: 230px;
+        top: -350px;
+        margin-left: -150px;
         opacity: 70%!important;
         animation: scaleUp 1s ease forwards
     }
+
     @keyframes scaleUp {
         from {
             transform: scale(0);
@@ -430,86 +406,84 @@
         }
     }
 
+    #aboutText {
+        width: 45%;
+        color: white;
+        text-align: center;
+        position: relative;
+        font-size: 20px;
+    }
+
     #aboutText > h2 {
         color: #61cc37;
-        margin-top: 350px;
+        margin-top: 20px; /* Adjust as needed */
         font-size: 20px;
-        position: absolute;
-        margin-left: 200px;
-        visibility: hidden;
     }
+
     #aboutText > h3 {
-        position: absolute;
-        top: 360px;
-        margin-left: 200px;
+        margin-top: 20px; /* Adjust as needed */
         font-size: 20px;
         color: white;
-        visibility: hidden;
     }
 
-    #aboutText >#p1 {
+    .about-text-item {
+        margin-top: 20px; /* Adjust as needed */
         font-size: 16px;
-        top: 450px;
-        position: absolute;
-        margin-left: 150px;
         color: white;
     }
-    #aboutText >#p2 {
-        font-size: 16px;
-        top: 540px;
-        position: absolute;
-        margin-left: 150px;
-        color: white;
-    }
-    #aboutText >#p3 {
-        font-size: 16px;
-        top: 650px;
-        position: absolute;
-        margin-left: 150px;
-        color: white;
-    }
-
     #btnDownload {
-        position: absolute;
         display: inline-flex;
         justify-content: center;
         align-items: center;
-        width: 130px;
+        width: 150px;
         height: 40px;
         border-radius: 40px;
-        font-size: 12px;
+        font-size: 14px;
         color: white;
         text-decoration: none;
         font-weight: 600;
         letter-spacing: 1px;
+        position: relative;
+        overflow: hidden; /* Added to contain pseudo-elements */
         z-index: 1;
         animation: pulse 1s infinite;
-        margin-left: 300px;
-        margin-top: 700px;
+        margin-top: 20px;
+        left: 0;
     }
 
+    @keyframes pulse {
+        0% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(1.1);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+
+    #btnDownload::before,
     #btnDownload::after {
         content: ' ';
         position: absolute;
         top: 0;
         left: 0;
-        inset: 0;
+        right: 0;
+        bottom: 0;
         background: linear-gradient(45deg, #0033ff, #ff3399, #13e767);
         background-position: 0 0;
         background-size: 200%;
-        z-index: -1;
         border-radius: 40px;
-        transition: .5s ease;
-
+        transition: background-position 0.5s ease;
+        z-index: -1; /* Ensure pseudo-elements are behind the text */
     }
 
+    #btnDownload:hover::before,
     #btnDownload:hover::after {
         background-position: 100% 0;
     }
 
-    #btnDownload:hover::before {
-        background-position: 100% 0;
-    }
 }
 /*@media all and (max-width: 320px ){}*/
 
