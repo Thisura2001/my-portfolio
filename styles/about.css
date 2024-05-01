@@ -283,6 +283,8 @@
     #aboutText {
         width: 45%;
         color: white;
+        position: relative;
+        top: -200px;
     }
 
     #aboutText > h2 {
@@ -296,21 +298,21 @@
 
     #aboutText > h3,
     #aboutText > #p1 {
-        margin-top: 20px;
+        margin-top: 10px;
         position: relative;
-        left: 100px;
+        left: 200px;
         font-size: 16px;
     }
     #aboutText > #p2 {
         margin-top: 20px;
         position: relative;
-        left: 100px;
+        left: 200px;
         font-size: 16px;
     }
     #aboutText > #p3 {
         margin-top: 20px;
         position: relative;
-        left: 100px;
+        left: 200px;
         font-size: 16px;
     }
     #btnDownload {

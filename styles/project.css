@@ -23,6 +23,15 @@
     min-height: 100vh;
     font-family: 'Open Sans';
 }
+.heading-top {
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    color: yellow;
+    position: relative;
+    top: 850px;
+    right: 150px;
+}
 #Project a {
     color: inherit;
 }
@@ -59,6 +68,7 @@
     overflow: hidden;
     border: 10px solid #ccc;
     text-decoration: none;
+    top: 100px;
 }
 
 #Project .project_card:hover {
@@ -166,12 +176,50 @@
 
 /* MEDIA QUERIES */
 @media screen and (max-width: 1285px) {
+    .heading-top {
+        font-size: 35px;
+        font-weight: bold;
+        text-align: center;
+        color: yellow;
+        position: relative;
+        top: 850px;
+        right: 10px;
+    }
     #Project .project-cards-wrapper {
         grid-template-columns: 1fr 1fr;
     }
 }
-
+/*@media all and (min-width: 1024px){*/
+/*    .heading-top {*/
+/*        font-size: 35px;*/
+/*        font-weight: bold;*/
+/*        text-align: center;*/
+/*        color: #ffffff;*/
+/*        position: relative;*/
+/*        top: 150px;*/
+/*        right: 100px;*/
+/*    }*/
+/*    #Project .project-cards-wrapper {*/
+/*        grid-template-columns: 1fr;*/
+/*    }*/
+/*    #Project .info {*/
+/*        justify-content: center;*/
+/*    }*/
+/*    #Project .project-card-grid-space .num {*/
+/*    /margin-left: 0;*/
+/*    /text-align: center;*/
+/*    }*/
+/*}*/
 @media screen and (max-width: 900px) {
+    .heading-top {
+        font-size: 35px;
+        font-weight: bold;
+        text-align: center;
+        color: #d0e015;
+        position: relative;
+        top: 150px;
+        right: 100px;
+    }
     #Project .project-cards-wrapper {
         grid-template-columns: 1fr;
     }
@@ -183,8 +231,37 @@
     /text-align: center;
     }
 }
-
+@media all and (min-width: 768px) and (max-width: 834px){
+    .heading-top {
+        font-size: 35px;
+        font-weight: bold;
+        text-align: center;
+        color: #d0e015;
+        position: relative;
+        top: 150px;
+        right: 100px;
+    }
+    #Project .project-cards-wrapper {
+        grid-template-columns: 1fr;
+    }
+    #Project .info {
+        justify-content: center;
+    }
+    #Project .project-card-grid-space .num {
+    /margin-left: 0;
+    /text-align: center;
+    }
+}
 @media screen and (max-width: 500px) {
+    .heading-top {
+        font-size: 35px;
+        font-weight: bold;
+        text-align: center;
+        color: #d0e015;
+        position: relative;
+        top: 150px;
+        right: 100px;
+    }
     #Project .project-cards-wrapper {
         padding: 4rem 2rem;
     }
@@ -194,6 +271,15 @@
 }
 
 @media screen and (max-width: 450px) {
+    .heading-top {
+        font-size: 35px;
+        font-weight: bold;
+        text-align: center;
+        color: #d0e015;
+        position: relative;
+        top: 150px;
+        right: 100px;
+    }
     #Project .info {
         display: block;
         text-align: center;
@@ -204,18 +290,45 @@
 }
 
 @media screen and (max-width: 425px) {
+        .heading-top {
+        font-size: 35px;
+        font-weight: bold;
+        text-align: center;
+        color: #d0e015;
+        position: relative;
+        top: 150px;
+        right: 100px;
+    }
     #Project .project-card-grid-space{
         margin-left: 0.5rem;
     }
 }
 
 @media screen and (max-width: 425px) {
+    .heading-top {
+        font-size: 35px;
+        font-weight: bold;
+        text-align: center;
+        color: #d0e015;
+        position: relative;
+        top: 150px;
+        right: 80px;
+    }
     #Project .project-card-grid-space{
         margin-left: 0.5rem;
     }
 }
 
 @media screen and (max-width: 325px) {
+    .heading-top {
+        font-size: 35px;
+        font-weight: bold;
+        text-align: center;
+        color: #d0e015;
+        position: relative;
+        top: 150px;
+        right: 100px;
+    }
     #Project .project-cards-wrapper {
         padding: 4rem 2rem;
     }
