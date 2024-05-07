@@ -1,20 +1,16 @@
-const menuBtn = document.querySelector('.menu-btn');
-const navToggle = document.querySelector('.navbar');
-const navContainer = document.querySelector('header');
 
-menuBtn.addEventListener('click', () => {
-    menuBtn.classList.toggle('active');
-    navToggle.classList.toggle('active');
-    navContainer.classList.toggle('active');
-});
-window.addEventListener('scroll', function() {
-    var scrollingPage = document.querySelector('.scrolling-page');
-    var scrollPosition = window.scrollY;
+document.addEventListener('DOMContentLoaded', function () {
+    const menuBtn = document.getElementById('menuBtn');
+    const navbar = document.getElementById('navbar');
 
-    // Add 'open' class when the user scrolls to reveal the scrolling page
-    if (scrollPosition > 100) { // Adjust this value based on your needs
-        scrollingPage.classList.add('open');
-    } else {
-        scrollingPage.classList.remove('open');
-    }
+    menuBtn.addEventListener('click', function () {
+        // Toggle the visibility of the navbar
+        navbar.style.display = navbar.style.display === 'block' ? 'none' : 'block';
+    });
+    // Optional: close the navbar when clicking outside of it
+    document.addEventListener('click', function (event) {
+        if (!navbar.contains(event.target) && event.target !== menuBtn) {
+            navbar.style.display = 'none';
+        }
+    });
 });
