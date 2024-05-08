@@ -1,3 +1,4 @@
+
 body{
     background: #111515;
     overflow-x:hidden ;
@@ -121,6 +122,34 @@ body{
     color: #34ACE0;
     animation: slideInFromLeft 1s ease-in-out;
 }
+/*.typing {*/
+/*    color: white;*/
+/*    position: absolute;*/
+/*    margin-left: 20px;*/
+/*    font-size: 20px;*/
+/*    top: 420px;*/
+/*}*/
+
+/*.typing::after {*/
+/*    content: '|';*/
+/*    position: absolute;*/
+/*    top: 0;*/
+/*    right: 0;*/
+/*    animation: typing 1.2s steps(1) infinite;*/
+/*}*/
+
+/*@keyframes typing {*/
+/*    0% {*/
+/*        opacity: 1;*/
+/*    }*/
+/*    50% {*/
+/*        opacity: 0;*/
+/*    }*/
+/*    100% {*/
+/*        opacity: 1;*/
+/*    }*/
+/*}*/
+
 @keyframes slideInFromLeft {
     0% { opacity: 0; transform: translateX(-100px); }
     100% { opacity: 1; transform: translateX(0); }
@@ -914,7 +943,7 @@ body{
 }
 @media all and (max-width: 768px) and (min-width: 425px){
     .hamburger{
-     display: none;
+        display: none;
     }
 
     .header>div:nth-child(1){
@@ -1043,19 +1072,28 @@ body{
 
     #navbar {
         display: none;
-        position: absolute;
+        position: fixed;
         top: 65px;
         align-self: baseline;
         flex-direction: column;
         justify-content: space-around;
         align-items: end;
-        height: 301px;
-        width: 150px;
+        height: 50vh;
+        width: 100%;
+        max-width: 150px;
         padding: 20px;
         right: 50px;
-
+        background: #84aaf5;
+        text-align: left;
+        border-radius: 5%;
+        opacity: 80%;
     }
-
+#navbar>a{
+    color: black;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
 
     .view{
         display: flex;
@@ -1222,6 +1260,33 @@ body{
         position: absolute;
         top: 420px;
     }
+    /*.typing {*/
+    /*    color: white;*/
+    /*    position: absolute;*/
+    /*    margin-left: 20px;*/
+    /*    font-size: 20px;*/
+    /*    top: 420px;*/
+    /*}*/
+
+    /*.typing::after {*/
+    /*    content: '|';*/
+    /*    position: absolute;*/
+    /*    top: 0;*/
+    /*    right: 0;*/
+    /*    animation: typing 1.2s steps(1) infinite;*/
+    /*}*/
+
+    /*@keyframes typing {*/
+    /*    0% {*/
+    /*        opacity: 1;*/
+    /*    }*/
+    /*    50% {*/
+    /*        opacity: 0;*/
+    /*    }*/
+    /*    100% {*/
+    /*        opacity: 1;*/
+    /*    }*/
+    /*}*/
 
     .section1>div:nth-child(1)>button {
         font-size: 16px;
