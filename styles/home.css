@@ -1103,7 +1103,7 @@ body{
         display: block !important;
     }
     .section1>div:nth-child(1)>h1 {
-        margin-left: 50px;
+        margin-left: 100px;
         font-size: 30px;
         animation: fadeIn 1s ease-in-out;
         position: absolute;
@@ -1111,7 +1111,7 @@ body{
     }
 
     .section1>div:nth-child(1)>h1:nth-child(2) {
-        margin-left: 60px;
+        margin-left: 130px;
         font-size: 30px;
         animation: fadeIn 1s ease-in-out;
         position: absolute;
@@ -1119,7 +1119,7 @@ body{
     }
 
     .section1>div:nth-child(1)>h2 {
-        margin-left: 30px;
+        margin-left: 80px;
         font-size: 40px;
         animation: fadeIn 1s ease-in-out;
         position: absolute;
@@ -1230,7 +1230,7 @@ body{
         display: block !important;
     }
     .section1>div:nth-child(1)>h1 {
-        margin-left: 50px;
+        margin-left: 100px;
         font-size: 30px;
         animation: fadeIn 1s ease-in-out;
         position: absolute;
@@ -1238,7 +1238,7 @@ body{
     }
 
     .section1>div:nth-child(1)>h1:nth-child(2) {
-        margin-left: 60px;
+        margin-left: 130px;
         font-size: 30px;
         animation: fadeIn 1s ease-in-out;
         position: absolute;
@@ -1246,7 +1246,7 @@ body{
     }
 
     .section1>div:nth-child(1)>h2 {
-        margin-left: 50px;
+        margin-left: 80px;
         font-size: 40px;
         animation: fadeIn 1s ease-in-out;
         position: absolute;
@@ -1254,8 +1254,8 @@ body{
     }
 
     .section1>div:nth-child(1)>h4 {
-        margin-left: 20px;
-        font-size: 20px;
+        margin-left: 40px;
+        font-size: 18px;
         animation: fadeIn 1s ease-in-out;
         position: absolute;
         top: 420px;
