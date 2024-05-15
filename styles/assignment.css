@@ -65,15 +65,16 @@
 .content .heading {
     font-weight: 700;
     font-size: 16px;
+    margin-top: 80px;
 }
 
 .content .para {
     line-height: 1.5;
 }
 
-.content .btn {
+.btnView{
     position: relative;
-    left: 25px;
+    left: 0;
     right: 0;
     margin: auto;
     color: #000000;
@@ -86,7 +87,23 @@
     border-radius: 5px;
     box-shadow: 0 5px 10px rgb(208, 224, 21);
     animation: pulse 1s infinite;
-
+}
+.btnPreview{
+    position: relative;
+    top: -57px;
+    left: 70px;
+    right: 20px;
+    margin: auto;
+    color: #000000;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(-45deg, white 0%, #e9faff 100%);
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgb(208, 224, 21);
+    animation: pulse 1s infinite;
 }
 @keyframes pulse {
     0% {

@@ -1,0 +1,115 @@
+body {
+
+}
+header {
+    position: relative;
+    width: 100vw;
+    height: 60px;
+    /*padding: 10px;*/
+    /*box-sizing: border-box;*/
+}
+
+header>img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+
+    left: 10px;
+
+    margin: auto;
+}
+
+header>nav {
+    height: fit-content;
+    position: absolute;
+    right: 10px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+header>nav>ul {
+    padding: 0;
+    margin: 0;
+}
+
+header>nav>ul>li {
+    display: inline-block;
+}
+
+footer {
+    background-color: darkgray;
+    text-align: center;
+    color: white;
+    /*padding-top: 20px;*/
+    /*padding-bottom: 20px;*/
+    padding: 20px 0px;
+}
+
+
+main {
+    position: relative;
+}
+
+main>aside {
+    background-color: purple;
+    color: white;
+    padding: 10px;
+    width: 150px;
+
+    box-sizing: border-box;
+
+    position: absolute;
+
+    top: 0;
+    bottom: 0;
+    margin: auto;
+
+}
+
+main>aside>ul {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+}
+
+main>section {
+    background-color: lightyellow;
+    width: calc(100vw - 150px);
+    margin-left: 150px;
+}
+
+main>section>p {
+    margin: 0;
+
+    font-family: "Micro 5", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+section>div {
+    position: relative;
+    height: 250px;
+}
+
+section>div>div {
+    width: calc(100%/3);
+    height: 250px;
+    position: absolute;
+
+    background: url("assest/nb14th-18-3840-2400.jpg");
+    background-position: center;
+
+    border: 1px solid brown;
+    box-sizing: border-box;
+}
+
+section>div>div:first-child {}
+section>div>div:nth-child(2) {
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+section>div>div:nth-child(3) {
+    right: 0;
+}

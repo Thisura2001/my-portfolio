@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>case 03</title>
+    <link rel="stylesheet" href="assests/normalize.css">
+    <style>
+        section>div{
+            width: 200px;
+            height: 100px;
+            border-radius: 20%;
+            background-color: blueviolet;
+            animation-name:  anime;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+            animation-direction: alternate;
+            animation-duration: 9s;
+        }
+        @keyframes anime {
+            0%{
+                margin-left: 0;
+            }
+            25%{
+                margin-left:calc(100vw - 200px);
+                margin-top: 0px;
+                background-color: #ff253a;
+                transform: rotate(180deg);
+            }
+            50%{
+                margin-left:calc(100vw - 200px);
+                margin-top: calc(100vh - 100px);
+                margin-bottom: 0;
+                background-color: #0384fc;
+                transform: rotate(0deg);
+            }
+            75%{
+                margin-top: calc(100vh - 100px);
+                margin-left: 0px;
+                background-color: greenyellow;
+                transform: rotate(180deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div></div>
+    </section>
+</body>
+</html>

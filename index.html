@@ -10,17 +10,21 @@
     <title>Home Page</title>
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/fontawesome-free-6.5.1-web/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="styles/home.css">
     <link rel="stylesheet" href="styles/about.css">
     <link rel="stylesheet" href="styles/project.css">
     <link rel="stylesheet" href="styles/assignment.css">
     <link rel="stylesheet" href="styles/contact.css">
-    <link rel="stylesheet" href="styles/scroll.css">
     <link rel="stylesheet" href="styles/skills.css">
     <link rel="stylesheet" href="styles/footer.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+    />
 </head>
 <body>
 <header class="header">
@@ -41,10 +45,10 @@
 <video autoplay muted loop id="bg-video">
     <source src="assets/images/background.mp4" type="video/mp4">
 </video>
-<section id="home" class="section1 hidden">
+<section id="home" class="section1 hidden" data-aos="fade-up" data-aos-anchor-placement="center-bottom" >
 <!--    left side-->
     <div>
-        <h1>HELLO ! ! !</h1>
+        <h1 class="animate__animated animate__bounce">HELLO ! ! !</h1>
         <h1>I' AM</h1>
         <h2>THISURA LIYANAGE</h2>
         <h4>Software Engineer Student..👨‍💻</h4>
@@ -70,7 +74,7 @@
     <br><br>
 </section>
 <!--    About section-->
-<section id="about" class="section2 hidden">
+<section id="about" class="section2 hidden" data-aos="fade-up" data-aos-delay="150">
 <!--    right side of about section-->
     <div>
         <h1 id="aboutLabel"> ABOUT</h1>
@@ -82,7 +86,7 @@
     </div>
 <!--    left side of about section-->
     <div id="aboutText">
-        <h2>I’M  Passionate Software Engineer !!<br><br></h2>
+        <h2 class="animate__hinge">I’M  Passionate Software Engineer !!<br><br></h2>
         <h3>Hello !!!</h3>
         <p id="p1">
             👨‍💻 I'm Thisura Liyanage a passionate software engineering student at <br>the Institute of Java Software Engineering. I am deeply enthusiastic
@@ -149,7 +153,7 @@
 
 <br><br>
 <!--Assignment Section-->
-    <section class="assigment hidden" id="assignments">
+    <section class="assigment hidden" id="assignments"  data-aos="zoom-in-down" data-aos-delay="150" data-aos-duration="2000">
         <section>
             <div>
                 <h2 id="assigmentLabel">ASSIGNMENTS</h2>
@@ -164,7 +168,8 @@
                     <p class="heading">Assignment 01
                     </p>
 
-                    <a href="https://github.com/Thisura2001/css-assignment-1.git"> <button class="btn">View</button></a>
+                    <a href="https://github.com/Thisura2001/css-assignment-1.git"> <button class="btn btnView"><i class="fa-brands fa-github"></i></button></a>
+                    <a href="https://www.figma.com/design/ahPfsku5dODuGpgNJQlWqZ/my-portfolio?node-id=0-1"> <button class="btn btnPreview"><i class="fa-brands fa-searchengin"></i></button></a>
                 </div>
             </div>
 
@@ -174,7 +179,8 @@
                     <p class="heading">Assignment 02
                     </p>
 
-                    <a href="https://github.com/Thisura2001/my-portfolio.git"><button class="btn">View</button></a>
+                    <a href="https://github.com/Thisura2001/my-portfolio.git"><button class="btn btnView"><i class="fa-brands fa-github"></i></button></a>
+                    <a href="#"> <button class="btn btnPreview"><i class="fa-brands fa-searchengin"></i></button></a>
                 </div>
             </div>
 
@@ -184,7 +190,8 @@
                     <p class="heading">Assignment 03
                     </p>
 
-                    <a href="https://github.com/Thisura2001/css-assignment-1.git"><button class="btn">View</button></a>
+                    <a href="https://github.com/Thisura2001/css-assignment-1.git"><button class="btn btnView"><i class="fa-brands fa-github"></i></button></a>
+                    <a href="assets/projects/assignment-01/Index.html"> <button class="btn btnPreview"><i class="fa-brands fa-searchengin"></i></button></a>
                 </div>
             </div>
 
@@ -194,7 +201,8 @@
                     <p class="heading">Assignment 04
                     </p>
 
-                    <a href="https://github.com/Thisura2001/css-assignment-04.git"><button class="btn">View</button></a>
+                    <a href="https://github.com/Thisura2001/css-assignment-04.git"><button class="btn btnView"><i class="fa-brands fa-github"></i></button></a>
+                    <a href="assets/projects/assigment-04/index.html"> <button class="btn btnPreview"><i class="fa-brands fa-searchengin"></i></button></a>
                 </div>
             </div>
 
@@ -204,7 +212,8 @@
                     <p class="heading">Assignment 05
                     </p>
 
-                    <a href="https://github.com/Thisura2001/my-portfolio.git"><button class="btn">View</button></a>
+                    <a href="https://github.com/Thisura2001/my-portfolio.git"><button class="btn btnView"><i class="fa-brands fa-github"></i></button></a>
+                    <a href="#"> <button class="btn btnPreview"><i class="fa-brands fa-searchengin"></i></button></a>
                 </div>
             </div>
 
@@ -214,7 +223,8 @@
                     <p class="heading">Assignment 06
                     </p>
 
-                    <a href="https://github.com/Thisura2001/Assignment-06.git"><button class="btn">View</button></a>
+                    <a href="https://github.com/Thisura2001/Assignment-06.git"><button class="btn btnView"><i class="fa-brands fa-github"></i></button></a>
+                    <a href="assets/projects/Assignment-6/index.html"> <button class="btn btnPreview"><i class="fa-brands fa-searchengin"></i></button></a>
                 </div>
             </div>
 
@@ -224,7 +234,8 @@
                     <p class="heading">Assignment 07
                     </p>
 
-                    <a href="https://github.com/Thisura2001/Assignment-06.git"><button class="btn">View</button></a>
+                    <a href="https://github.com/Thisura2001/Assignment-06.git"><button class="btn btnView"><i class="fa-brands fa-github"></i></button></a>
+                    <a href="assets/projects/Assignment-6/index.html"> <button class="btn btnPreview"><i class="fa-brands fa-searchengin"></i></button></a>
                 </div>
             </div>
 
@@ -234,7 +245,8 @@
                     <p class="heading">Assignment 08
                     </p>
 
-                    <a href="https://github.com/Thisura2001/Assignment-08.git"><button class="btn">View</button></a>
+                    <a href="https://github.com/Thisura2001/Assignment-08.git"><button class="btn btnView"><i class="fa-brands fa-github"></i></button></a>
+                    <a href="#"> <button class="btn btnPreview"><i class="fa-brands fa-searchengin"></i></button></a>
                 </div>
             </div>
 
@@ -243,9 +255,8 @@
                 <div class="content">
                     <p class="heading">Assignment 09
                     </p>
-
-
-                    <a href="https://github.com/Thisura2001/css-assignment-04.git"><button class="btn">View</button></a>
+                    <a href="https://github.com/Thisura2001/Assignment-09.git"><button class="btn btnView"><i class="fa-brands fa-github"></i></button></a>
+                    <a href="assets/projects/Assignment-09/index.html"> <button class="btn btnPreview"><i class="fa-brands fa-searchengin"></i></button></a>
                 </div>
             </div>
 
@@ -254,7 +265,8 @@
                     <p class="heading">Assignment 10
                     </p>
 
-                    <a href="https://github.com/Thisura2001/css-assignment-04.git"><button class="btn">View</button></a>
+                    <a href="https://github.com/Thisura2001/Assignment-10.git"><button class="btn btnView"><i class="fa-brands fa-github"></i></button></a>
+                    <a href="assets/projects/Assignment-10"> <button class="btn btnPreview"><i class="fa-brands fa-searchengin"></i></button></a>
                 </div>
             </div>
 
@@ -262,7 +274,8 @@
                 <div class="content">
                     <p class="heading">Assignment 11
                     </p>
-                    <a href="https://github.com/Thisura2001/css-assignment-04.git"><button class="btn">View</button></a>
+                    <a href="https://github.com/Thisura2001/Assignment-06.git"><button class="btn btnView"><i class="fa-brands fa-github"></i></button></a>
+                    <a href="assets/projects/Assignment-6/index.html"> <button class="btn btnPreview"><i class="fa-brands fa-searchengin"></i></button></a>
                 </div>
             </div>
 
@@ -270,14 +283,15 @@
                 <div class="content">
                     <p class="heading">Assignment 12
                     </p>
-                    <a href="https://github.com/Thisura2001/css-assignment-04.git"><button class="btn">View</button></a>
+                    <a href="https://github.com/Thisura2001/Assignment-06.git"><button class="btn btnView"><i class="fa-brands fa-github"></i></button></a>
+                    <a href="assets/projects/Assignment-6/index.html"> <button class="btn btnPreview"><i class="fa-brands fa-searchengin"></i></button></a>
                 </div>
             </div>
 
 
         </section>
     </section>
-    <section id="skills" class="hidden">
+    <section id="skills" class="hidden"  data-aos="fade-up-right" data-aos-delay="400">
         <br><br>
         <div>
             <h1 id="skillsLabel"> SKILLS</h1><br><br>
@@ -298,7 +312,7 @@
         </div>
     </section>
         <!--contact section-->
-        <section id="contact" class="section4 hidden">
+        <section id="contact" class="section4 hidden" data-aos="fade-left" data-aos-delay="300">
             <br><br>
             <!--left side-->
             <div>
@@ -354,6 +368,10 @@
     <P class="end">CopyWrite ©️ By Thisura Liyanage (2024)</P>
 </footer>
 <script src="assets/lib/jquery-3.7.1.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 <script src="js/script.js">
 
 </script>

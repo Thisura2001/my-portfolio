@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DashBoard</title>
+    <meta name="description" content="Hi! I'm Thisura Liyanage">
+    <meta name="keywords" content="Thisura Liayanage software engineer fullstack developer programming">
+    <meta name="author" content="Thisura Liyanage">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/fontawesome-free-6.5.1-web/css/all.min.css">
+    <link rel="stylesheet" href="styles/fontawesome-free-6.5.1-web/css/fontawesome.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <style>
+
+
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg bg-body-tertiary shadow mb-5 bg-white fixed-top" >
+    <div class="container-fluid" >
+        <a class="navbar-brand" href="index.html">POS System</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars fa-lg"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <span class="nav-link" id="nav-home">Home</span>
+                </li>
+                <li class="nav-item">
+                    <span  class="nav-link" id="nav-customer" style="color: mediumpurple">Customer</span>
+                </li>
+                <li class="nav-item">
+                    <span class="nav-link" id="nav-item" style="color:mediumpurple">Item</span>
+                </li>
+                <li class="nav-item">
+                    <span class="nav-link" id="nav-orders" style="color:mediumpurple">Place-Order</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<section class="sec1" id="home">
+    <div class="welcome">
+        <h1 style="font-size: 100px; text-align: center; padding-top: 170px">Welcome to POS System</h1>
+        <h3 style="font-size: 50px; text-align: center; padding-top: 20px">We are glad to have you here ....</h3>
+        <h3 style="font-size: 50px; text-align: center; padding-top: 20px">Happy Shopping !!</h3>
+    </div>
+</section>
+<!--Customer section-->
+    <section class="sec2" id="customer">
+        <div class="customerLabel">
+            <img src="assests/icons8-customer-64.png" style="width: 100px; height: 100px;" alt="Customer">
+            <p style="display: inline-block">Customer</p>
+        </div>
+        <!--form-->
+        <div class="container">
+            <div class="col col-xl-6 col-lg-6 col-md-12 col-sm-12 col12">
+                <form class="from">
+                    <div class="mb-3">
+                        <label for="cus_id" class="form-label" style="color:white;">Customer_Id</label>
+                        <input type="number" class="form-control" id="cus_id">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="name" class="form-label" style="color:white;" >Customer_Name</label>
+                        <input type="text" class="form-control" id="name">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="salary" class="form-label" style="color:white;">Salary</label>
+                        <input type="text" class="form-control" id="salary">
+                    </div>
+
+                    <div class="mb-3">
+                        <label  for="address" class="form-label" style="color:white;">Address</label>
+                        <textarea class="form-control" id="address" style="height: 120px"></textarea>
+                    </div>
+
+                    <div class="mt-4" >
+                        <button type="button" class="btn btn-warning">Save</button>
+                        <button type="button" class="btn btn-primary">Update</button>
+                        <button type="button" class="btn btn-danger">Delete</button>
+                    </div>
+                </form>
+            </div>
+            <form class="d-flex searchBar" role="search" style="width: 300px; height: 40px">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-success" type="submit" style="color:white;">Search</button>
+            </form>
+            <!--Table-->
+            <div class="col col-xl-6 col-lg-6 col-md-12 col-sm-12 col12">
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th scope="col">Customer_Id</th>
+                        <th scope="col">Customer_Name</th>
+                        <th scope="col">Salary</th>
+                        <th scope="col">Address</th>
+                    </tr>
+                    </thead>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Thisura</td>
+                        <td>150 000</td>
+                        <td>matugama</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+    <!--Item section-->
+    <section class="sec3" id="items">
+        <div class="ItemLabel">
+            <img src="assests/icons8-item-48.png" style="width: 100px; height: 100px;" alt="item">
+            <p style="display: inline-block">Items</p>
+        </div>
+        <!--form-->
+        <div class="container">
+            <div class="col col-xl-6 col-lg-6 col-md-12 col-sm-12 col12">
+                <form class="from">
+                    <div class="mb-3">
+                        <label for="Item_id" class="form-label" style="color:white;">Item_code</label>
+                        <input type="number" class="form-control" id="Item_id">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="item" class="form-label" style="color:white;" >Item_name</label>
+                        <input type="text" class="form-control" id="item">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="Price" class="form-label" style="color:white;">Price</label>
+                        <input type="text" class="form-control" id="Price">
+                    </div>
+
+                    <div class="mb-3">
+                        <label  for="qty" class="form-label" style="color:white;">Quantity</label>
+                        <textarea class="form-control" id="qty" style="height: 100px; width: 150px; "></textarea>
+                    </div>
+
+                    <div class="mt-4" >
+                        <button type="button" class="btn btn-warning">Save</button>
+                        <button type="button" class="btn btn-primary">Update</button>
+                        <button type="button" class="btn btn-danger">Delete</button>
+                    </div>
+                </form>
+            </div>
+            <form class="d-flex searchBar" role="search" style="width: 300px; height: 40px">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-success" type="submit" style="color:white;">Search</button>
+            </form>
+            <!--Table-->
+            <div class="col col-xl-6 col-lg-6 col-md-12 col-sm-12 col12">
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th scope="col">Item_code</th>
+                        <th scope="col">Item_name</th>
+                        <th scope="col">Price</th>
+                        <th scope="col">Quantity</th>
+                    </tr>
+                    </thead>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Book</td>
+                        <td>150.00</td>
+                        <td>300</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+<!--Place order section-->
+    <section class="sec4" id="orders">
+    <!--invoice form-->
+    <div class="invoice">
+        <form>
+            <h4 class="invoiceLabel">invoice Details</h4>
+            <div class="mb-3">
+                <label for="Invoice_id" class="form-label orderIdLabel">Order_id</label>
+                <input type="number" class="form-control orderId" id="Invoice_id">
+            </div>
+            <div class="mb-3">
+                <label for="date" class="form-label dateLabel">Date</label>
+                <input type="date" class="form-control date" id="date">
+            </div>
+            <div class="mb-3">
+                <label for="customerId" class="form-label customerIdLabel">Customer_id</label>
+                <input type="number" class="form-control customerId" id="customerId">
+            </div>
+            <div class="mb-3 input-group-sm col-12">
+                <select class="form-select customerName" aria-label="Default select example" id="cmbItemIDs"></select>
+            </div>
+            <div class="mb-3">
+                <label for="customerName1" class="form-label customerNameLabel1">Customer_name</label>
+                <input type="text" class="form-control CustomerName1" id="customerName1">
+            </div>
+            <div class="mb-3">
+                <label for="customerSalary" class="form-label salaryLabel">salary</label>
+                <input type="text" class="form-control salary" id="customerSalary">
+            </div>
+            <div class="mb-3">
+                <label for="cusAddress" class="form-label addressLabel">Address</label>
+                <input type="text" class="form-control address" id="cusAddress">
+            </div>
+        </form>
+        <!--Item form-->
+        <div class="itemBox">
+            <form>
+                <h4 class="itemLabel">Item Details</h4>
+                <div class="mb-3 input-group-sm col-12">
+                    <select class="form-select code" aria-label="Default select example" id="cmbItemId"></select>
+                </div>
+                <div class="mb-3">
+                    <label for="itemName" class="form-label itemNameLabel">Item_name</label>
+                    <input type="number" class="form-control itemName" id="itemName">
+                </div>
+                <div class="mb-3">
+                    <label for="itemPrice" class="form-label priceLabel">Price</label>
+                    <input type="number" class="form-control price" id="itemPrice">
+                </div>
+                <div class="mb-3">
+                    <label for="qtyOnHand" class="form-label qtyOnHandLabel">Qty_On_Hand</label>
+                    <input type="number" class="form-control qtyOnHand" id="qtyOnHand">
+                </div>
+                <div class="mb-3">
+                    <label for="Itemqty" class="form-label qtyLabel">Order_QTY</label>
+                    <input type="text" class="form-control qty" id="Itemqty">
+                </div>
+                <button type="button" class="btn btn-danger btnAdd">Add_Item</button>
+            </form>
+        </div>
+        <div class="total">
+            <form>
+                <br>
+                <h3 id="total">&nbsp;&nbsp;Total : <span>0</span> </h3>
+                <br>
+                <h3 id="subtotal">&nbsp;&nbsp;SubTotal : <span>0</span> </h3>
+                <br>
+                <input type="text" class="form-control" id="cash" placeholder="cash...">
+
+                <input type="text" class="form-control" id="discount" placeholder="discount(%)">
+                <br>
+                <br>
+                <input type="text" class="form-control" id="balance" placeholder="balance...">
+                <br><br>
+                <button type="submit" class=" btn btn-success" id="btn-purchase-order">Purchase</button>
+            </form>
+
+        </div>
+    </div>
+
+    <div class="col col-xl-6 col-lg-6 col-md-12 col-sm-12 col12">
+        <table class="table table-bordered border-primary tblOrder">
+            <thead>
+            <tr>
+                <th scope="col">Order_id</th>
+                <th scope="col">Item_code</th>
+                <th scope="col">Order_date</th>
+                <th scope="col">Item_name</th>
+                <th scope="col">Quantity</th>
+                <th scope="col">Total</th>
+            </tr>
+            </thead>
+            <tr>
+
+
+            </tr>
+        </table>
+        <button type="button" class="btn btn-warning btnPlaceOrder">Place_Order</button>
+    </div>
+</section>
+
+<script src="assests/lib/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"></script>
+<script src="js/single-page.js"></script>
+</body>
+</html>

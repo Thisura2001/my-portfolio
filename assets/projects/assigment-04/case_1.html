@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>case 01</title>
+    <link rel="stylesheet" href="assests/normalize.css">
+
+    <style>
+
+        section>div{
+            width: 300px;
+            height: 100px;
+            background-color: purple;
+            border-radius: 15px;
+            margin-top: 10px;
+            text-align: center;
+            color: white;
+
+            position: relative;
+            left: -250px;
+
+            transition-duration: 1s;
+        }
+
+        section>div>h3 {
+            height: fit-content;
+
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 20px;
+            margin: auto;
+
+        }
+
+        section>div>div {
+            height: fit-content;
+
+            position: absolute;
+            right: 20px;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        section>div:hover{
+            left: 0;
+        }
+    </style>
+
+</head>
+<body>
+<section>
+    <div>
+        <h3>Menu 01</h3>
+        <div><i class="fa-solid fa-rocket"></i></div>
+    </div>
+    <div>
+        <h3>Menu 02</h3>
+        <div><i class="fa-solid fa-rocket"></i></div>
+    </div>
+    <div>
+        <h3>Menu 03</h3>
+        <div><i class="fa-solid fa-rocket"></i></div>
+    </div>
+    <div>
+        <h3>Menu 04</h3>
+        <div><i class="fa-solid fa-rocket"></i></div>
+    </div>
+    <div>
+        <h3>Menu 05</h3>
+        <div><i class="fa-solid fa-rocket"></i></div>
+    </div>
+</section>
+</body>
+</html>

@@ -1,0 +1,158 @@
+
+section{
+    width: 100vw;
+    height: 100vh;
+
+    border: black 2px solid;
+
+    position: relative;
+}
+body{
+    overflow: hidden;
+}
+#div1{
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    background-color: red;
+}#div2{
+    width: 50%;
+     height: 50%;
+    right: 0px;
+    bottom:0px;
+    background-color: deeppink;
+    position: absolute;
+}#div3{
+    width: 50%;
+    bottom: 0px;
+      height: 50%;
+    background-color: orange;
+    position: absolute;
+}#div4{
+    width: 50%;
+    right: 0px;
+    top: 0px;
+       height: 50%;
+    background-color: green;
+    position: absolute;
+}
+ #div5{
+     width: 200px;
+     aspect-ratio: 1/1;
+     top: 0px;
+     bottom: 0px;
+     right: 0px;
+     left: 0px;
+     margin: auto;
+     background:white ;
+
+     position: absolute;
+ }
+ #div6{
+     width: 100px;
+     aspect-ratio: 1/1;
+     border-radius: 100%;
+     top: 0px;
+     bottom: 0px;
+     right: 0px;
+     left: 0px;
+     margin: auto;
+     background:red ;
+
+     position: absolute;
+ }
+.div7{
+    width: 200px;
+    aspect-ratio: 1/1;
+    border-radius: 100%;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    margin: auto;
+    background:white ;
+
+    position: absolute;
+}
+.div8{
+    width: 100px;
+    aspect-ratio: 1/1;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    margin: auto;
+    background:red ;
+
+    position: absolute;
+}
+#div9{
+    width: 200px;
+    aspect-ratio: 1/1;
+    border-radius: 100%;
+    top: -100px;
+    left: -100px;
+    margin: auto;
+    background:white ;
+
+    position: absolute;
+}
+#div10{
+    width: 200px;
+    aspect-ratio: 1/1;
+    border-radius: 100%;
+    top: -100px;
+    right: -100px;
+    margin: auto;
+    background:white ;
+
+    position: absolute;
+}
+#div11{
+    width: 200px;
+    aspect-ratio: 1/1;
+    border-radius: 100%;
+    bottom: -100px;
+    right: -100px;
+    margin: auto;
+    background:white ;
+
+    position: absolute;
+}
+#div12{
+    width: 200px;
+    aspect-ratio: 1/1;
+    border-radius: 100%;
+    bottom: -100px;
+    left: -100px;
+    margin: auto;
+    background:white ;
+
+    position: absolute;
+}
+#div13{
+    width:14vw;
+    aspect-ratio: 1/1;
+    background-color: white;
+    border-radius: 100%;
+    top: 0;
+    /* bottom: 0;*/
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+    transform: translate(0%,-50%);
+}
+#div14{
+    width:14vw;
+    aspect-ratio: 1/1;
+    background-color: white;
+    border-radius: 100%;
+    /*top: 0;*/
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+    transform: translate(0%,50%);
+}

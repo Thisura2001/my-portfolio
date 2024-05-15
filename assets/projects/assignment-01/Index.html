@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Center Main Element</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center; /* Center horizontally */
+      align-items: center; /* Center vertically */
+      height: 100vh; /* Ensure full viewport height */
+      margin: 0; /* Remove default margin */
+      background-color: #000000;
+    }
+
+    /* Box Style */
+    main {
+      display: flex;
+      flex-direction: column; /* Stack children vertically */
+      gap: 20px; /* Add spacing between children */
+    }
+
+    a {
+      display: inline-flex; /* Use flexbox */
+      align-items: center; /* Center vertically */
+      justify-content: center; /* Center horizontally */
+      text-decoration: none; /* Remove default underline */
+      padding: 20px 40px; /* Add padding */
+      border: 2px solid #04dcd5; /* Add border */
+      border-radius: 10px; /* Add border radius */
+      color: white;
+      font-size: 20px; /* Increase font size */
+      font-weight: bold; /* Add bold font weight */
+      text-transform: uppercase; /* Convert text to uppercase */
+      position: relative;
+      overflow: hidden;
+      animation: scaleIn 0.3s forwards; /* Apply animation */
+    }
+    a:hover {
+      background-color: #3bd5c3;
+      border-color: #999;
+    }
+  </style>
+</head>
+<body>
+<!-- Main element -->
+<main>
+  <a href="Q1.html"><div>Case-01</div></a>
+  <a href="Q2.html"><div>Case-02</div></a>
+  <a href="Q3.html"><div>Case-03</div></a>
+  <a href="Q4.html"><div>Case-04</div></a>
+  <a href="Q5.html"><div>Case-05</div></a>
+  <a href="Q6.html"><div>Case-06</div></a>
+</main>
+</body>
+</html>

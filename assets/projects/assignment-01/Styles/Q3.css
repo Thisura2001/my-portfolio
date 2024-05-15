@@ -1,0 +1,69 @@
+#div1{
+    width: 300px;
+    aspect-ratio: 1/1;
+    border: 50px solid gray;
+    border-radius: 100%;
+    top:0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    position: fixed;
+}
+#div1>div{
+    width: 200px;
+    aspect-ratio: 1/1;
+    border: 50px solid orangered;
+    border-radius: 100%;
+}
+#div2{
+    width: 200px;
+    aspect-ratio: 1/1;
+    background-color: purple;
+    text-align: center;
+    border-radius: 100%;
+    position: relative;
+    top:0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 800px auto;
+}
+#div3{
+    width: 200px;
+    aspect-ratio: 1/1;
+    background-color: deepskyblue;
+    text-align: center;
+    border-radius: 100%;
+    position: relative;
+    top:0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 800px auto;
+}
+#div4{
+    width: 200px;
+    aspect-ratio: 1/1;
+    background-color: deeppink;
+    text-align: center;
+    border-radius: 100%;
+    position: relative;
+    top:0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 800px auto;
+
+}
+h1{
+    text-align: center;
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+    top:0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+}

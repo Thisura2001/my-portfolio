@@ -1047,6 +1047,11 @@ body{
     100% { opacity: 1; }
 }
 @media all and (min-width: 321px ) and (max-width: 460px){
+    [data-aos] {
+        opacity: 1 !important;
+        visibility: visible !important;
+        transform: none !important;
+    }
     .hamburger{
         position: absolute;
         display: block;
@@ -1182,6 +1187,11 @@ body{
 
 }
 @media all and (max-width: 320px ){
+    [data-aos] {
+        opacity: 1 !important;
+        visibility: visible !important;
+        transform: none !important;
+    }
     .hamburger{
         position: absolute;
         display: block;
