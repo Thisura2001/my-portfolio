@@ -1074,31 +1074,41 @@ body{
         transform: rotate(90deg);
     }
 
-
     #navbar {
         display: none;
         position: fixed;
-        top: 65px;
-        align-self: baseline;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: end;
-        height: 50vh;
-        width: 100%;
-        max-width: 150px;
-        padding: 20px;
-        right: 50px;
-        background: #84aaf5;
+        top: 100px;
+        right: 0;
+        width: 600px;
+        max-width: 80%;
+        height: 80vh;
+        background: linear-gradient(45deg, #84aaf5, #41ead1, #4c5ec5);
+        border-radius: 10px;
+        padding: 50px;
+        box-sizing: border-box;
+        opacity: 0.9;
+        z-index: 999;
         text-align: left;
-        border-radius: 5%;
-        opacity: 80%;
     }
-#navbar>a{
-    color: black;
-    font-size: 20px;
-    margin-top: 20px;
-    margin-bottom: 10px;
-}
+
+    #navbar a {
+        display: block;
+        color: white;
+        text-decoration: none;
+        margin-bottom: 10px;
+        padding: 10px;
+        border-radius: 5px;
+        font-size: 40px;
+    }
+
+    #navbar a:hover {
+        background-color: #3b7cd1;
+    }
+
+    #navbar a:last-child {
+        margin-bottom: 0;
+    }
+
 
     .view{
         display: flex;
