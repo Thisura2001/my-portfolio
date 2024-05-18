@@ -1,0 +1,478 @@
+body{
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    overflow-x: hidden;
+}
+.navbar-brand{
+    font-weight: bolder;
+    color: blue;
+}
+#currentDateTime {
+    position: absolute;
+    right: 30px;
+    top: 10px;
+    font-size: 20px;
+    color: #0e5ce8;
+}
+.sec1{
+    background-color: black;
+    width: 100vw;
+    height : 100vh;
+    position: relative;
+    overflow-y: hidden;
+}
+.sec2{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background: linear-gradient(to right top, #000000, #1b2557);
+    overflow-y: hidden;
+}
+.customerLabel{
+    font-size: 100px;
+    font-weight: bolder;
+    color: #ffffff;
+    margin-left: 30vw;
+    top: 30px;
+    position: relative;
+}
+.searchBar{
+    position: relative;
+    left: 1050px;
+    top: -550px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+.table{
+    position: relative;
+    left: 700px;
+    top: -500px;
+    border: 2px solid black;
+}
+.from{
+    margin-top: 20px;
+    position: relative;
+}
+.ItemLabel{
+    font-size: 100px;
+    font-weight: bolder;
+    color: #ffffff;
+    margin-left: 38vw;
+    top: 30px;
+    position: relative;
+}
+.sec3{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background: linear-gradient(to right top, #000000, #1b2557);
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+.sec4{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background: linear-gradient(to right top, #000000, #1b2557);
+    overflow-y: hidden;
+}
+.invoice{
+    width: 500px;
+    height: 350px;
+    background: linear-gradient(to right top, #ae89e8, #ffffff);
+    position: relative;
+    left: 40px;
+    top: 70px;
+    border-radius: 20%;
+}
+.invoiceLabel{
+    text-align: center;
+    font-weight:bolder;
+    color: green;
+}
+.itemDetails{
+    width: 400px;
+    height: 250px;
+    background: linear-gradient(to right top, #ae89e8, #ffffff);
+    position: absolute;
+    left: 550px;
+    top: 200px;
+}
+.tblOrder{
+    position: absolute;
+    left: 180px;
+    top: 470px;
+    width: 1200px;
+}
+.btnPlaceOrder{
+    position: absolute;
+    left: 1300px;
+    top: 650px;
+}
+.orderId{
+    position: absolute;
+    width: 200px;
+    left: 20px;
+    top: 60px;
+}
+.orderIdLabel{
+    position: absolute;
+    width: 150px;
+    left: 25px;
+}
+.date{
+    position: absolute;
+    width: 200px;
+    left: 280px;
+    top: 60px;
+}
+.dateLabel{
+    position: absolute;
+    right: 170px;
+    top: 37px;
+}
+.customerIdLabel{
+    position: absolute;
+    width: 150px;
+    left: 25px;
+    top: 117px;
+}
+.customerId{
+    position: absolute;
+    width: 200px;
+    left: 20px;
+    top: 140px;
+}
+.customerName{
+    position: absolute;
+    width: 200px;
+    left: 280px;
+    top: 140px;
+}
+.CustomerNameLabel{
+    position: absolute;
+    right: 110px;
+    top: 120px;
+}
+.customerNameLabel1{
+    position: absolute;
+    width: 150px;
+    left: 25px;
+    top: 195px;
+}
+.CustomerName1{
+    position: absolute;
+    width: 200px;
+    left: 20px;
+    top: 220px;
+}
+.salaryLabel{
+    position: absolute;
+    width: 150px;
+    left: 280px;
+    top: 195px;
+}
+.salary{
+    position: absolute;
+    width: 200px;
+    left: 280px;
+    top: 220px;
+}
+.addressLabel{
+    position: absolute;
+    width: 150px;
+    left: 50px;
+    top: 260px;
+}
+.address{
+    position: absolute;
+    width: 400px;
+    left: 50px;
+    top: 290px;
+}
+.itemBox{
+    width: 500px;
+    height: 350px;
+    background: linear-gradient(to right top, #ae89e8, #ffffff);
+    position: relative;
+    left: 550px;
+    top: -40px;
+    border-radius: 20%;
+}
+.itemLabel{
+    text-align: center;
+    font-weight:bolder;
+    color: green;
+}
+.code{
+    position: absolute;
+    width: 200px;
+    left: 20px;
+    top: 60px;
+}
+.itemName{
+    position: absolute;
+    width: 200px;
+    left: 280px;
+    top: 60px;
+}
+.itemNameLabel{
+    position: absolute;
+    right: 140px;
+    top: 37px;
+}
+.priceLabel{
+    position: absolute;
+    width: 150px;
+    left: 25px;
+    top: 117px;
+}
+.price{
+    position: absolute;
+    width: 200px;
+    left: 20px;
+    top: 140px;
+}
+.qtyOnHandLabel{
+    position: absolute;
+    width: 150px;
+    left: 280px;
+    top: 117px;
+}
+.qtyOnHand{
+    position: absolute;
+    width: 200px;
+    left: 280px;
+    top: 140px;
+}
+.qtyLabel{
+    position: absolute;
+    width: 150px;
+    left: 50px;
+    top: 200px;
+}
+.qty{
+    position: absolute;
+    width: 400px;
+    left: 50px;
+    top: 230px;
+}
+.btnAdd{
+    position: absolute;
+    bottom: 20px;
+    right: 80px;
+}
+.total{
+    position: relative;
+    width: 350px;
+    height: 350px;
+    background: linear-gradient(to right top, #ae89e8, #ffffff);
+    left: 1100px;
+    top: -380px;
+    border-radius: 20%;
+}
+#cash{
+    width: 120px;
+    position: relative;
+    left: 10px;
+}
+
+#discount{
+    width: 120px;
+    height: 38px;
+    position: absolute;
+    left: 200px;
+    top: 155px;
+}
+#balance{
+    width: 280px;
+    position: relative;
+    left: 25px;
+}
+#btn-purchase-order{
+    position: absolute;
+    bottom: 20px;
+    right: 80px;
+}
+.custom-confirm {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.custom-confirm-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#confirmYesButton,
+#confirmNoButton {
+    margin-top: 10px;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+}
+
+#confirmYesButton {
+    background-color: #007bff;
+    color: white;
+}
+
+#confirmNoButton {
+    background-color: #dc3545;
+    color: white;
+    margin-left: 10px;
+}
+#placeOrderText1{
+    border: 2px solid grey;
+    border-radius: 10px;
+    background-color: grey;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+    margin-bottom: 10px;
+}
+
+#placeOrderText2{
+    border: 2px solid grey;
+    border-radius: 10px;
+    background-color: grey;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+}
+
+#placeOrderText3{
+    border: 2px solid grey;
+    border-radius: 10px;
+    background-color: grey;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+}
+
+
+#customerbtns{
+    margin-bottom: 30px;
+}
+
+#storebtns{
+    margin-bottom: 30px;
+}
+
+#placeOrderbtns{
+    margin-bottom: 30px;
+}
+
+#placeOrderbtns2>button:nth-child(1){
+    width: 140px;
+}
+
+#placeOrderbtns3>button:nth-child(1){
+    width: 100px;
+    background-color: #6c757d;
+    color: white;
+}
+
+#customerbtns>button:nth-child(1):hover,
+#customerbtns>button:nth-child(2):hover,
+#customerbtns>button:nth-child(3):hover,
+#customerbtns>button:nth-child(4):hover,
+#storebtns>button:nth-child(1):hover,
+#storebtns>button:nth-child(2):hover,
+#storebtns>button:nth-child(3):hover,
+#storebtns>button:nth-child(4):hover,
+#placeOrderbtns>button:nth-child(1):hover,
+#placeOrderbtns2>button:nth-child(1):hover,
+#placeOrderbtns3>button:nth-child(1):hover{
+    letter-spacing: 1px;
+    color: white;
+}
+
+#ItemNameDiv{
+    display: inline-block;
+    border: 1px solid grey;
+    width: 325px;
+    border-radius: 5px;
+}
+
+#ItemQutDiv{
+    display: inline-block;
+    border: 1px solid grey;
+    width: 145px;
+    border-radius: 5px;
+}
+
+#ItemPriceDiv{
+    display: inline-block;
+    border: 1px solid grey;
+    width: 120px;
+    border-radius: 5px;
+}
+
+.removeButton{
+    background-color: red;
+    border-radius: 10px;
+    color: white;
+    border: none;
+    width: 57px;
+    height: 29px;
+    padding: 0;
+}
+
+#currentDate{
+    font-size: 24px;
+    margin-right: 46px;
+    color: white;
+}
+#placeOrder{
+    font-size: 50px;
+    color: #ffffff;
+    font-weight: bolder;;
+    margin-top: 50px;
+    margin-left: 500px;
+}
+#tblPalceOrder {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+    overflow-x: auto; /* Add horizontal scroll if needed */
+}
+
+#tblPalceOrder th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    min-width: 120px; /* Set minimum width for cells */
+}
+#tblPalceOrder td{
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    min-width: 120px; /* Set minimum width for cells */
+    background-color: white;
+}
+#tblPalceOrder td:nth-child(4){
+    position: relative;
+    left: 0;
+    top: 0;
+}
+
+#tblPalceOrder th {
+    background-color: #f2f2f2;
+    color: black;
+}
+
+#tblPalceOrder tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+#total-container {
+    font-size: 2em;
+    color: #0caf3a;
+}
+#tot {
+    display: inline;
+    margin-left: 10px;
+}
