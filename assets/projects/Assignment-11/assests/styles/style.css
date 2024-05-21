@@ -7,6 +7,9 @@ body{
     font-weight: bolder;
     color: blue;
 }
+#navbarSupportedContent{
+    cursor: pointer;
+}
 #currentDateTime {
     position: absolute;
     right: 30px;
@@ -475,4 +478,51 @@ body{
 #tot {
     display: inline;
     margin-left: 10px;
+}
+#tblSearchOrder{
+    width: 50%;
+    border-collapse: collapse;
+    overflow-x: auto;
+    margin-left: 670px;
+    background: white;
+    top: -150px;
+    position: relative;
+}
+#tblSearchOrder th {
+    border: 1px solid #000000;
+    text-align: left;
+    padding: 8px;
+    min-width: 120px; /* Set minimum width for cells */
+}
+#tblSearchOrder td{
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    min-width: 120px; /* Set minimum width for cells */
+    background-color: white;
+}
+
+#tblSearchOrder th {
+    background-color: #f2f2f2;
+    color: black;
+}
+#tblSearchOrder td:nth-child(1){
+    position: relative;
+    left: 0;
+    top: 0;
+}
+#tblSearchOrder td:nth-child(2){
+    position: relative;
+    left: 0;
+    top: 0;
+}
+#tblSearchOrder td:nth-child(3){
+    position: relative;
+    left: 0;
+    top: 0;
+}
+#tblSearchOrder td:nth-child(4){
+    position: relative;
+    left: 0;
+    top: 0;
 }

@@ -1082,7 +1082,7 @@ body{
         width: 600px;
         max-width: 80%;
         height: 80vh;
-        background: linear-gradient(45deg, #84aaf5, #41ead1, #4c5ec5);
+        background: linear-gradient(45deg, #668ebe, #668ebe, #668ebe);
         border-radius: 10px;
         padding: 50px;
         box-sizing: border-box;
@@ -1093,12 +1093,13 @@ body{
 
     #navbar a {
         display: block;
-        color: white;
+        color: #ffffff;
+        font-weight: bolder;
         text-decoration: none;
         margin-bottom: 10px;
         padding: 10px;
         border-radius: 5px;
-        font-size: 40px;
+        font-size: 30px;
     }
 
     #navbar a:hover {

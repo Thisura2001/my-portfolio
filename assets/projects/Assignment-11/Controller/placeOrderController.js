@@ -17,7 +17,7 @@ function updateCustomerIDs() {
     $('#selectCus_ID').empty();
     const defaultOption = document.createElement("option");
 
-    defaultOption.text = "Select Customer Id";
+    defaultOption.text = "";
     $('#selectCus_ID').append(defaultOption);
 
     Customers.forEach(customer => {
@@ -68,7 +68,6 @@ $("#Order_id").on('click', function () {
     lastOrderId++;
     $("#Order_id").val(lastOrderId);
 });
-
 $("#placeOrderBtnReset").on('click',function (){
     $("#selectCus_ID").val("");
     $("#select").val("");
@@ -181,17 +180,19 @@ $("#place_Order").on('click',()=>{
             title: `Order Successful! \n Cash: ${cash.toFixed(2)}`,
             showConfirmButton: true
         });
-        $('#placeOrderBtnReset').click();
-        $('#amount').val("");
-        $('#tot').text(0);
+       clearPlaceOrderTable();
 
-        let date = $('#currentDate').text();
-        let orderID = $('#Order_id').val();
+        let date = $('#currentDateTime').text();
+        let orderID = $('#Order_id').text();
         let cusID = $('#selectCus_ID').val();
 
-        let recode = `<tr><td class='date'>${date}</td><td class='order_id'>${orderID}</td><td class='cus_id'>${cusID}</td><td class='net_total'>${netTotal}</td></tr>`
-        $("#OrderHistory-tbody").append(recode);
-
+        let recode = `<tr>
+            <td class='OrderId'>${orderID}</td>
+            <td class='customerId'>${cusID}</td>
+            <td class='date'>${date}</td>
+            <td class='net_total'>${netTotal}</td>
+</tr>`
+        $("#tblSearchOrder").append(recode);
     } else {
         Swal.fire({
             icon: 'error',
@@ -213,4 +214,9 @@ function ClearFields() {
 window.onload = () => {
     updateCustomerIDs();
     updateItemIDs();
+}
+function clearPlaceOrderTable() {
+    $('#placeOrder-tbody').empty();
+    $('#tot').text(0.0);
+    $('#amount').val("");
 }
