@@ -3,11 +3,13 @@ $("#home").css({display:'block'})
 $("#customer").css({display:'none'})
 $("#items").css({display:'none'})
 $("#orders").css({display:'none'})
+$("#searchOrder").css({display:'none'})
 $("#nav-home").on('click',function (){
     $("#home").css({display:'block'})
     $("#customer").css({display:'none'})
     $("#items").css({display:'none'})
     $("#orders").css({display:'none'})
+    $("#searchOrder").css({display:'none'})
 });
 
 $("#nav-customer").on('click',function (){
@@ -15,18 +17,28 @@ $("#nav-customer").on('click',function (){
     $("#customer").css({display:'block'})
     $("#items").css({display:'none'})
     $("#orders").css({display:'none'})
+    $("#searchOrder").css({display:'none'})
 });
 $("#nav-item").on('click',function (){
     $("#home").css({display:'none'})
     $("#customer").css({display:'none'})
     $("#items").css({display:'block'})
     $("#orders").css({display:'none'})
+    $("#searchOrder").css({display:'none'})
 });
 $("#nav-orders").on('click', ()=>{
     $("#home").css({display:'none'})
     $("#customer").css({display:'none'})
     $("#items").css({display:'none'})
     $("#orders").css({display:'block'})
+    $("#searchOrder").css({display:'none'})
+});
+$("#nav-search").on('click', ()=>{
+    $("#home").css({display:'none'})
+    $("#customer").css({display:'none'})
+    $("#items").css({display:'none'})
+    $("#orders").css({display:'none'})
+    $("#searchOrder").css({display:'block'})
 });
 function updateDate() {
     const now = new Date();

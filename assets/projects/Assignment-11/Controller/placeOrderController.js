@@ -1,4 +1,7 @@
-import { Customers, Items } from "../Db/Db.js";
+import { Customers, Items,Orders } from "../Db/Db.js";
+import PlaceOrderModel from "../Model/PlaceOrderModel.js";
+import ItemModel from "../Model/ItemModel.js";
+import CustomerModel from "../Model/ItemModel.js";
 
 
 const loadDataTable = () => {
@@ -17,7 +20,7 @@ function updateCustomerIDs() {
     $('#selectCus_ID').empty();
     const defaultOption = document.createElement("option");
 
-    defaultOption.text = "";
+    defaultOption.text = "Select Customer ID";
     $('#selectCus_ID').append(defaultOption);
 
     Customers.forEach(customer => {
@@ -63,11 +66,6 @@ $('#select').on('change', () => {
         $('#quantity_placeOrder').focus();
     }
 });
-let lastOrderId = 0;
-$("#Order_id").on('click', function () {
-    lastOrderId++;
-    $("#Order_id").val(lastOrderId);
-});
 $("#placeOrderBtnReset").on('click',function (){
     $("#selectCus_ID").val("");
     $("#select").val("");
@@ -76,11 +74,22 @@ $("#placeOrderBtnReset").on('click',function (){
     $("#itemPrice").text("");
     $("#quantity_placeOrder").val("");
 })
+let currentOrderId = Orders.length > 0 ? String(Number(Orders[Orders.length - 1].order_id) + 1).padStart(3, '0') : '001';
+
+// Function to generate the next order ID
+function generateOrderId() {
+    const nextOrderId = currentOrderId;
+    currentOrderId = String(Number(currentOrderId) + 1).padStart(3, '0');
+    return nextOrderId;
+}
+
+$("#Order_id").val(generateOrderId());
 $("#btnAdd").on('click', function () {
     let item_id = $("#select").val();
     let quantity = parseInt($("#quantity_placeOrder").val());
     let unit_price = parseFloat($("#itemPrice").text());
     let total = quantity * unit_price;
+    let discount = total * 0.20;
 
     let existingRow = $(`#placeOrder-tbody tr[data-item-id="${item_id}"]`);
 
@@ -135,6 +144,8 @@ $("#btnAdd").on('click', function () {
             netTot += parseFloat($(this).find('.price').text());
         });
         $("#tot").text(netTot.toFixed(2));
+        $("#dis").text("The amount saved by the 20% discount: = Rs."+(netTot * 0.20).toFixed(2));
+        $("#final").text("New Total Rs:"+(netTot - (netTot * 0.20)).toFixed(2));
     }
 
     updateNetTotal();
@@ -149,50 +160,55 @@ $("#btnAdd").on('click', function () {
     $('#itemQut').text("_____________");
     $('#itemPrice').text("___________");
 });
-$("#place_Order").on('click',()=>{
+$("#place_Order").on('click', () => {
     let amount = parseFloat($('#amount').val());
     let netTotal = parseFloat($('#tot').text());
+    let discount = netTotal * 0.20; // Calculate 20% discount
+    let order_id = $("#Order_id").val();
+    let finalTotal = netTotal - discount; // Calculate final total after discount
+    let orderItems = [];
 
-    $("#placeOrder-tbody tr").each(function() {
-        let quantity = parseFloat($(this).find('.quantity').text());
-        let item_id = $(this).find('.item_id').text();
+    if (amount >= finalTotal) {
+        $("#placeOrder-tbody tr").each(function () {
+            let quantity = parseFloat($(this).find('.quantity').text());
+            let item_id = $(this).find('.item_id').text();
+            let unit_price = parseFloat($(this).find('.item_price').text());
+            let total = parseFloat($(this).find('.price').text());
 
-        let index = Items.findIndex(item => item.itemCode === item_id);
+            let index = Items.findIndex(item => item.itemCode === item_id);
 
-        if (index !== -1) {
-            let newQuantity = Items[index].qty - quantity;
+            if (index !== -1) {
+                let newQuantity = Items[index].qty - quantity;
 
-            if (newQuantity >= 0) {
-                Items[index].qty = newQuantity;
+                if (newQuantity >= 0) {
+                    Items[index].qty = newQuantity;
+                    // Collect item details for the order
+                    orderItems.push({
+                        item_id: item_id,
+                        unit_price: unit_price,
+                        quantity: quantity,
+                        total: total
+                    });
+                } else {
+                    console.log("Error: Not enough quantity in stock for item with ID " + item_id);
+                }
             } else {
-                // Handle the case where the new quantity would be negative (out of stock)
-                console.log("Error: Not enough quantity in stock for item with ID " + item_id);
+                console.log("Item not found in item_db.");
             }
-        } else {
-            console.log("Item not found in item_db.");
-        }
-    });
+        });
 
-    if (amount >= netTotal) {
-        let cash = amount - netTotal;
+        let newOrder = new PlaceOrderModel(order_id, orderItems, netTotal, discount, finalTotal);
+        Orders.push(newOrder);
+
+        let cash = amount - finalTotal;
         Swal.fire({
             icon: 'success',
             title: `Order Successful! \n Cash: ${cash.toFixed(2)}`,
             showConfirmButton: true
         });
-       clearPlaceOrderTable();
 
-        let date = $('#currentDateTime').text();
-        let orderID = $('#Order_id').text();
-        let cusID = $('#selectCus_ID').val();
-
-        let recode = `<tr>
-            <td class='OrderId'>${orderID}</td>
-            <td class='customerId'>${cusID}</td>
-            <td class='date'>${date}</td>
-            <td class='net_total'>${netTotal}</td>
-</tr>`
-        $("#tblSearchOrder").append(recode);
+        $("#Order_id").val(generateOrderId());
+        clearPlaceOrderTable();
     } else {
         Swal.fire({
             icon: 'error',
@@ -219,4 +235,6 @@ function clearPlaceOrderTable() {
     $('#placeOrder-tbody').empty();
     $('#tot').text(0.0);
     $('#amount').val("");
+    $('#dis').text("");
+    $('#final').text("");
 }

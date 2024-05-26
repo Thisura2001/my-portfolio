@@ -279,14 +279,6 @@ body{
     position: relative;
     left: 10px;
 }
-
-#discount{
-    width: 120px;
-    height: 38px;
-    position: absolute;
-    left: 200px;
-    top: 155px;
-}
 #balance{
     width: 280px;
     position: relative;
@@ -479,50 +471,84 @@ body{
     display: inline;
     margin-left: 10px;
 }
+
+
+#tblSearchOrder th {
+    background-color: #f2f2f2;
+    color: black;
+}
+/*#tblSearchOrder td:nth-child(1){*/
+/*    position: relative;*/
+/*    left: 0;*/
+/*    top: 0;*/
+/*}*/
+/*#tblSearchOrder td:nth-child(2){*/
+/*    position: relative;*/
+/*    left: 0;*/
+/*    top: 0;*/
+/*}*/
+/*#tblSearchOrder td:nth-child(3){*/
+/*    position: relative;*/
+/*    left: 0;*/
+/*    top: 0;*/
+/*}*/
+/*#tblSearchOrder td:nth-child(4){*/
+/*    position: relative;*/
+/*    left: 0;*/
+/*    top: 0;*/
+/*}*/
+#searchOrder{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background: linear-gradient(to right top, #000000, #1b2557);
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+#searchOrderText{
+    margin-top: 100px;
+    width: 500px;
+    color:white ;
+}
 #tblSearchOrder{
-    width: 50%;
+    width: 80%;
     border-collapse: collapse;
     overflow-x: auto;
-    margin-left: 670px;
     background: white;
-    top: -150px;
+    margin-top: 150px;
     position: relative;
+    margin-left: 150px;
 }
 #tblSearchOrder th {
     border: 1px solid #000000;
     text-align: left;
     padding: 8px;
-    min-width: 120px; /* Set minimum width for cells */
+    min-width: 120px;
 }
+#discount{
+    color: #0caf3a;
+    font-size: 30px;
+}
+#dis{
+    color: #0caf3a;
+    font-size: 30px;
+    display: inline;
+}
+#final{
+    color: #0caf3a;
+    font-size: 30px;
+    display: inline;
+}
+#fin{
+    color: #0caf3a;
+    font-size: 30px;
+    display: inline;
+}
+
 #tblSearchOrder td{
     border: 1px solid #dddddd;
     text-align: left;
     padding: 8px;
     min-width: 120px; /* Set minimum width for cells */
     background-color: white;
-}
-
-#tblSearchOrder th {
-    background-color: #f2f2f2;
-    color: black;
-}
-#tblSearchOrder td:nth-child(1){
-    position: relative;
-    left: 0;
-    top: 0;
-}
-#tblSearchOrder td:nth-child(2){
-    position: relative;
-    left: 0;
-    top: 0;
-}
-#tblSearchOrder td:nth-child(3){
-    position: relative;
-    left: 0;
-    top: 0;
-}
-#tblSearchOrder td:nth-child(4){
-    position: relative;
-    left: 0;
-    top: 0;
 }

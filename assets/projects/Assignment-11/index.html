@@ -44,6 +44,9 @@
                 <li class="nav-item">
                     <span class="nav-link" id="nav-orders" style="color:mediumpurple">Place-Order</span>
                 </li>
+                <li class="nav-item">
+                    <span class="nav-link" id="nav-search" style="color:mediumpurple">Search-Order</span>
+                </li>
             </ul>
         </div>
     </div>
@@ -254,6 +257,14 @@
                         <span id="total">Total Rs:</span>
                         <h2 id="tot">0.0</h2>
                     </div>
+                    <div id="Discount-container">
+                        <span id="discount"></span>
+                        <h2 id="dis"></h2>
+                    </div>
+                    <div id="final-container">
+                        <span id="final"></span>
+                        <h2 id="fin"></h2>
+                    </div>
                     <label for="amount"></label>
                     <input id="amount" type="number" class="form-control" placeholder="Amount">
 
@@ -262,19 +273,27 @@
                     </div>
                 </div>
             </div>
-            <table id="tblSearchOrder" class="col col-xl-6 col-lg-6 col-md-12 col-sm-12 col12">
-                <thead>
-                <tr>
-                    <th class="table-heading" scope="col">Order_id</th>
-                    <th class="table-heading" scope="col">Customer_id</th>
-                    <th class="table-heading" scope="col">date</th>
-                    <th class="table-heading" scope="col">Total</th>
-                </tr>
-                </thead>
-                <tbody class="table-tr" id="searchOrderTBody" style="background: white"></tbody>
-
-            </table>
         </div>
+</section>
+<section id="searchOrder">
+    <div id="searchOrderText" class="mb-lg-2">
+        <div class="mt-lg-2 mb-lg-2 m-lg-3">
+            <label for="SelectOrderId" class="form-label">OrderId</label>
+            <select id="SelectOrderId" class="form-select mb-3" aria-label="Default select example"></select>
+        </div>
+    </div>
+    <table id="tblSearchOrder" class="col col-xl-6 col-lg-6 col-md-12 col-sm-12 col12">
+        <thead>
+        <tr>
+            <th class="table-heading" scope="col">Order_id</th>
+            <th class="table-heading" scope="col">Customer_id</th>
+            <th class="table-heading" scope="col">date</th>
+            <th class="table-heading" scope="col">Total</th>
+        </tr>
+        </thead>
+        <tbody class="table-tr" id="searchOrderTBody" style="background: white"></tbody>
+
+    </table>
 </section>
 
 <script src="assests/lib/jquery-3.7.1.min.js"></script>
@@ -284,5 +303,6 @@
 <script src="Controller/CustomerController.js" type="module"></script>
 <script src="Controller/ItemController.js" type="module"></script>
 <script src="Controller/placeOrderController.js" type="module"></script>
+<script src="Controller/SearchOrderController.js" type="module"></script>
 </body>
 </html>
