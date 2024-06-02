@@ -981,26 +981,26 @@ body{
         display: block !important;
     }
     .section1>div:nth-child(1)>h1 {
-        top: 20px;
-        margin-left: 50px;
+        top: 50px;
+        margin-left: 170px;
         font-size: 30px;
         animation: fadeIn 1s ease-in-out;
     }
 
     .section1>div:nth-child(1)>h1:nth-child(2) {
-        margin-left: 60px;
+        margin-left: 190px;
         font-size: 30px;
         animation: fadeIn 1s ease-in-out;
     }
 
     .section1>div:nth-child(1)>h2 {
-        margin-left: 30px;
-        font-size: 40px;
+        margin-left: 70px;
+        font-size: 35px;
         animation: fadeIn 1s ease-in-out;
     }
 
     .section1>div:nth-child(1)>h4 {
-        margin-left: 50px;
+        margin-left: 120px;
         font-size: 20px;
         animation: fadeIn 1s ease-in-out;
     }
